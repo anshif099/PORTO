@@ -27,7 +27,8 @@ export default function Sponsors() {
   useEffect(() => {
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap";
+    link.href =
+      "https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap";
     document.head.appendChild(link);
     return () => {
       document.head.removeChild(link);
@@ -49,30 +50,28 @@ export default function Sponsors() {
           animation: scroll 35s linear infinite;
         }
 
+        /* FORCE ALL LOGOS WHITE */
         .brand {
           height: 44px;
           max-width: 140px;
           object-fit: contain;
           opacity: 0.85;
-          transition: opacity 0.3s ease, transform 0.3s ease, filter 0.3s ease;
-          filter: brightness(1.15);
+          transition: all 0.3s ease;
+          filter: brightness(0) invert(1);
         }
 
+        /* LIGHT HOVER EFFECT */
         .brand:hover {
           opacity: 1;
           transform: translateY(-2px);
-          filter: brightness(1);
-        }
-
-        /* fix nearly-black logos like SONY */
-        .dark-logo {
-          filter: brightness(1.8) contrast(1.2);
+          filter: brightness(0) invert(1) drop-shadow(0 0 6px rgba(255,255,255,0.35));
         }
       `}</style>
 
-      {/* Grid bg */}
+      {/* Grid Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#222_1px,transparent_1px),linear-gradient(to_bottom,#222_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20 pointer-events-none" />
 
+      {/* Scrolling Sponsors */}
       <div className="relative z-10 overflow-hidden">
         <div ref={trackRef} className="track gap-16 px-10">
           {scrolling.map((b, i) => (
@@ -80,7 +79,7 @@ export default function Sponsors() {
               key={`${b.name}-${i}`}
               src={b.logo}
               alt={b.name}
-              className={`brand ${b.name === "Sony" ? "dark-logo" : ""}`}
+              className="brand"
               loading="lazy"
               draggable={false}
               onError={() => setHidden(prev => [...prev, b.name])}
@@ -89,7 +88,7 @@ export default function Sponsors() {
         </div>
       </div>
 
-      {/* edge shadow */}
+      {/* Edge Fade */}
       <div className="absolute left-0 top-0 w-24 h-full bg-gradient-to-r from-[#050505] to-transparent z-20" />
       <div className="absolute right-0 top-0 w-24 h-full bg-gradient-to-l from-[#050505] to-transparent z-20" />
 
