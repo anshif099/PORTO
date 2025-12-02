@@ -3,6 +3,7 @@ import Bg1 from "@/components/Bg1";
 import Header from "@/components/Header";
 import Location from "@/components/Location";
 import MainText from "@/components/MainText";
+import MainText2 from "@/components/MainText2";
 import Members from "@/components/Members";
 import Sponsors from "@/components/Sponsers";
 
@@ -16,6 +17,7 @@ const Index = () => {
       <Approach />
       <Members />
       <Sponsors />
+      <MainText2 />
       
     </div>
   );
