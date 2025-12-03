@@ -1,7 +1,5 @@
-# TODO List for Header Component Updates
-
-- [x] Update logo source to '@/assets/Logo.svg' in Header.tsx
-- [x] Add title "Title Porto" next to the logo in the header navigation
-- [x] Change menu items (Home, Work, Who We Are, Article, Contact) font size to text-[120px]
-- [x] Add 4-dot hover animation on each menu item (4 white dots that appear and animate on hover, similar to the menu trigger)
-- [x] Change mouse pointer to a white dot cursor for the entire component
+- [x] Replace README.md with a generic project README
+- [x] Update index.html meta tags to remove Lovable references
+- [x] Remove lovable-tagger import from vite.config.ts
+- [ ] Remove lovable-tagger dependency from package.json
+- [ ] Reinstall dependencies
