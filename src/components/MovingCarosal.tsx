@@ -36,7 +36,7 @@ const MovingCarosal: React.FC = () => {
   return (
     <section className="relative w-full bg-[#050505] py-10 sm:py-14 lg:py-20 overflow-hidden">
       {/* background pattern to match other sections */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle,#171717_1px,transparent_1px)] bg-[size:8px_8px] opacity-60 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle,#171717_1px,transparent_1px)] bg-[size:8px_8px] opacity-60 pointer-events-none " />
 
       {/* custom animation for infinite scroll */}
       <style>{`
@@ -58,7 +58,7 @@ const MovingCarosal: React.FC = () => {
 
       <div className="relative z-10 max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12">
         {/* Outer wrapper so hover pauses animation */}
-        <div className="group overflow-hidden w-full">
+        <div className="group overflow-hidden w-full opacity-100 overflow-hidden [mask-image:linear-gradient(to_right,rgba(0,0,0,0)_0%,rgb(0,0,0)_12.5%,rgb(0,0,0)_87.5%,rgba(0,0,0,0)_100%)]">
           <div className="flex w-max gap-6 sm:gap-8 lg:gap-10 moving-track group-hover:moving-track-paused">
             {loopImages.map((src, index) => (
               <div
