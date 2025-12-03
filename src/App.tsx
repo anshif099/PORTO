@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Google from "./pages/Google";
 import Cursor from "./components/Cursor";
 import { CursorProvider } from "./contexts/CursorContext";
+import AmazeWit from "./pages/AmazeWit";
 
 const queryClient = new QueryClient();
 
@@ -23,9 +24,10 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
             <Route path="Contact" element={<Contact/>} />
             <Route path="Google" element={<Google/>} />
+            <Route path="AmazeWit" element={<AmazeWit/>} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>

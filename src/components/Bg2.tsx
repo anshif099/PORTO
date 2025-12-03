@@ -74,6 +74,7 @@ const Bg2: React.FC = () => {
               src={amazeWit}
               alt="Amaze WIT"
               className="w-full h-full object-cover"
+              onClick={() => navigate('/AmazeWit')}
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
             />
@@ -93,7 +94,7 @@ const Bg2: React.FC = () => {
               Amaze WIT
             </p>
 
-            <MoveRight size={20} />
+            <MoveRight size={20} onClick={() => navigate('/AmazeWit')} className="cursor-pointer" />
           </div>
         </div>
 

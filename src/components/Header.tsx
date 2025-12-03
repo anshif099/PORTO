@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '@/assets/identity-logo.svg';
 
 /**
@@ -106,12 +107,12 @@ const Header = () => {
         </button>
 
         {/* Contact Button */}
-        <a
-          href="/Contact"
+        <Link
+          to="/Contact"
           className="z-50 px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full border border-white text-white font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs md:text-sm hover:bg-white hover:text-black transition-all duration-300"
         >
           Contact Now
-        </a>
+        </Link>
       </nav>
 
       {/* --- Full Screen Menu Overlay --- */}
@@ -130,28 +131,53 @@ const Header = () => {
         <div className="flex-grow flex flex-col justify-center items-center">
           <div className="flex flex-col items-center text-center space-y-1 sm:space-y-2 md:space-y-0 group/list">
             {menuItems.map((item, index) => (
-              <a
-                key={index}
-                href={item.href}
-                onClick={toggleMenu}
-                className="
-                  font-bold uppercase leading-none text-white 
-                  transition-all duration-300 
-                  group-hover/list:opacity-20 group-hover/list:blur-[1px] 
-                  hover:!opacity-100 hover:!blur-none relative
-                  text-[28px] xs:text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px]
-                "
-              >
-                {item.label}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <div className="grid grid-cols-2 gap-1.5">
-                    <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
-                    <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-75" />
-                    <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-150" />
-                    <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-225" />
+              item.href.startsWith('/') ? (
+                <Link
+                  key={index}
+                  to={item.href}
+                  onClick={toggleMenu}
+                  className="
+                    font-bold uppercase leading-none text-white
+                    transition-all duration-300
+                    group-hover/list:opacity-20 group-hover/list:blur-[1px]
+                    hover:!opacity-100 hover:!blur-none relative
+                    text-[28px] xs:text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px]
+                  "
+                >
+                  {item.label}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <div className="grid grid-cols-2 gap-1.5">
+                      <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
+                      <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-75" />
+                      <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-150" />
+                      <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-225" />
+                    </div>
                   </div>
-                </div>
-              </a>
+                </Link>
+              ) : (
+                <a
+                  key={index}
+                  href={item.href}
+                  onClick={toggleMenu}
+                  className="
+                    font-bold uppercase leading-none text-white
+                    transition-all duration-300
+                    group-hover/list:opacity-20 group-hover/list:blur-[1px]
+                    hover:!opacity-100 hover:!blur-none relative
+                    text-[28px] xs:text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px]
+                  "
+                >
+                  {item.label}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <div className="grid grid-cols-2 gap-1.5">
+                      <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
+                      <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-75" />
+                      <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-150" />
+                      <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-225" />
+                    </div>
+                  </div>
+                </a>
+              )
             ))}
           </div>
         </div>
