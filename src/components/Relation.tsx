@@ -67,6 +67,14 @@ const Relation: React.FC = () => {
           <br className="hidden md:block" />
           campaigns, to the next big thing.
         </p>
+          {/* TOP SOCIAL LINKS */}
+        <header className="w-full pt-8 px-6 md:px-12 flex justify-center">
+          <nav className="flex gap-8 md:gap-12 text-[11px] md:text-[12px] tracking-[0.25em] uppercase">
+            <a href="#" className="hover:text-gray-300">Instagram ↗</a>
+            <a href="#" className="hover:text-gray-300">LinkedIn ↗</a>
+            <a href="#" className="hover:text-gray-300">Twitter ↗</a>
+          </nav>
+        </header>
       </div>
     </section>
   );

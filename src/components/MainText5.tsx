@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MainText5: React.FC = () => {
   return (
@@ -20,20 +21,21 @@ const MainText5: React.FC = () => {
         <br />
         TOGETHER
       </h1>
-
       {/* Button */}
-      <button
-        className="
-          relative z-10 mt-10
-          px-10 py-3 rounded-full
-          bg-white text-black
-          font-semibold tracking-widest text-sm
-          transition-all duration-300
-          hover:bg-black hover:text-white hover:border hover:border-white
-        "
-      >
-        CONTACT NOW
-      </button>
+      <Link to="/Contact">
+        <button
+          className="
+            relative z-10 mt-10
+            px-10 py-3 rounded-full
+            bg-white text-black
+            font-semibold tracking-widest text-sm
+            transition-all duration-300
+            hover:bg-black hover:text-white hover:border hover:border-white
+          "
+        >
+          CONTACT NOW
+        </button>
+      </Link>
     </section>
   );
 };

@@ -10,14 +10,7 @@ const FooterIdentity: React.FC = () => {
 
       <div className="relative z-10 flex flex-col justify-between min-h-screen font-sans">
 
-        {/* TOP SOCIAL LINKS */}
-        <header className="w-full pt-8 px-6 md:px-12 flex justify-center">
-          <nav className="flex gap-8 md:gap-12 text-[11px] md:text-[12px] tracking-[0.25em] uppercase">
-            <a href="#" className="hover:text-gray-300">Instagram ↗</a>
-            <a href="#" className="hover:text-gray-300">LinkedIn ↗</a>
-            <a href="#" className="hover:text-gray-300">Twitter ↗</a>
-          </nav>
-        </header>
+      
 
         {/* BIG LOGO */}
         <main className="flex-1 flex items-end justify-center pb-14 md:pb-18 lg:pb-22">

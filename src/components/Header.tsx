@@ -15,11 +15,11 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const menuItems = [
-    { label: 'Home', href: '#' },
+    { label: 'Home', href: '/' },
     { label: 'Work', href: '#work' },
     { label: 'Who We Are', href: '#about' },
     { label: 'Article', href: '#' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Contact', href: '/Contact' },
   ];
 
   return (
@@ -107,7 +107,7 @@ const Header = () => {
 
         {/* Contact Button */}
         <a
-          href="#contact"
+          href="/Contact"
           className="z-50 px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full border border-white text-white font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs md:text-sm hover:bg-white hover:text-black transition-all duration-300"
         >
           Contact Now
