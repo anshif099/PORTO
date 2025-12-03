@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useCursor } from '../contexts/CursorContext';
 
 const Cursor: React.FC = () => {
+  const location = useLocation();
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const { isHovering: imageHover } = useCursor();
   const [textHover] = useState(false); // unchanged
@@ -18,7 +19,7 @@ const Cursor: React.FC = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  const size = isHovering ? 40 : 18;
+  const size = location.pathname === '/AmazeWit' ? 18 : (isHovering ? 40 : 18);
   const radius = size / 2;
 
   return (
