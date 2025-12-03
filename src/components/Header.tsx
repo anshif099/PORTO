@@ -139,7 +139,7 @@ const Header = () => {
                   transition-all duration-300 
                   group-hover/list:opacity-20 group-hover/list:blur-[1px] 
                   hover:!opacity-100 hover:!blur-none relative
-                  text-[32px] xs:text-[40px] sm:text-[56px] md:text-[72px] lg:text-[96px] xl:text-[120px]
+                  text-[28px] xs:text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px]
                 "
               >
                 {item.label}
@@ -156,35 +156,43 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Footer Info */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-[10px] sm:text-xs md:text-sm font-bold tracking-[0.18em] uppercase text-white w-full border-t border-white/10 pt-4 sm:pt-6">
-          <p className="text-gray-400">&copy; 2025 All Rights Reserved</p>
-          <div className="flex flex-wrap gap-4 sm:gap-6 md:gap-8">
-            {['Instagram', 'Dribbble', 'Twitter'].map((social) => (
-              <a
-                key={social}
-                href="#"
-                className="flex items-center gap-1 hover:text-gray-400 transition-colors"
-              >
-                {social}
-                <svg
-                  width="10"
-                  height="10"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="ml-1"
+        {/* Footer Info – copyright + socials */}
+        <div className="w-full border-t border-white/10 pt-4 sm:pt-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-white font-clash">
+            {/* Left: copyright */}
+            <p className="text-[10px] sm:text-[11px] md:text-[12px] tracking-[0.25em] uppercase text-white/70">
+              ©2024 All Rights Reserved
+            </p>
+
+            {/* Right: social links */}
+            <div className="flex flex-wrap items-center gap-6 sm:gap-8 md:gap-10 text-[10px] sm:text-[11px] md:text-[12px] tracking-[0.25em] uppercase">
+              {['Instagram', 'Dribbble', 'Twitter'].map((social) => (
+                <a
+                  key={social}
+                  href="#"
+                  className="flex items-center gap-1 hover:text-gray-300 transition-colors"
                 >
-                  <path
-                    d="M7 17L17 7M17 7H7M17 7V17"
-                    stroke="currentColor"
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </a>
-            ))}
+                  {social}
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="ml-1"
+                  >
+                    <path
+                      d="M7 17L17 7M17 7H7M17 7V17"
+                      stroke="currentColor"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  <span className="sr-only">external link</span>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
