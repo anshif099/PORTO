@@ -1,10 +1,15 @@
 import React from "react";
 import { MoveRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { useCursor } from "../contexts/CursorContext";
 
 import googleIcs from "@/assets/google-ics.jpg";
 import amazeWit from "@/assets/amaze-wit.jpg";
 
 const Bg2: React.FC = () => {
+  const navigate = useNavigate();
+  const { setIsHovering } = useCursor();
+
   return (
     <section className="relative w-full min-h-screen bg-[#050505] flex items-center justify-center px-4 sm:px-8 lg:px-20">
 
@@ -33,6 +38,9 @@ const Bg2: React.FC = () => {
               src={googleIcs}
               alt="Google / ICS Summit"
               className="w-full h-full object-cover"
+              onClick={() => navigate('/Google')}
+              onMouseEnter={() => setIsHovering(true)}
+              onMouseLeave={() => setIsHovering(false)}
             />
           </div>
 
@@ -50,7 +58,7 @@ const Bg2: React.FC = () => {
               Google / ICS Summit 2022-25
             </p>
 
-            <MoveRight size={20} />
+            <MoveRight size={20} onClick={() => navigate('/Google')} className="cursor-pointer" />
           </div>
         </div>
 
@@ -66,6 +74,8 @@ const Bg2: React.FC = () => {
               src={amazeWit}
               alt="Amaze WIT"
               className="w-full h-full object-cover"
+              onMouseEnter={() => setIsHovering(true)}
+              onMouseLeave={() => setIsHovering(false)}
             />
           </div>
 

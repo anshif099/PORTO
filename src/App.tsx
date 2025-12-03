@@ -6,23 +6,30 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
+import Google from "./pages/Google";
+import Cursor from "./components/Cursor";
+import { CursorProvider } from "./contexts/CursorContext";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-          <Route path="Contact" element={<Contact/>} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+    <CursorProvider>
+      <TooltipProvider>
+        <Cursor />
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+            <Route path="Contact" element={<Contact/>} />
+            <Route path="Google" element={<Google/>} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </CursorProvider>
   </QueryClientProvider>
 );
 
