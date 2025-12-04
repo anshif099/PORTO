@@ -35,9 +35,10 @@ export default function Approach() {
           <span className="block uppercase">// Approach</span>
           <span className="block uppercase">Four Phases</span>
         </div>
+        
 
         {/* Main Content Area */}
-        <div className="flex-grow flex flex-col items-center justify-center text-center">
+        <div className="flex-grow flex flex-col items-center justify-center text-center py-40">
           
           {/* Hero Heading */}
           <h1 className="font-clash font-semibold text-white tracking-tight uppercase leading-[0.9] w-full mx-auto mb-10 md:mb-12 px-2">
