@@ -10,6 +10,7 @@ import Google from "./pages/Google";
 import Cursor from "./components/Cursor";
 import { CursorProvider } from "./contexts/CursorContext";
 import AmazeWit from "./pages/AmazeWit";
+import LinkedInHackWeek from "./pages/LinkedInHackWeek";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="Contact" element={<Contact/>} />
             <Route path="Google" element={<Google/>} />
             <Route path="AmazeWit" element={<AmazeWit/>} />
+            <Route path="LinkedInHackWeek" element={<LinkedInHackWeek/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
