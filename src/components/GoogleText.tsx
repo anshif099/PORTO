@@ -4,7 +4,7 @@ const GoogleText: React.FC = () => {
   return (
     <section
       className="
-        w-full min-h-screen
+        w-full py-20
         flex items-center justify-center
         bg-[#050505]
         text-white

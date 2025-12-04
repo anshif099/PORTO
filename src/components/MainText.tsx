@@ -16,7 +16,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white selection:bg-white selection:text-black font-sans overflow-x-hidden flex flex-col">
+    <div className="py-20 bg-[#050505] text-white selection:bg-white selection:text-black font-sans overflow-x-hidden flex flex-col">
       {/* Custom font */}
       <style>{`
         :root {

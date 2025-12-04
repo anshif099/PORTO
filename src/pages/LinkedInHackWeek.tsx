@@ -13,7 +13,7 @@ import LinkedInData from "@/components/LinkedInData";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-[#050505]">
+    <div className="py-20 bg-[#050505]">
       <Header />
       <LinkedInHackWeekText />
       <LinkedInHackWeekBg1 />

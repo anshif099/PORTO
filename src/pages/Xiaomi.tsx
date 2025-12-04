@@ -14,7 +14,7 @@ import Relation from "@/components/Relation";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-[#050505]">
+    <div className="py-20 bg-[#050505]">
       <Header />
       <XiaomiText />
       <XiaomiBg1 />

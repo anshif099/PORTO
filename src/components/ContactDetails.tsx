@@ -3,7 +3,7 @@ import React from 'react';
 const ContactDetails = () => {
   return (
     <section
-      className="w-full min-h-screen bg-[#050505] flex items-start justify-center text-white font-clash"
+      className="w-full py-20 bg-[#050505] flex items-start justify-center text-white font-clash"
       style={{
         backgroundImage: 'radial-gradient(#333 1px, transparent 1px)',
         backgroundSize: '24px 24px',

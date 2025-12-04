@@ -3,7 +3,7 @@ import relationImg from "@/assets/relation.jpg"; // <- replace with your handsha
 
 const Relation: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen bg-[#050505] text-white overflow-hidden">
+    <section className="relative w-full py-20 bg-[#050505] text-white overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle,#171717_1px,transparent_1px)] bg-[size:8px_8px] opacity-60 pointer-events-none" />
 
@@ -14,7 +14,7 @@ const Relation: React.FC = () => {
         }
       `}</style>
 
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-20 flex flex-col items-center justify-center min-h-screen font-inter-display">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-20 flex flex-col items-center justify-center py-20 font-inter-display">
         {/* Top row: left text / image / right text */}
         <div className="w-full grid grid-cols-[1fr_auto_1fr] items-center gap-4 mb-12 md:mb-16">
           {/* Left text */}

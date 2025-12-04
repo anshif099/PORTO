@@ -96,7 +96,7 @@ const DropDown: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full min-h-screen bg-[#050505] text-white overflow-hidden">
+    <section className="relative w-full py-20 bg-[#050505] text-white overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle,#171717_1px,transparent_1px)] bg-[size:9px_9px] opacity-60" />
 

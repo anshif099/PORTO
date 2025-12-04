@@ -3,7 +3,7 @@ import handshake from "@/assets/handshake.jpg"; // put your image path here
 
 const ContactForm = () => {
   return (
-    <section className="w-full min-h-screen bg-[#050505] flex items-center justify-center font-[Clash Display]">
+    <section className="w-full py-20 bg-[#050505] flex items-center justify-center font-[Clash Display]">
       <div className="max-w-[1400px] w-full px-6 md:px-12 grid md:grid-cols-2 gap-8 items-center">
 
         {/* LEFT CONTENT */}

@@ -9,7 +9,7 @@ const stats = [
 
 const Status: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen bg-[#050505] text-white overflow-hidden">
+    <section className="relative w-full py-20 bg-[#050505] text-white overflow-hidden">
       {/* Background grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)] bg-[size:80px_80px] opacity-45" />
 
@@ -34,7 +34,7 @@ const Status: React.FC = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 flex items-center justify-center w-full min-h-screen">
+      <div className="relative z-10 flex items-center justify-center w-full py-20">
         <div className="w-full max-w-[1500px] mx-auto px-6 md:px-16 lg:px-24 font-inter-display">
           {/* 4 stats in a row */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-y-0">

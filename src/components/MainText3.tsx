@@ -2,7 +2,7 @@ import React from "react";
 
 const MainText3: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen bg-[#050505] overflow-hidden">
+    <section className="relative w-full py-20 bg-[#050505] overflow-hidden">
 
       {/* Background grid pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:80px_80px] opacity-40" />
@@ -22,7 +22,7 @@ const MainText3: React.FC = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 md:px-16 lg:px-24 flex items-center min-h-screen">
+      <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 md:px-16 lg:px-24 flex items-center py-20">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-16">
 
           {/* Left: big headline */}

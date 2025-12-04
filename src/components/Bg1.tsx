@@ -5,7 +5,7 @@ import bg1 from "@/assets/bg1.png"; // or .jpg – use your actual file name
 const Bg1: React.FC = () => {
   return (
     <section className="w-full bg-black">
-      <div className="relative flex items-center justify-center min-h-screen overflow-hidden">
+      <div className="relative flex items-center justify-center py-20 overflow-hidden">
         <img
           src={bg1}
           alt="Stage background"

@@ -3,7 +3,7 @@ import teamImage from "@/assets/team-photo.jpg"; // <- change to your actual fil
 
 const Bg5: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen bg-[#050505] flex items-center justify-center px-4 sm:px-8 lg:px-20 py-10 sm:py-14 lg:py-20">
+    <section className="relative w-full py-20 bg-[#050505] flex items-center justify-center px-4 sm:px-8 lg:px-20 py-10 sm:py-14 lg:py-20">
       {/* Background pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle,#171717_1px,transparent_1px)] bg-[size:8px_8px] opacity-60" />
 

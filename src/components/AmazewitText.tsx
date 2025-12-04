@@ -3,7 +3,7 @@ import React from "react";
 const AmazewitText: React.FC = () => {
   return (
     <section
-      className="w-full min-h-screen flex items-center justify-center text-white font-clash px-6"
+      className="w-full py-20 flex items-center justify-center text-white font-clash px-6"
       style={{
         backgroundColor: "#050505",
         backgroundImage: "radial-gradient(#202020 1px, transparent 1px)",
