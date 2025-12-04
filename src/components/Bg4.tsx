@@ -1,6 +1,6 @@
 import React from "react";
 import { MoveRight } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import amazonPxt from "@/assets/amazon-pxt.jpg";      // Left
 import xiaomiCivi from "@/assets/xiaomi-civi.jpg";    // Right
@@ -97,6 +97,7 @@ const Bg4: React.FC = () => {
       </div>
 
       {/* BUTTON */}
+      <Link to="https://docs.google.com/presentation/d/1hd7tlaGOBHem6UjJ5yCB6ub09TKteYDRv0Ehlx87L6E/edit?usp=sharing">
       <button
   className="
     relative z-10 mt-4 px-8 py-3 rounded-full 
@@ -109,7 +110,7 @@ const Bg4: React.FC = () => {
 >
   LATEST PROFILE
 </button>
-
+</Link>
 
     </section>
   );

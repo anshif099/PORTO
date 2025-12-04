@@ -1,11 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useCursor } from "../contexts/CursorContext";
 
-import img1 from "@/assets/google-ics.jpg"; // AMAZE WIT
-import img2 from "@/assets/amaze-wit.jpg"; // LinkedIn HackWeek
+import img1 from "@/assets/google-ics.jpg"; // Google/ICS Summit 2022-25
+import img2 from "@/assets/amaze-wit.jpg"; // Amaze WIT
 
 const GoogleBg3: React.FC = () => {
   const { setIsHovering } = useCursor();
+  const navigate = useNavigate();
   return (
     <section className="relative w-full bg-[#050505] overflow-hidden py-10">
 
@@ -14,10 +16,11 @@ const GoogleBg3: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
           {/* LEFT IMAGE */}
-          <div 
+          <div
             className="w-full group cursor-pointer"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
+            onClick={() => navigate('/Google')}
           >
             <div className="relative aspect-[16/11] rounded-xl overflow-hidden transition duration-500 ease-out">
 
@@ -56,10 +59,11 @@ const GoogleBg3: React.FC = () => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div 
+          <div
             className="w-full group cursor-pointer"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
+            onClick={() => navigate('/AmazeWit')}
           >
             <div className="relative aspect-[16/11] rounded-xl overflow-hidden transition duration-500 ease-out">
 
