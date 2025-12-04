@@ -13,6 +13,7 @@ import AmazeWit from "./pages/AmazeWit";
 import LinkedInHackWeek from "./pages/LinkedInHackWeek";
 import AmazonPXT from "./pages/AmazonPXT";
 import Xiaomi from "./pages/Xiaomi";
+import Work from "./pages/Work";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="LinkedInHackWeek" element={<LinkedInHackWeek/>} />
             <Route path="AmazonPXT" element={<AmazonPXT/>} />
             <Route path="Xiaomi" element={<Xiaomi/>} />
+             <Route path="Work" element={<Work/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
