@@ -1,26 +1,27 @@
 import React from "react";
 import FooterIdentity from "@/components/FooterIdentity";
 import Header from "@/components/Header";
-import AmazewitText from "@/components/AmazewitText";
-import AmazewitBg1 from "@/components/AmazewitBg1";
-import AmazewitBg2 from "@/components/AmazewitBg2";
+import AmazonPXTText from "@/components/AmazonPXTText";
+import AmazonPXTBg1 from "@/components/AmazonPXTBg1";
+import AmazonPXTBg2 from "@/components/AmazonPXTBg2";
 import TextCarousal from "@/components/TextCarousal";
-import AmazewitBg3 from "@/components/AmazewitBg3";
+import LinkedInHackWeekBg3 from "@/components/LinkedInHackWeekBg3";
 import FAQ from "@/components/FAQ";
 import MainText5 from "@/components/MainText5";
 import Relation from "@/components/Relation";
-import AmazonData from "@/components/AmazonData";
+import AmazoneData from "@/components/AmazonData";
+
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-[#050505]">
       <Header />
-      <AmazewitText />
-      <AmazewitBg1 />
-      <AmazonData />
-      <AmazewitBg2 />
+      <AmazonPXTText />
+      <AmazonPXTBg1 />
+      <AmazoneData/>
+      <AmazonPXTBg2 />
       <TextCarousal />
-      <AmazewitBg3 />
+      <LinkedInHackWeekBg3 />
       <FAQ />
       <MainText5 />
       <Relation />

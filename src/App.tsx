@@ -11,6 +11,8 @@ import Cursor from "./components/Cursor";
 import { CursorProvider } from "./contexts/CursorContext";
 import AmazeWit from "./pages/AmazeWit";
 import LinkedInHackWeek from "./pages/LinkedInHackWeek";
+import AmazonPXT from "./pages/AmazonPXT";
+import Xiaomi from "./pages/Xiaomi";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +31,8 @@ const App = () => (
             <Route path="Google" element={<Google/>} />
             <Route path="AmazeWit" element={<AmazeWit/>} />
             <Route path="LinkedInHackWeek" element={<LinkedInHackWeek/>} />
+            <Route path="AmazonPXT" element={<AmazonPXT/>} />
+            <Route path="Xiaomi" element={<Xiaomi/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
