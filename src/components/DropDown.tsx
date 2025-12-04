@@ -96,7 +96,7 @@ const DropDown: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full py-20 bg-[#050505] text-white overflow-hidden">
+    <section className="relative w-full bg-[#050505] text-white overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle,#171717_1px,transparent_1px)] bg-[size:9px_9px] opacity-60" />
 
@@ -107,7 +107,7 @@ const DropDown: React.FC = () => {
         }
       `}</style>
 
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 md:px-10 lg:px-20 py-16 font-inter-display">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 md:px-10 lg:px-20  font-inter-display">
         {/* Two-column layout, left mostly empty like screenshot */}
         <div className="grid grid-cols-1 md:grid-cols-[0.9fr,2fr] gap-10 md:gap-16">
           {/* Left spacer column (keeps content pushed right) */}

@@ -14,7 +14,7 @@ export default function Approach() {
   }, []);
 
   return (
-    <div className="w-full py-20 bg-[#050505] text-white font-sans overflow-hidden relative flex flex-col">
+    <div className="w-full bg-[#050505] text-white font-sans overflow-hidden relative flex flex-col">
       <style>{`
         :root {
           --framer-font-family: "Clash Display", "Clash Display Placeholder", sans-serif;
@@ -27,7 +27,7 @@ export default function Approach() {
       {/* Subtle Grid Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#232323_1px,transparent_1px),linear-gradient(to_bottom,#232323_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 pointer-events-none"></div>
 
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 py-12 flex flex-col h-full py-20 justify-between">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 flex flex-col h-full py-20 justify-between">
         
         {/* Top Header Row */}
         <div className="flex justify-between items-start w-full text-[12px] md:text-sm font-clash font-medium tracking-widest text-gray-400 mb-10 md:mb-0">
@@ -38,7 +38,7 @@ export default function Approach() {
         
 
         {/* Main Content Area */}
-        <div className="flex-grow flex flex-col items-center justify-center text-center py-40">
+        <div className="flex-grow flex flex-col items-center justify-center text-center pt-40">
           
           {/* Hero Heading */}
           <h1 className="font-clash font-semibold text-white tracking-tight uppercase leading-[0.9] w-full mx-auto mb-10 md:mb-12 px-2">

@@ -2,7 +2,7 @@ import React from "react";
 
 const MainText3: React.FC = () => {
   return (
-    <section className="relative w-full py-20 bg-[#050505] overflow-hidden">
+    <section className="relative w-full bg-[#050505] overflow-hidden">
 
       {/* Background grid pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:80px_80px] opacity-40" />

@@ -46,7 +46,7 @@ export default function Members() {
   ];
 
   return (
-    <div className="w-full bg-[#050505] text-white font-sans overflow-hidden relative py-20">
+    <div className="w-full bg-[#050505] text-white font-sans overflow-hidden relative ">
       <style>{`
         :root {
           --framer-font-family: "Clash Display", "Clash Display Placeholder", sans-serif;

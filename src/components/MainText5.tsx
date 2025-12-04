@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const MainText5: React.FC = () => {
   return (
-    <section className="relative w-full h-screen bg-[#050505] overflow-hidden flex flex-col justify-center items-center text-center">
+    <section className="relative w-full bg-[#050505] overflow-hidden flex flex-col justify-center items-center text-center">
 
       {/* Background pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle,#1a1a1a_1px,transparent_1px)] bg-[size:8px_8px] opacity-60" />
