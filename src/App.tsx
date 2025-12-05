@@ -14,6 +14,7 @@ import LinkedInHackWeek from "./pages/LinkedInHackWeek";
 import AmazonPXT from "./pages/AmazonPXT";
 import Xiaomi from "./pages/Xiaomi";
 import Work from "./pages/Work";
+import WhoWeAre from "./pages/WhoWeAre";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="AmazonPXT" element={<AmazonPXT/>} />
             <Route path="Xiaomi" element={<Xiaomi/>} />
              <Route path="Work" element={<Work/>} />
+             <Route path="WhoWeAre" element={<WhoWeAre/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
