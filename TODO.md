@@ -1,5 +1,1 @@
-- [x] Replace README.md with a generic project README
-- [x] Update index.html meta tags to remove Lovable references
-- [x] Remove lovable-tagger import from vite.config.ts
-- [ ] Remove lovable-tagger dependency from package.json
-- [ ] Reinstall dependencies
+- [x] Fix typo in image path for Vinish in src/components/WhoweareCard.tsx: change "src/asstes/vinish.png" to "src/assets/vinish.png"
