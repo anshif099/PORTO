@@ -16,6 +16,7 @@ import Xiaomi from "./pages/Xiaomi";
 import Work from "./pages/Work";
 import WhoWeAre from "./pages/WhoWeAre";
 import Article from "./pages/Article";
+import Blog1 from "./pages/Blog1";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,7 @@ const App = () => (
              <Route path="Work" element={<Work/>} />
              <Route path="WhoWeAre" element={<WhoWeAre/>} />
              <Route path="Article" element={<Article/>} />
+              <Route path="Blog1" element={<Blog1/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

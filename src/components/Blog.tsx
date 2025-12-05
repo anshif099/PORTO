@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 type BlogItem = {
   title: string;
@@ -35,6 +36,14 @@ const blogs: BlogItem[] = [
 ];
 
 const Blog: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleRedirect = (index: number) => {
+    if (index === 0) {
+      navigate("/blog1");
+    }
+  };
+
   return (
     <section
       className="w-full flex justify-center px-4 sm:px-8 py-16"
@@ -48,10 +57,11 @@ const Blog: React.FC = () => {
     >
       <div className="w-full max-w-6xl mx-auto">
         <div className="grid gap-y-12 gap-x-10 md:grid-cols-2 lg:grid-cols-3">
-          {blogs.map((item) => (
+          {blogs.map((item, index) => (
             <article
               key={item.title}
               className="group flex flex-col cursor-pointer"
+              onClick={() => handleRedirect(index)}
             >
               {/* Image */}
               <div className="rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)] transform transition-transform duration-500 group-hover:-translate-y-1.5">
@@ -62,7 +72,7 @@ const Blog: React.FC = () => {
                 />
               </div>
 
-              {/* Text + arrow */}
+              {/* Text + Arrow */}
               <div className="flex items-start justify-between mt-4">
                 <div className="max-w-xs">
                   <h3 className="text-white text-[1.05rem] leading-snug font-semibold">
