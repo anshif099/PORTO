@@ -1,4 +1,8 @@
 import React from "react";
+import valueBoldInnovation from "../assets/value-bold-innovation.webp";
+import valueStrategicImpact from "../assets/value-strategic-impact.webp";
+import valueAuthenticEngagement from "../assets/value-authentic-engagement.webp";
+import valueTechnicalExcellence from "../assets/value-technical-excellence.webp";
 
 type ValueItem = {
   title: string;
@@ -10,24 +14,24 @@ const values: ValueItem[] = [
   {
     title: "BOLD INNOVATION",
     description: "We create experiences that haven't been seen before.",
-    icon: "src/assets/value-bold-innovation.webp", // hand + bulb
+    icon: valueBoldInnovation,
   },
   {
     title: "STRATEGIC IMPACT",
     description: "We design every element with clear objectives",
-    icon: "src/assets/value-strategic-impact.webp", // pen tool
+    icon: valueStrategicImpact,
   },
   {
     title: "AUTHENTIC ENGAGEMENT",
     description:
       "We create genuine connections between brands and audiences",
-    icon: "src/assets/value-authentic-engagement.webp", // palette
+    icon: valueAuthenticEngagement,
   },
   {
     title: "TECHNICAL EXCELLENCE",
     description:
       "Our production standards and technical capabilities employ the best-in-business.",
-    icon: "src/assets/value-technical-excellence.webp", // eye
+    icon: valueTechnicalExcellence,
   },
 ];
 
