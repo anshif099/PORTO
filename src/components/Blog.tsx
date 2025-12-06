@@ -11,27 +11,27 @@ const blogs: BlogItem[] = [
   {
     title: "Cybersecurity Study Jam/Google Cybersecurity Campaign",
     date: "AUGUST 16, 2024",
-    image: "src/assets/blog-cybersecurity.jpg",
+    image: blogCybersecurity,
   },
   {
     title: "Alli Serona Campaign",
     date: "JULY 12, 2025",
-    image: "src/assets/blog-alli-serona.jpg",
+    image: blogAlliSerona,
   },
   {
     title: "google-devfest",
     date: "NOVEMBER 12, 2023",
-    image: "src/assets/blog-google-devfest.jpg",
+    image: blogGoogleDevfest,
   },
   {
     title: "Unacademy Compete",
     date: "SEPTEMBER 12, 2025",
-    image: "src/assets/blog-unacademy-compete.jpg",
+    image: blogUnacademyCompete,
   },
   {
     title: "xiaomi-smarter-living",
     date: "APRIL 11, 2025",
-    image: "src/assets/blog-xiaomi-smarter-living.jpg",
+    image: blogXiaomiSmarterLiving,
   },
 ];
 
