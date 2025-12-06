@@ -39,9 +39,11 @@ const Blog: React.FC = () => {
   const navigate = useNavigate();
 
   const handleRedirect = (index: number) => {
-    if (index === 0) {
-      navigate("/blog1");
-    }
+    if (index === 0) navigate("/blog1");
+    else if (index === 1) navigate("/blog2");
+    else if (index === 2) navigate("/blog3");
+    else if (index === 3) navigate("/blog4");
+    else if (index === 4) navigate("/blog5");
   };
 
   return (
