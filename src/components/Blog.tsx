@@ -1,5 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import blogCybersecurity from "../assets/blog-cybersecurity.jpg";
+import blogAlliSerona from "../assets/blog-alli-serona.jpg";
+import blogGoogleDevfest from "../assets/blog-google-devfest.jpg";
+import blogUnacademyCompete from "../assets/blog-unacademy-compete.jpg";
+import blogXiaomiSmarterLiving from "../assets/blog-xiaomi-smarter-living.jpg";
 
 type BlogItem = {
   title: string;
