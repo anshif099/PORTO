@@ -1,4 +1,27 @@
 import React from "react";
+import ismailMk from "../assets/ismail-mk.jpg";
+import craigDmello from "../assets/Craig-Dmello.jpg";
+import manuVikraman from "../assets/Manu-Vikraman.jpg";
+import madhuJ from "../assets/Madhu-J.jpg";
+import suseenthiranJ from "../assets/Suseenthiran-J.jpg";
+import vinishMm from "../assets/vinish.png";
+import riyazMk from "../assets/Riyaz-M-K.jpg";
+import sudhishRam from "../assets/Sudhish-Ram.jpg";
+import sandeshKarant from "../assets/Sandesh-Karant.jpg";
+import yacobPs from "../assets/Yacob-P-S.jpg";
+import sayeedMk from "../assets/Sayeed-M-K.jpg";
+import harishaB from "../assets/Harisha-B.jpg";
+import sanjuC from "../assets/Sanju-C.jpg";
+import prasantTs from "../assets/Prasant-T-S.jpg";
+import ananyaRao from "../assets/Ananya-Rao.jpg";
+import naufalKk from "../assets/Naufal-K-K.jpg";
+import saffan from "../assets/Saffan.jpg";
+import saninSadath from "../assets/Sanin-Sadath.jpg";
+import mohammedFahiz from "../assets/Mohammed-Fahiz.jpg";
+import priyankaBr from "../assets/Priyanka-B-R.jpg";
+import manzoor from "../assets/Manzoor.jpg";
+import rameshAp from "../assets/Ramesh-AP.jpg";
+import malaN from "../assets/Mala-N.jpg";
 
 type Member = {
   name: string;
@@ -10,117 +33,117 @@ const members: Member[] = [
   {
     name: "Ismail M K",
     role: "Founder / Director",
-    image: "src/assets/ismail-mk.jpg", // TODO: replace with real path
+    image: ismailMk,
   },
   {
     name: "Craig Dmello",
     role: "Creative Partner",
-    image: "src/assets/Craig-Dmello.jpg",
+    image: craigDmello,
   },
   {
     name: "Manu Vikraman",
     role: "Creative Associate",
-    image: "src/assets/Manu-Vikraman.jpg",
+    image: manuVikraman,
   },
   {
     name: "Madhu J",
     role: "Associate Director",
-    image: "src/assets/Madhu-J.jpg",
+    image: madhuJ,
   },
   {
     name: "Suseenthiran J",
     role: "Associate Director",
-    image: "src/assets/Suseenthiran-J.jpg",
+    image: suseenthiranJ,
   },
   {
     name: "Vinish M M",
     role: "Operation Head",
-    image: "src/assets/vinish.png",
+    image: vinishMm,
   },
   {
     name: "Riyaz M K",
     role: "Account Manager",
-    image: "src/assets/Riyaz-M-K.jpg",
+    image: riyazMk,
   },
   {
     name: "Sudhish Ram",
     role: "Creative Director",
-    image: "src/assets/Sudhish-Ram.jpg",
+    image: sudhishRam,
   },
   {
     name: "Sandesh Karant",
     role: "Account Manager",
-    image: "src/assets/Sandesh-Karant.jpg",
+    image: sandeshKarant,
   },
   {
     name: "Yacob P S",
     role: "Account Manager",
-    image: "src/assets/Yacob-P-S.jpg",
+    image: yacobPs,
   },
   {
     name: "Sayeed M K",
     role: "Program Manager",
-    image: "src/assets/Sayeed-M-K.jpg",
+    image: sayeedMk,
   },
   {
     name: "Harisha B",
     role: "Sr 3D Designer",
-    image: "src/assets/Harisha-B.jpg",
+    image: harishaB,
   },
   {
     name: "Sanju C",
     role: "3D Designer",
-    image: "src/assets/Sanju-C.jpg",
+    image: sanjuC,
   },
   {
     name: "Prasant T S",
     role: "2D Designer",
-    image: "src/assets/Prasant-T-S.jpg",
+    image: prasantTs,
   },
   {
     name: "Ananya Rao",
     role: "Sr Executive",
-    image: "src/assets/Ananya-Rao.jpg",
+    image: ananyaRao,
   },
   {
     name: "Naufal K K",
     role: "Sr Executive",
-    image: "src/assets/Naufal-K-K.jpg",
+    image: naufalKk,
   },
   {
     name: "Saffan",
     role: "Finance Head",
-    image: "src/assets/Saffan.jpg",
+    image: saffan,
   },
   {
     name: "Sanin Sadath",
     role: "Executive",
-    image: "src/assets/Sanin-Sadath.jpg",
+    image: saninSadath,
   },
   {
     name: "Mohammed Fahiz",
     role: "Executive",
-    image: "src/assets/Mohammed-Fahiz.jpg",
+    image: mohammedFahiz,
   },
   {
     name: "Priyanka B R",
     role: "Executive",
-    image: "src/assets/Priyanka-B-R.jpg",
+    image: priyankaBr,
   },
   {
     name: "Manzoor",
     role: "Office Assistanat",
-    image: "src/assets/Manzoor.jpg",
+    image: manzoor,
   },
   {
     name: "Ramesh AP",
     role: "Senior 2D Designer",
-    image: "src/assets/Ramesh-AP.jpg",
+    image: rameshAp,
   },
   {
     name: "Mala N",
     role: "Executive Response Management",
-    image: "src/assets/Mala-N.jpg",
+    image: malaN,
   },
 ];
 

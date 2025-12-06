@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import blog1HeroCybersecurity from "../assets/blog1-hero-cybersecurity.jpg";
 
 const Blog1Bg1: React.FC = () => {
   const [scale, setScale] = useState(1.2);
@@ -29,7 +30,7 @@ const Blog1Bg1: React.FC = () => {
       <div className="w-full h-screen">
         <div className="w-full h-full rounded-none sm:rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
           <img
-            src="src/assets/blog1-hero-cybersecurity.jpg" // replace with your image path
+            src={blog1HeroCybersecurity}
             alt="Cybersecurity Roadshows"
             className="w-full h-full object-cover will-change-transform transition-transform duration-75 ease-out"
             style={{ transform: `scale(${scale})` }}

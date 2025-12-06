@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import blog4Bg2Left from "../assets/blog4-bg2-left.jpg";
+import blog4Bg2Right from "../assets/blog4-bg2-right.jpg";
 
 const Blog1Bg2: React.FC = () => {
   const [scale, setScale] = useState(1.2);
