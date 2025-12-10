@@ -1,96 +1,115 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
+
+import poco from "@/assets/poco.svg";
+import amazon from "@/assets/amazon.svg";
+import artpark from "@/assets/artpark.svg";
+import dataiku from "@/assets/dataiku.svg";
+import neo4j from "@/assets/neo4j.svg";
+import orkes from "@/assets/orkes.svg";
+import polygon from "@/assets/polygon.svg";
+import smartbridge from "@/assets/smartbridge.svg";
+import smartinternz from "@/assets/smartinternz.svg";
+import unacademy from "@/assets/unacademy.svg";
+import google from "@/assets/google.svg";
+import xiaomi from "@/assets/xiaomi.svg";
+import sagility from "@/assets/sagility.svg";
+import linkedin from "@/assets/linkedin.svg";
 
 const brands = [
-  { name: "LinkedIn", logo: "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" },
-  { name: "Amazon", logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" },
-  { name: "Google", logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" },
-  { name: "Microsoft", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" },
-  { name: "Spotify", logo: "https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" },
-  { name: "Netflix", logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" },
-  { name: "Adobe", logo: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Adobe_logo_2020.svg" },
-  { name: "Samsung", logo: "https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" },
-  { name: "Intel", logo: "https://upload.wikimedia.org/wikipedia/commons/c/c9/Intel-logo.svg" },
-  { name: "HP", logo: "https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" },
-  { name: "Dell", logo: "https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" },
-  { name: "IBM", logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" },
-  { name: "Oracle", logo: "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" },
-  { name: "Cisco", logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" }
+  { name: "Sagility", logo: sagility },
+  { name: "LinkedIn", logo: linkedin },
+  { name: "POCO", logo: poco },
+  { name: "Amazon", logo: amazon },
+  { name: "Google", logo: google },
+  { name: "Xiaomi", logo: xiaomi },
+  { name: "ARTPARK", logo: artpark },
+  { name: "dataiku", logo: dataiku },
+  { name: "neo4j", logo: neo4j },
+  { name: "orkes", logo: orkes },
+  { name: "polygon", logo: polygon },
+  { name: "SMARTBRIDGE", logo: smartbridge },
+  { name: "SmartInternz", logo: smartinternz },
+  { name: "unacademy", logo: unacademy },
 ];
 
 export default function Sponsors() {
-  const [hidden, setHidden] = useState<string[]>([]);
-  const trackRef = useRef<HTMLDivElement>(null);
-
-  const valid = brands.filter(b => !hidden.includes(b.name));
-  const scrolling = [...valid, ...valid];
-
-  useEffect(() => {
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href =
-      "https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap";
-    document.head.appendChild(link);
-    return () => {
-      document.head.removeChild(link);
-    };
-  }, []);
+  const scrolling = [...brands, ...brands];
 
   return (
-    <div className="w-full bg-[#050505] py-20 overflow-hidden relative border-t border-white/5">
+    <div className="w-full bg-[#050505] py-16 sm:py-20 overflow-hidden relative border-t border-white/5">
 
       <style>{`
-        @keyframes scroll {
-          from { transform: translateX(0); }
-          to { transform: translateX(-${trackRef.current?.scrollWidth ? trackRef.current.scrollWidth / 2 : 1000}px); }
+        @keyframes sponsors-scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
         }
 
-        .track {
+        .sponsors-track {
           display: flex;
           width: max-content;
-          animation: scroll 35s linear infinite;
+          animation: sponsors-scroll 35s linear infinite;
         }
 
-        /* FORCE ALL LOGOS WHITE */
-        .brand {
-          height: 44px;
-          max-width: 140px;
-          object-fit: contain;
-          opacity: 0.85;
+        .sponsor-card {
+          min-width: 240px;
+          height: 140px;
+          border-radius: 20px;
+          background: radial-gradient(circle at top left, #111, #050505 65%);
+          border: 1px solid rgba(255,255,255,0.05);
+          box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+          display: flex;
+          align-items: center;
+          justify-content: center;
           transition: all 0.3s ease;
-          filter: brightness(0) invert(1);
         }
 
-        /* LIGHT HOVER EFFECT */
-        .brand:hover {
-          opacity: 1;
-          transform: translateY(-2px);
-          filter: brightness(0) invert(1) drop-shadow(0 0 6px rgba(255,255,255,0.35));
+        .sponsor-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 22px 55px rgba(0,0,0,1);
+        }
+
+        .sponsor-logo {
+          max-width: 140px;
+          max-height: 50px;
+          object-fit: contain;
+          filter: brightness(0) invert(1);
+          opacity: 0.9;
+        }
+
+        @media (min-width: 1024px) {
+          .sponsor-card {
+            min-width: 280px;
+            height: 160px;
+          }
+          .sponsor-logo {
+            max-width: 160px;
+          }
         }
       `}</style>
 
-      {/* Grid Background */}
+      {/* Grid background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#222_1px,transparent_1px),linear-gradient(to_bottom,#222_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20 pointer-events-none" />
 
-      {/* Scrolling Sponsors */}
+      {/* Scrolling logos */}
       <div className="relative z-10 overflow-hidden">
-        <div ref={trackRef} className="track gap-16 px-10">
-          {scrolling.map((b, i) => (
-            <img
-              key={`${b.name}-${i}`}
-              src={b.logo}
-              alt={b.name}
-              className="brand"
-              loading="lazy"
-              draggable={false}
-              onError={() => setHidden(prev => [...prev, b.name])}
-            />
+        <div className="sponsors-track gap-6 sm:gap-10 px-6 sm:px-16">
+          {scrolling.map((item, i) => (
+            <div className="sponsor-card" key={`${item.name}-${i}`}>
+              <img
+                src={item.logo}
+                alt={item.name}
+                className="sponsor-logo"
+                draggable={false}
+                loading="lazy"
+              />
+            </div>
           ))}
         </div>
       </div>
 
-      {/* Edge Fade */}
-      <div className="absolute left-0 top-0 w-24 h-full bg-gradient-to-r from-[#050505] to-transparent z-20" />
-      <div className="absolute right-0 top-0 w-24 h-full bg-gradient-to-l from-[#050505] to-transparent z-20" />
+      {/* Edge fade */}
+      <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-[#050505] to-transparent z-10" />
+      <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-[#050505] to-transparent z-10" />
 
     </div>
   );

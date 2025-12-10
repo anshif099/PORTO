@@ -11,9 +11,6 @@ import sandeshKarant from "../assets/Sandesh-Karant.jpg";
 import yacobPs from "../assets/Yacob-P-S.jpg";
 import sayeedMk from "../assets/Sayeed-M-K.jpg";
 import harishaB from "../assets/Harisha-B.jpg";
-import sanjuC from "../assets/Sanju-C.jpg";
-import prasantTs from "../assets/Prasant-T-S.jpg";
-import ananyaRao from "../assets/Ananya-Rao.jpg";
 import naufalKk from "../assets/Naufal-K-K.jpg";
 import saffan from "../assets/Saffan.jpg";
 import saninSadath from "../assets/Sanin-Sadath.jpg";
@@ -89,21 +86,6 @@ const members: Member[] = [
     name: "Harisha B",
     role: "Sr 3D Designer",
     image: harishaB,
-  },
-  {
-    name: "Sanju C",
-    role: "3D Designer",
-    image: sanjuC,
-  },
-  {
-    name: "Prasant T S",
-    role: "2D Designer",
-    image: prasantTs,
-  },
-  {
-    name: "Ananya Rao",
-    role: "Sr Executive",
-    image: ananyaRao,
   },
   {
     name: "Naufal K K",
