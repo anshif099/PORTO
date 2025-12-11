@@ -3,7 +3,7 @@ import logo from "@/assets/identity-logo.svg"; // <-- your logo file
 
 const FooterIdentity: React.FC = () => {
   return (
-    <section className="relative w-full  bg-[#050505] text-white overflow-hidden">
+    <section className="relative w-full   text-white overflow-hidden">
 
       {/* Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)] bg-[size:80px_80px] opacity-40 pointer-events-none" />

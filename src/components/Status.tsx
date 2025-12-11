@@ -9,7 +9,7 @@ const stats = [
 
 const Status: React.FC = () => {
   return (
-    <section className="relative w-full pt-20  bg-[#050505] text-white overflow-hidden">
+    <section className="relative w-full pt-20   text-white overflow-hidden">
       {/* Background grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)] bg-[size:80px_80px] opacity-45" />
 

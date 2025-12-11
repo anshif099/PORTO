@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '@/assets/identity-logo.svg';
 
+
 /**
  * Header Component
- * Features:
- * - Toggles between two Logo Images (Open vs Closed state)
- * - 4-dot menu trigger transforms/swaps with Closing X
- * - Full screen immersive overlay
- * - Clash Display Typography
+ * - Carbon background + visible grid lines
+ * - Toggle menu with 4 dots / X
  */
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,18 +21,22 @@ const Header = () => {
     { label: 'Contact', href: '/Contact' },
   ];
 
+
+
+  const cursorStyle =
+    'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 16 16\'%3E%3Ccircle cx=\'8\' cy=\'8\' r=\'8\' fill=\'white\'/%3E%3C/svg%3E") 8 8, auto';
+
   return (
     <>
       {/* --- Main Navigation Bar --- */}
       <nav
-        className="fixed top-0 w-full z-50 bg-[#050505] border-b border-white/5 px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center font-clash text-white transition-colors duration-300"
+        className="fixed top-0 w-full z-50 border-b border-white/5 px-4 sm:px-6 py-2 sm:py-3 flex justify-between items-center font-clash text-white transition-colors duration-300"
         style={{
-          cursor:
-            'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 16 16\'%3E%3Ccircle cx=\'8\' cy=\'8\' r=\'8\' fill=\'white\'/%3E%3C/svg%3E") 8 8, auto',
+          cursor: cursorStyle,
         }}
       >
         {/* LOGO: Toggles between two images based on menu state */}
-        <a href="#" className="z-50 block w-28 sm:w-32 md:w-40 relative h-8 sm:h-10">
+        <a href="#" className="z-50 block w-28 sm:w-32 md:w-40 relative h-7 sm:h-8">
           {/* Image 1: Shown when menu is CLOSED (The Colorful Logo) */}
           <img
             src={logo}
@@ -58,10 +60,10 @@ const Header = () => {
         {/* CENTER TRIGGER: Toggles between 4-Dots and Closing X */}
         <button
           onClick={toggleMenu}
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer z-50 p-3 sm:p-4 group"
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer z-50 p-2.5 sm:p-3 group"
           aria-label={isMenuOpen ? 'Close Menu' : 'Open Menu'}
         >
-          <div className="relative w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
+          <div className="relative w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center">
             {/* 4-DOTS ICON (Visible when Closed) */}
             <div
               className={`grid grid-cols-2 gap-1.5 transition-all duration-300 transform ${
@@ -81,8 +83,8 @@ const Header = () => {
               }`}
             >
               <svg
-                width="24"
-                height="24"
+                width="22"
+                height="22"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +111,7 @@ const Header = () => {
         {/* Contact Button */}
         <Link
           to="/Contact"
-          className="z-50 px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full border border-white text-white font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs md:text-sm hover:bg-white hover:text-black transition-all duration-300"
+          className="z-50 px-4 sm:px-6 md:px-8 py-1.5 md:py-2.5 rounded-full border border-white text-white font-bold uppercase tracking-[0.2em] text-[9px] sm:text-[10px] md:text-xs hover:bg-white hover:text-black transition-all duration-300"
         >
           Contact Now
         </Link>
@@ -117,20 +119,17 @@ const Header = () => {
 
       {/* --- Full Screen Menu Overlay --- */}
       <div
-        className={`fixed inset-0 z-40 flex flex-col justify-between pt-24 sm:pt-28 md:pt-32 pb-6 sm:pb-8 px-5 sm:px-8 md:px-16 bg-[#050505] transition-all duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] font-clash ${
+        className={`fixed inset-0 z-40 flex flex-col justify-between pt-24 sm:pt-28 md:pt-32 pb-6 sm:pb-8 px-5 sm:px-8 md:px-16 transition-all duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] font-clash ${
           isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
         }`}
         style={{
-          backgroundImage: 'radial-gradient(#333 1px, transparent 1px)',
-          backgroundSize: '24px 24px',
-          cursor:
-            'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 16 16\'%3E%3Ccircle cx=\'8\' cy=\'8\' r=\'8\' fill=\'white\'/%3E%3C/svg%3E") 8 8, auto',
+          cursor: cursorStyle,
         }}
       >
         {/* Menu Links List */}
         <div className="flex-grow flex flex-col justify-center items-center">
           <div className="flex flex-col items-center text-center space-y-1 sm:space-y-2 md:space-y-0 group/list">
-            {menuItems.map((item, index) => (
+            {menuItems.map((item, index) =>
               item.href.startsWith('/') ? (
                 <Link
                   key={index}
@@ -178,19 +177,17 @@ const Header = () => {
                   </div>
                 </a>
               )
-            ))}
+            )}
           </div>
         </div>
 
         {/* Footer Info – copyright + socials */}
-        <div className="w-full border-t border-white/10 pt-4 sm:pt-6">
+        <div className="w-full border-top border-white/10 pt-4 sm:pt-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-white font-clash">
-            {/* Left: copyright */}
             <p className="text-[10px] sm:text-[11px] md:text-[12px] tracking-[0.25em] uppercase text-white/70">
               ©2024 All Rights Reserved
             </p>
 
-            {/* Right: social links */}
             <div className="flex flex-wrap items-center gap-6 sm:gap-8 md:gap-10 text-[10px] sm:text-[11px] md:text-[12px] tracking-[0.25em] uppercase">
               {['Instagram', 'Dribbble', 'Twitter'].map((social) => (
                 <a

@@ -34,7 +34,7 @@ const MovingCarosal: React.FC = () => {
   const loopImages = [...images, ...images];
 
   return (
-    <section className="relative w-full bg-[#050505] py-10 sm:py-14 lg:py-20 overflow-hidden">
+    <section className="relative w-full  py-10 sm:py-14 lg:py-20 overflow-hidden">
       {/* background pattern to match other sections */}
       <div className="absolute inset-0 bg-[radial-gradient(circle,#171717_1px,transparent_1px)] bg-[size:8px_8px] opacity-60 pointer-events-none " />
 

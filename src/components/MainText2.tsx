@@ -15,7 +15,7 @@ export default function MainText2() {
   }, []);
 
   return (
-    <div className="w-full py-20 bg-[#050505] text-white font-sans overflow-hidden relative flex flex-col justify-between p-6 md:p-12">
+    <div className="w-full py-20  text-white font-sans overflow-hidden relative flex flex-col justify-between p-6 md:p-12">
       <style>{`
         :root {
           --framer-font-family: "Clash Display", "Clash Display Placeholder", sans-serif;

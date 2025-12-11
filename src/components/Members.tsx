@@ -46,7 +46,7 @@ export default function Members() {
   ];
 
   return (
-    <div className="w-full bg-[#050505] text-white font-sans overflow-hidden relative ">
+    <div className="w-full  text-white font-sans overflow-hidden relative ">
       <style>{`
         :root {
           --framer-font-family: "Clash Display", "Clash Display Placeholder", sans-serif;
@@ -57,7 +57,7 @@ export default function Members() {
       `}</style>
 
       {/* Subtle Grid Background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#232323_1px,transparent_1px),linear-gradient(to_bottom,#232323_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 pointer-events-none"></div>
+      <div className="absolute inset-0 pointer-events-none"></div>
 
       <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6">
         

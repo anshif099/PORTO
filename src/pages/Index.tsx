@@ -21,28 +21,38 @@ import Status from "@/components/Status";
 
 const Index = () => {
   return (
-    <div className="py-20 bg-[#050505]">
-      <Header />
-      <MainText />
-      <Location />
-      <Bg1 />
-      <Approach />
-      <Members />
-      <Sponsors />
-      <MainText2 />
-      <Bg2 />
-      <Bg3 />
-      <Bg4 />
-      <MainText3 />
-      <DropDown />
-      <Bg5 />
-      <MainText4 />
-      <Status />
-      <MovingCarosal />
-      <MainText5 />
-      <Relation />
-      <FooterIdentity />
-      
+    <div className="bg-framer-pattern relative py-20">
+
+      {/* Faint big rectangles */}
+<div className="bg-rectangle"></div>
+
+      {/* Noise texture */}
+      <div className="noise-overlay"></div>
+
+      {/* Main content */}
+      <div className="relative z-10">
+        <Header />
+        <MainText />
+        <Location />
+        <Bg1 />
+        <Approach />
+        <Members />
+        <Sponsors />
+        <MainText2 />
+        <Bg2 />
+        <Bg3 />
+        <Bg4 />
+        <MainText3 />
+        <DropDown />
+        <Bg5 />
+        <MainText4 />
+        <Status />
+        <MovingCarosal />
+        <MainText5 />
+        <Relation />
+        <FooterIdentity />
+      </div>
+
     </div>
   );
 };

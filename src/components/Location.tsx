@@ -15,7 +15,7 @@ export default function Location() {
   }, []);
 
   return (
-    <div className="w-full bg-[#050505] text-white py-16 px-4 flex justify-center items-center font-sans overflow-hidden relative">
+    <div className="w-full  text-white py-16 px-4 flex justify-center items-center font-sans overflow-hidden relative">
       <style>{`
         :root {
           --framer-font-family: "Clash Display", "Clash Display Placeholder", sans-serif;
@@ -26,7 +26,7 @@ export default function Location() {
       `}</style>
 
       {/* Subtle Grid Background to match the aesthetic */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#232323_1px,transparent_1px),linear-gradient(to_bottom,#232323_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 pointer-events-none"></div>
+      <div className="absolute inset-0 pointer-events-none"></div>
 
       <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
         

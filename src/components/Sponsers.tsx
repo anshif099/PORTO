@@ -36,7 +36,7 @@ export default function Sponsors() {
   const scrolling = [...brands, ...brands];
 
   return (
-    <div className="w-full bg-[#050505] py-16 sm:py-20 overflow-hidden relative border-t border-white/5">
+    <div className="w-full  py-16 sm:py-20 overflow-hidden relative border-t border-white/5">
 
       <style>{`
         @keyframes sponsors-scroll {

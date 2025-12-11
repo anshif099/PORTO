@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { MoveRight } from 'lucide-react';
 
+
+
 export default function App() {
   // Inject the font into the document head
   useEffect(() => {
@@ -16,8 +18,9 @@ export default function App() {
   }, []);
 
   return (
-    <div className="py-20 bg-[#050505] text-white selection:bg-white selection:text-black font-sans overflow-x-hidden flex flex-col">
+    <div className="py-20  text-white selection:bg-white selection:text-black font-sans overflow-x-hidden flex flex-col">
       {/* Custom font */}
+      
       <style>{`
         :root {
           --framer-font-family: "Clash Display", "Clash Display Placeholder", sans-serif;
@@ -30,7 +33,7 @@ export default function App() {
       {/* Main Content Container */}
       <main className="flex-grow flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 lg:py-12 relative w-full">
         {/* Subtle grid background */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#232323_1px,transparent_1px),linear-gradient(to_bottom,#232323_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 pointer-events-none"></div>
+        <div className="absolute inset-0 pointer-events-none"></div>
 
         <div className="relative z-10 flex flex-col items-center text-center w-full max-w-[1400px]">
           {/* Heading – made smaller on mobile */}
