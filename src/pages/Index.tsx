@@ -21,7 +21,7 @@ import Status from "@/components/Status";
 
 const Index = () => {
   return (
-    <div className="bg-framer-pattern relative py-20">
+    <div className="bg-framer-pattern relative">
 
       {/* Faint big rectangles */}
 <div className="bg-rectangle"></div>

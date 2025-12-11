@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import { MapPin, Globe, BadgeCheck } from 'lucide-react';
+import { MapPin, BadgeCheck } from 'lucide-react';
+import globeImg from '@/assets/globe.png';
 
 export default function Location() {
-  // Inject the font into the document head
   useEffect(() => {
     const link = document.createElement('link');
-    link.href = 'https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap';
+    link.href =
+      'https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap';
     link.rel = 'stylesheet';
     document.head.appendChild(link);
 
@@ -15,7 +16,7 @@ export default function Location() {
   }, []);
 
   return (
-    <div className="w-full  text-white py-16 px-4 flex justify-center items-center font-sans overflow-hidden relative">
+    <div className="w-full text-white px-4 flex justify-center items-center font-sans overflow-hidden relative">
       <style>{`
         :root {
           --framer-font-family: "Clash Display", "Clash Display Placeholder", sans-serif;
@@ -25,14 +26,11 @@ export default function Location() {
         }
       `}</style>
 
-      {/* Subtle Grid Background to match the aesthetic */}
-      <div className="absolute inset-0 pointer-events-none"></div>
-
       <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
-        
+
         {/* Item 1: HQ */}
         <div className="flex flex-col items-center text-center group">
-          <div className="mb-5 p-2 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition-colors duration-300">
+          <div className="mb-5">
             <MapPin className="w-6 h-6 text-green-500" strokeWidth={1.5} />
           </div>
           <div className="font-clash text-[12px] tracking-wider font-semibold uppercase leading-relaxed">
@@ -41,20 +39,28 @@ export default function Location() {
           </div>
         </div>
 
-        {/* Item 2: Worldwide */}
-        <div className="flex flex-col items-center text-center group">
-          <div className="mb-5 p-2 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors duration-300">
-            <Globe className="w-6 h-6 text-white" strokeWidth={1.5} />
-          </div>
-          <div className="font-clash text-[12px] tracking-wider font-semibold uppercase leading-relaxed">
-            <span className="text-white block">Available All Around</span>
-            <span className="text-gray-500 block">Worldwide</span>
+        {/* Item 2: Worldwide (exact screenshot layout) */}
+        <div className="flex flex-col items-center text-center">
+          <img
+            src={globeImg}
+            alt="Globe"
+            className="w-[90px] h-[42px] object-contain mb-4 brightness-0 invert"
+          />
+
+          <div className="font-clash leading-tight tracking-wide uppercase text-center">
+            <span className="block text-[15px] font-semibold text-white">
+              Available All Around
+            </span>
+
+            <span className="block text-[12px] text-gray-500 mt-1">
+              Worldwide
+            </span>
           </div>
         </div>
 
         {/* Item 3: Events */}
         <div className="flex flex-col items-center text-center group">
-          <div className="mb-5 p-2 rounded-full bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors duration-300">
+          <div className="mb-5">
             <BadgeCheck className="w-6 h-6 text-blue-500" strokeWidth={1.5} />
           </div>
           <div className="font-clash text-[12px] tracking-wider font-semibold uppercase leading-relaxed">

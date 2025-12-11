@@ -30,13 +30,13 @@ const Header = () => {
     <>
       {/* --- Main Navigation Bar --- */}
       <nav
-        className="fixed top-0 w-full z-50 border-b border-white/5 px-4 sm:px-6 py-2 sm:py-3 flex justify-between items-center font-clash text-white transition-colors duration-300"
+        className=" t w-full z-50 border-b border-white/5 px-4 sm:px-6 py-2 sm:py-3 flex justify-between items-center font-clash text-white transition-colors duration-300"
         style={{
           cursor: cursorStyle,
         }}
       >
         {/* LOGO: Toggles between two images based on menu state */}
-        <a href="#" className="z-50 block w-28 sm:w-32 md:w-40 relative h-7 sm:h-8">
+        <a href="#" className="z-50 block w-28 sm:w-32 md:w-[240px] relative h-[50px] sm:h-[50px]">
           {/* Image 1: Shown when menu is CLOSED (The Colorful Logo) */}
           <img
             src={logo}
@@ -60,7 +60,7 @@ const Header = () => {
         {/* CENTER TRIGGER: Toggles between 4-Dots and Closing X */}
         <button
           onClick={toggleMenu}
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer z-50 p-2.5 sm:p-3 group"
+          className="absolute left-1/2 top-[.3%] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-50 p-2.5 sm:p-3 group"
           aria-label={isMenuOpen ? 'Close Menu' : 'Open Menu'}
         >
           <div className="relative w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center">
@@ -119,7 +119,7 @@ const Header = () => {
 
       {/* --- Full Screen Menu Overlay --- */}
       <div
-        className={`fixed inset-0 z-40 flex flex-col justify-between pt-24 sm:pt-28 md:pt-32 pb-6 sm:pb-8 px-5 sm:px-8 md:px-16 transition-all duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] font-clash ${
+        className={`bg-black fixed inset-0 z-40 flex flex-col justify-between pt-24 sm:pt-28 md:pt-32 pb-6 sm:pb-8 px-5 sm:px-8 md:px-16 transition-all duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] font-clash ${
           isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
         }`}
         style={{

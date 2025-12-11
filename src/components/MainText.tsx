@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { MoveRight } from 'lucide-react';
 
-
-
 export default function App() {
   // Inject the font into the document head
   useEffect(() => {
@@ -18,9 +16,8 @@ export default function App() {
   }, []);
 
   return (
-    <div className="py-20  text-white selection:bg-white selection:text-black font-sans overflow-x-hidden flex flex-col">
+    <div className="pt-20 text-white selection:bg-white selection:text-black font-sans overflow-x-hidden flex flex-col">
       {/* Custom font */}
-      
       <style>{`
         :root {
           --framer-font-family: "Clash Display", "Clash Display Placeholder", sans-serif;
@@ -31,29 +28,18 @@ export default function App() {
       `}</style>
 
       {/* Main Content Container */}
-      <main className="flex-grow flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 lg:py-12 relative w-full">
-        {/* Subtle grid background */}
+      <main className="flex-grow flex items-center justify-center py-8 lg:py-12 relative w-full">
         <div className="absolute inset-0 pointer-events-none"></div>
 
-        <div className="relative z-10 flex flex-col items-center text-center w-full max-w-[1400px]">
-          {/* Heading – made smaller on mobile */}
-          <h1 className="font-clash font-semibold text-white tracking-tighter uppercase flex flex-col items-center justify-center leading-[0.9] sm:leading-[0.85] w-full mx-auto">
-            {/* 
-              Clamp:
-              - min ~1.8rem (≈ 29px) so it fits even on 320px
-              - fluid with 8vw
-              - max 10rem (160px) on big screens
-            */}
-            <span className="block text-[clamp(1.8rem,8vw,10rem)]">
-              Experience
-            </span>
-            <span className="block text-[clamp(1.8rem,8vw,10rem)]">
-              Extraordinary
-            </span>
+        <div className="relative z-10 flex flex-col items-center text-center w-full max-w-none">
+          {/* Responsive Heading */}
+          <h1 className="font-clash font-semibold text-white tracking-tighter uppercase flex flex-col items-center justify-center leading-[0.9] sm:leading-[0.85] mx-auto">
+            <span className="block sm:text-[10.8vw] text-[10vw]">Experience</span>
+            <span className="block sm:text-[10.8vw] text-[10vw]">Extraordinary</span>
           </h1>
 
           {/* Subtext */}
-          <p className="mt-6 sm:mt-8 md:mt-10 font-clash text-sm sm:text-lg md:text-[20px] lg:text-[24px] text-gray-200 font-medium max-w-xl sm:max-w-2xl leading-relaxed tracking-wide">
+          <p className="mt-6 sm:mt-8 md:mt-2 font-clash text-sm sm:text-lg md:text-[20px] lg:text-[24px] text-gray-200 font-medium max-w-xl sm:max-w-2xl leading-relaxed tracking-wide">
             Turn brand narratives into living, breathing moments{' '}
             <br className="hidden sm:block" />
             that resonate.
