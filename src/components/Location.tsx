@@ -44,7 +44,7 @@ export default function Location() {
           <img
             src={globeImg}
             alt="Globe"
-            className="w-[90px] h-[42px] object-contain mb-4 brightness-0 invert"
+            className="w-[74px] h-[30px] object-contain mb-4 brightness-0 invert"
           />
 
           <div className="font-clash leading-tight tracking-wide uppercase text-center">
