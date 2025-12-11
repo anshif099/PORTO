@@ -1,13 +1,13 @@
 import React from "react";
-import relationImg from "@/assets/relation.jpg"; // <- replace with your handshake image
+import relationImg from "@/assets/relation.jpg"; // handshake image
 
 const Relation: React.FC = () => {
   return (
-    <section className="relative w-full  text-white overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle,#171717_1px,transparent_1px)] bg-[size:8px_8px] opacity-60 pointer-events-none" />
+    <section className="relative w-full text-white overflow-hidden">
 
-      {/* Font: Inter Display */}
+      {/* ❌ Background dots removed */}
+
+      {/* Inter Display Font */}
       <style>{`
         .font-inter-display {
           font-family: "Inter Display", "Inter Display Placeholder", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -15,8 +15,10 @@ const Relation: React.FC = () => {
       `}</style>
 
       <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-20 flex flex-col items-center justify-center py-20 font-inter-display">
+
         {/* Top row: left text / image / right text */}
         <div className="w-full grid grid-cols-[1fr_auto_1fr] items-center gap-4 mb-12 md:mb-16">
+
           {/* Left text */}
           <div className="hidden sm:flex flex-col items-start justify-center text-left">
             <p className="text-[11px] tracking-[0.22em] uppercase">
@@ -67,7 +69,8 @@ const Relation: React.FC = () => {
           <br className="hidden md:block" />
           campaigns, to the next big thing.
         </p>
-          {/* TOP SOCIAL LINKS */}
+
+        {/* Social Links */}
         <header className="w-full pt-8 px-6 md:px-12 flex justify-center">
           <nav className="flex gap-8 md:gap-12 text-[11px] md:text-[12px] tracking-[0.25em] uppercase">
             <a href="#" className="hover:text-gray-300">Instagram ↗</a>

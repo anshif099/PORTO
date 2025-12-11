@@ -10,7 +10,7 @@ import mediaFilmImg from "@/assets/media-film.jpg";
 type ServiceItem = {
   title: string;
   subtitle: string;
-  dotsActive: number; // how many dots are white
+  dotsActive: number;
   image: string;
   bullets: string[];
 };
@@ -96,9 +96,8 @@ const DropDown: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full bg-[#050505] text-white overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle,#171717_1px,transparent_1px)] bg-[size:9px_9px] opacity-60" />
+    <section className="relative w-full  text-white overflow-hidden">
+      {/* Removed background pattern */}
 
       {/* Inter Display font */}
       <style>{`
@@ -107,13 +106,13 @@ const DropDown: React.FC = () => {
         }
       `}</style>
 
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 md:px-10 lg:px-20  font-inter-display">
-        {/* Two-column layout, left mostly empty like screenshot */}
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 md:px-10 lg:px-20 font-inter-display">
         <div className="grid grid-cols-1 md:grid-cols-[0.9fr,2fr] gap-10 md:gap-16">
-          {/* Left spacer column (keeps content pushed right) */}
+
+          {/* Left empty column */}
           <div className="hidden md:block" />
 
-          {/* Right: accordion list */}
+          {/* Right Accordion */}
           <div className="space-y-1 border-t border-white/5">
             {services.map((item, index) => {
               const isOpen = openIndex === index;
@@ -123,27 +122,15 @@ const DropDown: React.FC = () => {
                   key={item.title}
                   className="border-b border-white/10 pb-4 md:pb-6"
                 >
-                  {/* Header row */}
+                  {/* Header */}
                   <button
                     type="button"
                     onClick={() => handleToggle(index)}
                     className="w-full flex items-center justify-between gap-6 pt-4 md:pt-6"
                   >
-                    {/* Dots on the far left */}
-                    <div className="flex items-center gap-1.5 shrink-0">
-                      {Array.from({ length: 5 }).map((_, dotIdx) => (
-                        <span
-                          key={dotIdx}
-                          className={`h-2 w-2 rounded-full ${
-                            dotIdx < item.dotsActive
-                              ? "bg-white"
-                              : "bg-white/25"
-                          }`}
-                        />
-                      ))}
-                    </div>
+                    {/* Removed DOTS completely */}
 
-                    {/* Text block */}
+                    {/* Text */}
                     <div className="flex-1 text-left">
                       <h3 className="text-[18px] md:text-[19px] font-semibold">
                         {item.title}
@@ -153,7 +140,7 @@ const DropDown: React.FC = () => {
                       </p>
                     </div>
 
-                    {/* Arrow + state dot on the right */}
+                    {/* Arrow + dot indicator */}
                     <div className="flex items-center gap-3 shrink-0">
                       <span
                         className={`h-2.5 w-2.5 rounded-full border border-white transition-all ${
@@ -168,10 +155,10 @@ const DropDown: React.FC = () => {
                     </div>
                   </button>
 
-                  {/* Expanded content */}
+                  {/* Expanded Content */}
                   {isOpen && (
                     <div className="mt-6 flex flex-col md:flex-row gap-8 md:gap-10">
-                      {/* Image card */}
+                      {/* Image */}
                       <div className="w-full md:w-[360px] rounded-[22px] overflow-hidden bg-black/60 border border-white/10 shadow-[0_30px_70px_rgba(0,0,0,0.8)]">
                         <img
                           src={item.image}
@@ -180,7 +167,7 @@ const DropDown: React.FC = () => {
                         />
                       </div>
 
-                      {/* Bullet list with checkmarks */}
+                      {/* Bullet List */}
                       <ul className="flex-1 space-y-2.5 text-[13px] md:text-[14px] leading-relaxed">
                         {item.bullets.map((bullet) => (
                           <li

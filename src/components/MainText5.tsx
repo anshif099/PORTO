@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 
 const MainText5: React.FC = () => {
   return (
-    <section className="relative w-full  overflow-hidden flex flex-col justify-center items-center text-center">
+    <section className="relative w-full overflow-hidden flex flex-col justify-center items-center text-center py-20">
 
-      {/* Background pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle,#1a1a1a_1px,transparent_1px)] bg-[size:8px_8px] opacity-60" />
+      {/* ❌ Background dots removed */}
 
       {/* Main Title */}
       <h1
@@ -21,6 +20,7 @@ const MainText5: React.FC = () => {
         <br />
         TOGETHER
       </h1>
+
       {/* Button */}
       <Link to="/Contact">
         <button
