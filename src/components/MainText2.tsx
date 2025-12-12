@@ -53,10 +53,6 @@ export default function MainText2() {
           {/* Center/Right Decorative Elements & Paragraph */}
           <div className="col-span-1 lg:col-span-4 flex flex-col justify-end h-full mt-8 lg:mt-0 relative">
             
-            {/* The White Dot - Positioned absolutely or flexed to align with design */}
-            <div className="hidden lg:block absolute -left-12 top-1/2 -translate-y-1/2">
-                <div className="w-4 h-4 bg-white rounded-full"></div>
-            </div>
 
             {/* Bottom Right Paragraph */}
             <div className="mt-auto lg:pl-12">
@@ -67,13 +63,6 @@ export default function MainText2() {
           </div>
 
         </div>
-      </div>
-
-      {/* Floating Action Button (Right Side) */}
-      <div className="absolute right-6 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center">
-         <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">
-            <Pencil className="w-5 h-5 text-white" />
-         </div>
       </div>
 
     </div>
