@@ -6,7 +6,7 @@ const GoogeData: React.FC = () => {
     <section
       className="
         w-full
-        bg-[#050505]
+       
         text-white
         px-6
         md:px-16
@@ -16,8 +16,6 @@ const GoogeData: React.FC = () => {
       "
       style={{
         fontFamily: '"Clash Display", "Clash Display Placeholder", sans-serif',
-        backgroundImage: "radial-gradient(#333 1px, transparent 1px)",
-        backgroundSize: "24px 24px",
       }}
     >
       <div className="max-w-[1400px] mx-auto">

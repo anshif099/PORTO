@@ -14,7 +14,7 @@ const Relation: React.FC = () => {
         }
       `}</style>
 
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-20 flex flex-col items-center justify-center py-20 font-inter-display">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-20 flex flex-col items-center justify-center font-inter-display">
 
         {/* Top row: left text / image / right text */}
         <div className="w-full grid grid-cols-[1fr_auto_1fr] items-center gap-4 mb-12 md:mb-16">
@@ -30,25 +30,27 @@ const Relation: React.FC = () => {
           </div>
 
           {/* Center image */}
-          <div className="flex justify-center">
-            <div
-              className="
-                w-[70vw] max-w-[420px]
-                rounded-[32px]
-                overflow-hidden
-                bg-black/70
-                border border-white/10
-                shadow-[0_40px_90px_rgba(0,0,0,0.9)]
-              "
-              style={{ aspectRatio: "4 / 5" }}
-            >
-              <img
-                src={relationImg}
-                alt="Handshake"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
+         {/* Center image */}
+<div className="flex justify-center py-20">
+  <div
+    className="
+  w-[450px] h-[500px]
+  rounded-t-[18px] rounded-b-[6px]
+  overflow-hidden
+  bg-black/70
+  border border-white/10
+  shadow-[0_40px_90px_rgba(0,0,0,0.9)]
+"
+
+  >
+    <img
+      src={relationImg}
+      alt="Handshake"
+      className="w-full h-full object-cover"
+      draggable={false}
+    />
+  </div>
+</div>
 
           {/* Right text */}
           <div className="hidden sm:flex flex-col items-center justify-center text-right font-bold">
@@ -62,7 +64,7 @@ const Relation: React.FC = () => {
         </div>
 
         {/* Bottom text */}
-        <p className="max-w-[780px] text-center text-[11px] sm:text-[12px] md:text-[24px] uppercase text-white">
+        <p className=" leading-[1] max-w-[780px] text-center text-[11px] sm:text-[12px] md:text-[24px] uppercase text-white">
           Comprehensive brand experience
           <br className="hidden md:block" />
           solutions, to future defining experiential
@@ -71,8 +73,8 @@ const Relation: React.FC = () => {
         </p>
 
         {/* Social Links */}
-        <header className="w-full pt-8 px-6 md:px-12 flex justify-center">
-          <nav className="flex gap-8 md:gap-12 text-[11px] md:text-[18px] font-bold uppercase">
+        <header className="w-full pt-8 px-6 md:px-12 flex justify-center py-40">
+          <nav className="flex gap-8 md:gap-12 text-[11px] md:text-[18px] font-semibold uppercase">
             <a href="#" className="hover:text-gray-300">Instagram ↗</a>
             <a href="#" className="hover:text-gray-300">LinkedIn ↗</a>
             <a href="#" className="hover:text-gray-300">Twitter ↗</a>

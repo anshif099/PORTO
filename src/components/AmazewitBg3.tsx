@@ -9,7 +9,7 @@ const AmazewitBg3: React.FC = () => {
   const { setIsHovering } = useCursor();
   const navigate = useNavigate();
   return (
-    <section className="relative w-full bg-[#050505] overflow-hidden py-10">
+    <section className="relative w-full overflow-hidden py-10">
 
       <div className="mx-auto max-w-[1600px] w-full px-6">
         

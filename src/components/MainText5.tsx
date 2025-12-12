@@ -11,12 +11,12 @@ const MainText5: React.FC = () => {
       <h1
         className="
           relative z-10
-          font-bold uppercase tracking-tight leading-[0.9]
+          font-semibold uppercase tracking-[-0.02em] leading-[0.75]
           text-white
-          text-[clamp(42px,8vw,140px)]
+          text-[clamp(42px,8vw,120px)]
         "
       >
-        LET’S WORK
+        LET'S WORK
         <br />
         TOGETHER
       </h1>
@@ -25,10 +25,10 @@ const MainText5: React.FC = () => {
       <Link to="/Contact">
         <button
           className="
-            relative z-10 mt-10
+            relative z-10 mt-20
             px-10 py-3 rounded-full
             bg-white text-black
-            font-semibold tracking-widest text-sm
+            font-semibold tracking-widest text-[18px]
             transition-all duration-300
             hover:bg-black hover:text-white hover:border hover:border-white
           "

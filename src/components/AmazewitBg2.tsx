@@ -86,7 +86,6 @@ const GoogleBg2: React.FC = () => {
     <section
       className="
         w-full
-        bg-[#050505]
         px-4
         md:px-8
         lg:px-10
@@ -100,10 +99,6 @@ const GoogleBg2: React.FC = () => {
         flex-col
         items-center
       "
-      style={{
-        backgroundImage: "radial-gradient(#333 1px, transparent 1px)",
-        backgroundSize: "24px 24px",
-      }}
     >
       <ZoomImageSection
         src={imgOne}

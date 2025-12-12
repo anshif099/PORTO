@@ -23,8 +23,9 @@ const Header: React.FC = () => {
 
   return (
     <>
+    <br></br>
       <nav
-        className="w-full z-50 border-b border-white/5 px-4 sm:px-6 py-2 sm:py-3 flex justify-between items-center font-clash text-white transition-colors duration-300"
+        className="w-full z-50 border-b border-white/5 px-8 sm:px-10 py-2 sm:py-3 flex justify-between items-center font-clash text-white transition-colors duration-300"
         style={{ cursor: cursorStyle }}
       >
         {/* Logo */}
@@ -56,20 +57,20 @@ const Header: React.FC = () => {
           aria-label={isMenuOpen ? 'Close Menu' : 'Open Menu'}
           // make sure this sits on top of everything and is easy to click
           style={{ cursor: cursorStyle, zIndex: 9999 }}
-          className="absolute left-1/2 top-[2.5rem] -translate-x-1/2 -translate-y-1/2 p-2.5 sm:p-3 flex items-center justify-center"
+          className="absolute left-1/2 top-[4rem] -translate-x-1/2 -translate-y-1/2 p-2.5 sm:p-3 flex items-center justify-center"
         >
           <div className="relative w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center">
             {/* 4-dots (hidden when open) */}
             <div
               aria-hidden={isMenuOpen}
-              className={`grid grid-cols-2 gap-1.5 transition-all duration-300 transform ${
+              className={`grid grid-cols-2 gap-3 transition-all duration-300 transform ${
                 isMenuOpen ? 'opacity-0 scale-75 -rotate-12' : 'opacity-100 scale-100 rotate-0'
               }`}
             >
-              <div className="w-1.5 h-1.5 bg-white rounded-full" />
-              <div className="w-1.5 h-1.5 bg-white rounded-full" />
-              <div className="w-1.5 h-1.5 bg-white rounded-full" />
-              <div className="w-1.5 h-1.5 bg-white rounded-full" />
+              <div className="w-1 h-1 bg-white rounded-full" />
+              <div className="w-1 h-1 bg-white rounded-full" />
+              <div className="w-1 h-1 bg-white rounded-full" />
+              <div className="w-1 h-1 bg-white rounded-full" />
             </div>
 
             {/* X (visible when open) — high z and guaranteed white stroke */}
@@ -116,7 +117,7 @@ const Header: React.FC = () => {
         {/* Contact */}
         <Link
           to="/Contact"
-          className="z-50 px-4 sm:px-6 md:px-8 py-1.5 md:py-2.5 rounded-full border border-white text-white font-bold uppercase tracking-[0.2em] text-[9px] sm:text-[10px] md:text-xs hover:bg-white hover:text-black transition-all duration-300"
+          className="z-50 px-4 sm:px-6 md:px-4 py-1.5 md:py-2.5 rounded-[2.5em] border-[2px] border-white text-white font-semibold uppercase tracking-[-0.01em] text-[9px] sm:text-[10px] md:text-[18px] hover:bg-white hover:text-black transition-all duration-300"
         >
           Contact Now
         </Link>

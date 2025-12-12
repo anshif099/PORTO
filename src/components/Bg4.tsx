@@ -11,8 +11,7 @@ const Bg4: React.FC = () => {
   return (
     <section className="relative w-full py-20 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-20 gap-16">
 
-      {/* background pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle,#1a1a1a_1px,transparent_1px)] bg-[size:7px_7px] opacity-50" />
+     
 
       {/* font */}
       <style>{`

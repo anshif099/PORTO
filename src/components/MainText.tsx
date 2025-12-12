@@ -28,7 +28,7 @@ export default function App() {
       `}</style>
 
       {/* Main Content Container */}
-      <main className="flex-grow flex items-center justify-center py-8 lg:py-12 relative w-full">
+      <main className="flex-grow flex items-center justify-center  relative w-full">
         <div className="absolute inset-0 pointer-events-none"></div>
 
         <div className="relative z-10 flex flex-col items-center text-center w-full max-w-none">

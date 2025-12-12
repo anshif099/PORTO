@@ -13,7 +13,10 @@ import LinkedInData from "@/components/LinkedInData";
 
 const Index = () => {
   return (
-    <div className="py-20 bg-[#050505]">
+    <div className="bg-framer-pattern">
+      <div className="relative z-10">
+              {/* Faint big rectangles */}
+<div className="bg-rectangle"></div>
       <Header />
       <LinkedInHackWeekText />
       <LinkedInHackWeekBg1 />
@@ -26,7 +29,7 @@ const Index = () => {
       <Relation />
       <FooterIdentity />
       
-    </div>
+    </div></div>
   );
 };
 

@@ -5,10 +5,6 @@ const Blog2: React.FC = () => {
     <section
       className="w-full flex justify-center px-4 sm:px-8 py-16 relative"
       style={{
-        backgroundColor: "#050505",
-        backgroundImage:
-          "radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px)",
-        backgroundSize: "6px 6px",
         fontFamily: `"Clash Display", "Clash Display Placeholder", sans-serif`,
       }}
     >

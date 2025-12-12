@@ -41,7 +41,6 @@ const GoogleBg1: React.FC = () => {
     <section
       className="
         w-full
-        bg-[#050505]
         flex
         justify-center
         items-center
@@ -49,8 +48,6 @@ const GoogleBg1: React.FC = () => {
         py-12
         md:py-16
         lg:py-20
-        bg-[radial-gradient(#333_1px,transparent_1px)]
-        bg-[length:24px_24px]
       "
     >
       <div

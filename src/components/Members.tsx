@@ -32,7 +32,7 @@ export default function Members() {
         "From executive summits to product launches, we craft sophisticated corporate gatherings that align with your business objectives while exceeding attendee expectations.",
       image:
         "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=400&h=400",
-      dots: 3,
+      dots: 2,
     },
     {
       id: "03",
@@ -66,22 +66,22 @@ export default function Members() {
         }
       `}</style>
 
-      {/* subtle grid background placeholder */}
+      {/* subtle grid background placeholder (kept transparent/empty) */}
       <div className="absolute inset-0 pointer-events-none" />
 
       <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 py-12">
-        {/* Top badges row for lg (keeps same as earlier) */}
+        {/* Top badges row for lg */}
         <div className="hidden lg:flex justify-between items-center absolute left-6 right-6 top-6 z-20 pointer-events-none w-[700px] m-auto">
           {services.map((s) => (
             <div key={s.id} className="flex-1 flex justify-center">
-              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full text-[12px] font-medium text-white font-clash bg-[#292929]">
+              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full  bg-[#292929] text-white font-clash font-semibold tracking-[0.15em] text-[13px]">
                 {s.id}
               </span>
             </div>
           ))}
         </div>
 
-        {/* outer framed box to match screenshot look */}
+        {/* outer framed box */}
         <div className="border border-white/5 p-6 py-20">
           {/* Cards grid */}
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-0">
@@ -89,36 +89,32 @@ export default function Members() {
               <article
                 key={service.id}
                 className="relative group flex flex-col items-center text-center px-6 py-12 lg:py-16 lg:px-8 border border-transparent lg:border-l lg:border-white/5"
-                // add subtle left divider for all but first on lg
-                style={
-                  idx === 0
-                    ? {}
-                    : { boxShadow: " rgba(10, 8, 8, 0.03)" }
-                }
+                style={idx === 0 ? {} : { boxShadow: "rgba(10, 8, 8, 0.03)" }}
               >
-                {/* top small carousel/dot indicators */}
+                {/* top small carousel/dot indicators — active = white, inactive = dim */}
                 <div className="mb-4 flex gap-2">
                   {[0, 1, 2, 3].map((i) => (
                     <span
                       key={i}
                       className={`w-2.5 h-2.5 rounded-full transition-all ${
-                        i < service.dots ? "bg-white" : "bg-white"
+                        i < service.dots ? "bg-white" : "bg-white/25"
                       }`}
                     />
                   ))}
                 </div>
 
-                {/* small avatar */}
-                <div className="w-14 h-14 rounded-md overflow-hidden mb-6 shadow-[0_8px_20px_rgba(0,0,0,0.6)]">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                {/* small avatar — 40x40 with curved border */}
+                <div className="w-10 h-10 rounded-[10px] overflow-hidden mb-6 shadow-[0_8px_20px_rgba(0,0,0,0.6)] border border-white/10">
+  <img
+    src={service.image}
+    alt={service.title}
+    className="w-full h-full object-cover"
+  />
+</div>
+
 
                 {/* Title */}
-                <h3 className="font-clash text-[20px] md:text-[22px] lg:text-[22px] font-medium uppercase tracking-wide mb-6 leading-tight text-white max-w-[260px]">
+                <h3 className="font-clash text-[20px] md:text-[22px] lg:text-[24px] font-medium uppercase tracking-wide mb-6 leading-tight text-white max-w-[260px]">
                   {service.title}
                 </h3>
 
@@ -127,7 +123,7 @@ export default function Members() {
                   {service.description}
                 </p>
 
-                {/* vertical divider line on desktop between cards (visual only) */}
+                {/* vertical divider line on desktop between cards */}
                 {idx !== services.length - 1 && (
                   <div className="hidden lg:block absolute right-0 top-6 h-[calc(100%-48px)] w-[1px] bg-gradient-to-b from-transparent via-white/6 to-transparent" />
                 )}

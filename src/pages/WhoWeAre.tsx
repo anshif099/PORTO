@@ -8,7 +8,10 @@ import WhoweareCard from "@/components/WhoweareCard";
 import WhoweareText from "@/components/WhoweareText";
 const Index = () => {
   return (
-    <div className="py-20 bg-[#050505]">
+    <div className="bg-framer-pattern ">
+      <div className="relative z-10">
+      {/* Faint big rectangles */}
+<div className="bg-rectangle"></div>
       <Header />
       <WhoweareText />
       <WhoweareCard />
@@ -18,6 +21,7 @@ const Index = () => {
       <Relation />
       <FooterIdentity />
       
+    </div>
     </div>
   );
 };

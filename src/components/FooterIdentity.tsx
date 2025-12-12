@@ -14,42 +14,48 @@ const FooterIdentity: React.FC = () => {
 
         {/* BIG LOGO */}
         <main className="flex-1 flex items-end justify-center pb-14 md:pb-18 lg:pb-22">
-          <div className="w-full max-w-[1600px] px-4 md:px-10 flex justify-center">
-            <img
-              src={logo}
-              alt="IDENTITY"
-              className="
-                w-full max-w-[1400px]
-                object-contain
-                brightness-0 invert
-                opacity-100
-                pointer-events-none
-              "
-            />
-          </div>
+          <div className="w-full flex justify-center">
+  <img
+    src={logo}
+    alt="IDENTITY"
+    className="
+     px-1 md:px-5
+      object-contain
+      brightness-0 invert
+      opacity-100
+      pointer-events-none
+    "
+  />
+</div>
         </main>
 
         {/* FOOTER LINKS */}
         <footer
   className="
-    w-full pb-6 md:pb-8 px-6 md:px-12 
-    flex items-center justify-between 
-    tracking-[0.25em] uppercase
+    w-full 
+             /* ↓ tighter top & bottom like screenshot */
+    px-20               /* ↓ remove left & right gap */
+    flex items-center justify-between
+    uppercase 
+    
   "
   style={{
     fontFamily: `"Clash Display", "Clash Display Placeholder", sans-serif`,
     fontSize: "18px",
-    fontWeight: 700,
+    fontWeight: 600,
+    letterSpacing: "0.15em",   /* ↓ tighter spacing like screenshot */
+    lineHeight: "1",           /* ↓ compressed vertical height */
   }}
 >
   <div>
-    <a href="#" className="hover:text-gray-300">Design & Dev By The</a>
+    <a href="#" className="hover:text-gray-300 tracking-[-0.02em]">DESIGN & DEV BY THE</a>
   </div>
 
   <div>
-    <a href="#" className="hover:text-gray-300">Back To Home</a>
+    <a href="#" className="hover:text-gray-300 tracking-[-0.02em]">BACK TO HOME</a>
   </div>
 </footer>
+<br></br>
       </div>
     </section>
   );

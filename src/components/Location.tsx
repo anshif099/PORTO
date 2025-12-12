@@ -26,7 +26,7 @@ export default function Location() {
         }
       `}</style>
 
-      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
+      <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-3 gap-80 relative z-10 py-20">
 
         {/* Item 1: HQ */}
         <div className="flex flex-col items-center text-center group">

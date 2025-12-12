@@ -5,14 +5,12 @@ import bg1 from "@/assets/bg1.png"; // or .jpg – use your actual file name
 const Bg1: React.FC = () => {
   return (
     <section className="w-full ">
-      <div className="relative flex items-center justify-center py-20 overflow-hidden">
+      <div className="relative flex items-center justify-center overflow-hidden">
         <img
           src={bg1}
           alt="Stage background"
           className="
-            w-full
-            h-full
-            max-h-screen
+            w-[1420px]
             object-contain
             pointer-events-none
             select-none

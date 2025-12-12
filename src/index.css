@@ -8,6 +8,7 @@ html, body {
   margin: 0;
   padding: 0;
   background: transparent !important;
+  font-family: "Clash Display", "Clash Display Placeholder", sans-serif;
 }
 
 body {
@@ -66,8 +67,8 @@ body {
 
   /* CELL GRID INSIDE THE RECTANGLE */
   background-image:
-    linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px);
+    linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px);
+    /* linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px); */
 
   /* Use smaller grid size → far smoother */
   background-size: 380px 150px;

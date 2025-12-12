@@ -4,12 +4,8 @@ export default function WhoweareText() {
       className="min-h-screen w-full flex items-center justify-center relative overflow-hidden px-[5vw]"
       style={{
         fontFamily: `"Clash Display", "Clash Display Placeholder", sans-serif`,
-        backgroundColor: "#050505",
       }}
     >
-
-      {/* background dot texture */}
-      <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.07)_1px,transparent_1px)] bg-[size:6px_6px] opacity-70" />
 
       {/* Content */}
       <div className="relative z-10 max-w-[1100px] text-center uppercase tracking-[0.12em] leading-tight text-white">

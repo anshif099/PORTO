@@ -19,17 +19,17 @@ const MainText3: React.FC = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 md:px-16 lg:px-24 flex items-center py-20">
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-16">
+      <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6  flex items-center py-20">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-16 pt-7">
 
           {/* Left: big headline */}
           <div className="flex flex-col justify-center">
             <h1
               className="
                 text-white
-                font-bold
+                font-semibold
                 uppercase
-                leading-[0.82]
+                leading-[0.75]
                 text-[64px] md:text-[120px]
               "
               style={{

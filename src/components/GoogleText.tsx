@@ -6,11 +6,8 @@ const GoogleText: React.FC = () => {
       className="
         w-full py-20
         flex items-center justify-center
-        bg-[#050505]
         text-white
         px-4
-        bg-[radial-gradient(#333_1px,transparent_1px)]
-        bg-[length:24px_24px]
       "
       style={{
         fontFamily: '"Clash Display", "Clash Display Placeholder", sans-serif',

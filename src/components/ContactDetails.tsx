@@ -3,11 +3,7 @@ import React from 'react';
 const ContactDetails = () => {
   return (
     <section
-      className="w-full py-20 bg-[#050505] flex items-start justify-center text-white font-clash"
-      style={{
-        backgroundImage: 'radial-gradient(#333 1px, transparent 1px)',
-        backgroundSize: '24px 24px',
-      }}
+      className="w-full py-20 flex items-start justify-center text-white font-clash"
     >
       <div className="w-full max-w-[1600px] grid grid-cols-1 md:grid-cols-4 gap-y-12 md:gap-x-24 px-8 md:px-24 pt-32">
 

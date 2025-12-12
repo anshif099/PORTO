@@ -4,11 +4,7 @@ const AmazewitText: React.FC = () => {
   return (
     <section
       className="w-full py-20 flex items-center justify-center text-white font-clash px-6"
-      style={{
-        backgroundColor: "#050505",
-        backgroundImage: "radial-gradient(#202020 1px, transparent 1px)",
-        backgroundSize: "24px 24px",
-      }}
+      
     >
       <div className="max-w-[820px] w-full text-center space-y-8">
 

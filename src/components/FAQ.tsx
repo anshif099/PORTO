@@ -62,9 +62,6 @@ const FAQ: React.FC = () => {
     <section
       className="w-full text-white font-clash"
       style={{
-        backgroundColor: "#050505",
-        backgroundImage: "radial-gradient(#202020 1px, transparent 1px)",
-        backgroundSize: "24px 24px",
       }}
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-16 py-16 sm:py-20 lg:py-24">

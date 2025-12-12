@@ -27,7 +27,7 @@ export default function Approach() {
       {/* Subtle Grid Background */}
       <div className="absolute inset-0 pointer-events-none"></div>
 
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 flex flex-col h-full py-20 justify-between">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 flex flex-col h-full py-40 justify-between">
         
         {/* Top Header Row */}
         <div className="flex justify-between items-start w-full text-[12px] md:text-sm font-clash font-medium tracking-widest text-gray-400 mb-10 md:mb-0">
