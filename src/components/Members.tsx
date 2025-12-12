@@ -59,6 +59,7 @@ export default function Members() {
       <style>{`
         :root {
           --framer-font-family: "Clash Display", "Clash Display Placeholder", sans-serif;
+          --token-4695e61d-48ec-4e1b-ae93-f5b8f9dc2f6c: rgb(41, 41, 41);
         }
         .font-clash {
           font-family: var(--framer-font-family);
@@ -73,7 +74,7 @@ export default function Members() {
         <div className="hidden lg:flex justify-between items-center absolute left-6 right-6 top-6 z-20 pointer-events-none w-[700px] m-auto">
           {services.map((s) => (
             <div key={s.id} className="flex-1 flex justify-center">
-              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full border border-white/20 text-[10px] font-medium text-white font-clash bg-gray-500">
+              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full border border-white/20 text-[17px] font-medium text-white font-clash bg-[#292929]">
                 {s.id}
               </span>
             </div>
