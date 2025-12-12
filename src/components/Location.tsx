@@ -44,11 +44,11 @@ export default function Location() {
           <img
             src={globeImg}
             alt="Globe"
-            className="w-[74px] h-[30px] object-contain mb-4 brightness-0 invert"
+            className="w-[53px] h-[21px] mb-5 brightness-0 invert"
           />
 
-          <div className="font-clash leading-tight tracking-wide uppercase text-center">
-            <span className="block text-[15px] font-semibold text-white">
+          <div className="font-semibold font-clash leading-tight tracking-wide uppercase text-center">
+            <span className="block text-[12px] font-semibold text-white mt-2">
               Available All Around
             </span>
 
