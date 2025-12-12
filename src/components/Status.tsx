@@ -21,7 +21,7 @@ const Status: React.FC = () => {
       `}</style>
 
       {/* Top row: 05 / //STATS / FUN FACTS */}
-      <div className="absolute top-8 left-6 md:left-12 text-[11px] md:text-[12px] tracking-[0.22em] uppercase text-white/80 font-inter-display">
+      <div className="absolute top-8 left-6 md:left-12 text-[11px] md:text-[12px] tracking-[0.22em] uppercase text-white font-inter-display">
         05
       </div>
 

@@ -88,6 +88,22 @@ const services: ServiceItem[] = [
   },
 ];
 
+// ⭐ HORIZONTAL DOT ROW LIKE SCREENSHOT
+const DotRow: React.FC<{ active: number }> = ({ active }) => {
+  return (
+    <div className="hidden md:flex items-center justify-start gap-2 w-[120px]">
+      {[1, 2, 3, 4, 5].map((n) => (
+        <span
+          key={n}
+          className={`block h-2.5 w-2.5 rounded-full transition-all ${
+            n <= active ? "bg-white" : "bg-white/25"
+          }`}
+        />
+      ))}
+    </div>
+  );
+};
+
 const DropDown: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
@@ -96,23 +112,22 @@ const DropDown: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full  text-white overflow-hidden">
-      {/* Removed background pattern */}
+    <section className="relative w-full text-white overflow-hidden">
 
       {/* Inter Display font */}
       <style>{`
         .font-inter-display {
-          font-family: "Inter Display", "Inter Display Placeholder", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+          font-family: "Inter Display", "Inter Display Placeholder", system-ui, sans-serif;
         }
       `}</style>
 
       <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 md:px-10 lg:px-20 font-inter-display">
         <div className="grid grid-cols-1 md:grid-cols-[0.9fr,2fr] gap-10 md:gap-16">
 
-          {/* Left empty column */}
+          {/* LEFT EMPTY COLUMN */}
           <div className="hidden md:block" />
 
-          {/* Right Accordion */}
+          {/* RIGHT ACCORDION */}
           <div className="space-y-1 border-t border-white/5">
             {services.map((item, index) => {
               const isOpen = openIndex === index;
@@ -122,15 +137,16 @@ const DropDown: React.FC = () => {
                   key={item.title}
                   className="border-b border-white/10 pb-4 md:pb-6"
                 >
-                  {/* Header */}
+                  {/* HEADER LINE */}
                   <button
                     type="button"
                     onClick={() => handleToggle(index)}
                     className="w-full flex items-center justify-between gap-6 pt-4 md:pt-6"
                   >
-                    {/* Removed DOTS completely */}
+                    {/* LEFT: DOT ROW */}
+                    <DotRow active={item.dotsActive} />
 
-                    {/* Text */}
+                    {/* MIDDLE: TEXT */}
                     <div className="flex-1 text-left">
                       <h3 className="text-[18px] md:text-[19px] font-semibold">
                         {item.title}
@@ -140,13 +156,8 @@ const DropDown: React.FC = () => {
                       </p>
                     </div>
 
-                    {/* Arrow + dot indicator */}
-                    <div className="flex items-center gap-3 shrink-0">
-                      <span
-                        className={`h-2.5 w-2.5 rounded-full border border-white transition-all ${
-                          isOpen ? "bg-white" : "bg-transparent opacity-60"
-                        }`}
-                      />
+                    {/* RIGHT: ARROW ONLY — NO DOT */}
+                    <div className="flex items-center shrink-0">
                       {isOpen ? (
                         <ChevronUp className="h-4 w-4" />
                       ) : (
@@ -155,10 +166,11 @@ const DropDown: React.FC = () => {
                     </div>
                   </button>
 
-                  {/* Expanded Content */}
+                  {/* EXPANDED CONTENT */}
                   {isOpen && (
                     <div className="mt-6 flex flex-col md:flex-row gap-8 md:gap-10">
-                      {/* Image */}
+
+                      {/* IMAGE */}
                       <div className="w-full md:w-[360px] rounded-[22px] overflow-hidden bg-black/60 border border-white/10 shadow-[0_30px_70px_rgba(0,0,0,0.8)]">
                         <img
                           src={item.image}
@@ -167,7 +179,7 @@ const DropDown: React.FC = () => {
                         />
                       </div>
 
-                      {/* Bullet List */}
+                      {/* BULLETS */}
                       <ul className="flex-1 space-y-2.5 text-[13px] md:text-[14px] leading-relaxed">
                         {item.bullets.map((bullet) => (
                           <li

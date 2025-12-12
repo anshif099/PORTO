@@ -10,7 +10,7 @@ const Relation: React.FC = () => {
       {/* Inter Display Font */}
       <style>{`
         .font-inter-display {
-          font-family: "Inter Display", "Inter Display Placeholder", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+          font-family: "Clash Display", "Clash Display Placeholder", sans-serif;
         }
       `}</style>
 
@@ -20,7 +20,7 @@ const Relation: React.FC = () => {
         <div className="w-full grid grid-cols-[1fr_auto_1fr] items-center gap-4 mb-12 md:mb-16">
 
           {/* Left text */}
-          <div className="hidden sm:flex flex-col items-start justify-center text-left">
+          <div className="hidden sm:flex flex-col items-center justify-center text-left font-bold">
             <p className="text-[11px] tracking-[0.22em] uppercase">
               Based in Bengaluru
             </p>
@@ -51,7 +51,7 @@ const Relation: React.FC = () => {
           </div>
 
           {/* Right text */}
-          <div className="hidden sm:flex flex-col items-end justify-center text-right">
+          <div className="hidden sm:flex flex-col items-center justify-center text-right font-bold">
             <p className="text-[11px] tracking-[0.22em] uppercase">
               Events
             </p>
@@ -62,7 +62,7 @@ const Relation: React.FC = () => {
         </div>
 
         {/* Bottom text */}
-        <p className="max-w-[780px] text-center text-[11px] sm:text-[12px] md:text-[13px] leading-relaxed tracking-[0.22em] uppercase text-white">
+        <p className="max-w-[780px] text-center text-[11px] sm:text-[12px] md:text-[24px] uppercase text-white">
           Comprehensive brand experience
           <br className="hidden md:block" />
           solutions, to future defining experiential
@@ -72,7 +72,7 @@ const Relation: React.FC = () => {
 
         {/* Social Links */}
         <header className="w-full pt-8 px-6 md:px-12 flex justify-center">
-          <nav className="flex gap-8 md:gap-12 text-[11px] md:text-[12px] tracking-[0.25em] uppercase">
+          <nav className="flex gap-8 md:gap-12 text-[11px] md:text-[18px] font-bold uppercase">
             <a href="#" className="hover:text-gray-300">Instagram ↗</a>
             <a href="#" className="hover:text-gray-300">LinkedIn ↗</a>
             <a href="#" className="hover:text-gray-300">Twitter ↗</a>

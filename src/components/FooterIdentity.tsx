@@ -30,15 +30,26 @@ const FooterIdentity: React.FC = () => {
         </main>
 
         {/* FOOTER LINKS */}
-        <footer className="w-full pb-6 md:pb-8 px-6 md:px-12 flex items-center justify-between text-[11px] md:text-[12px] tracking-[0.25em] uppercase">
-          <div>
-            <a href="#" className="hover:text-gray-300">Design & Dev By The</a>
-          </div>
-          <div>
-            <a href="#" className="hover:text-gray-300">Back To Home</a>
-          </div>
-        </footer>
+        <footer
+  className="
+    w-full pb-6 md:pb-8 px-6 md:px-12 
+    flex items-center justify-between 
+    tracking-[0.25em] uppercase
+  "
+  style={{
+    fontFamily: `"Clash Display", "Clash Display Placeholder", sans-serif`,
+    fontSize: "18px",
+    fontWeight: 700,
+  }}
+>
+  <div>
+    <a href="#" className="hover:text-gray-300">Design & Dev By The</a>
+  </div>
 
+  <div>
+    <a href="#" className="hover:text-gray-300">Back To Home</a>
+  </div>
+</footer>
       </div>
     </section>
   );

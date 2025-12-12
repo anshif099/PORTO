@@ -37,12 +37,12 @@ export default function MainText2() {
 
       {/* Main Content Area */}
       <div className="relative z-10 flex-grow flex items-center w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 w-full items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full items-center">
           
           {/* Large Left Text */}
-          <div className="col-span-1 lg:col-span-8">
+          <div className="col-span-1 lg:col-span-1">
             {/* Updated font size to 62px as requested */}
-            <h1 className="font-clash font-bold text-white tracking-tight uppercase leading-[0.9] text-[10vw] md:text-[62px]">
+            <h1 className="pt-[3.25rem] text-center font-clash font-semibold text-white uppercase leading-[0.9] text-[10vw] md:text-[71px]">
               <span className="block">Work is our</span>
               <span className="block">Culture.</span>
               <span className="block">Working Smart</span>
@@ -51,12 +51,12 @@ export default function MainText2() {
           </div>
 
           {/* Center/Right Decorative Elements & Paragraph */}
-          <div className="col-span-1 lg:col-span-4 flex flex-col justify-end h-full mt-8 lg:mt-0 relative">
+          <div className="col-span-1 lg:col-span-1 flex flex-col justify-end h-full mt-8 lg:mt-0 relative">
             
 
             {/* Bottom Right Paragraph */}
             <div className="mt-auto lg:pl-12">
-               <p className="font-clash text-lg md:text-xl text-white font-medium leading-relaxed tracking-wide text-left max-w-md">
+               <p className="font-clash text-lg md:text-xl text-white font-medium leading-relaxed tracking-wide text-left max-w-sm ms-auto">
                  Our creative spirit comes alive in the digital realm. With nimble fingers flying across the device.
                </p>
             </div>

@@ -25,8 +25,6 @@ const MovingCarosal: React.FC = () => {
   return (
     <section className="relative w-full py-10 sm:py-14 lg:py-20 overflow-hidden">
 
-      {/* ❌ Removed background dots — No background pattern here */}
-
       {/* Animation */}
       <style>{`
         @keyframes scroll-x {
@@ -61,8 +59,7 @@ const MovingCarosal: React.FC = () => {
                   bg-black/60 border border-white/10
                   shadow-[0_30px_70px_rgba(0,0,0,0.9)]
                   flex-shrink-0
-                  w-[70vw] sm:w-[50vw] md:w-[38vw] lg:w-[28vw]
-                  aspect-[4/3]
+                  w-[350px] h-[245px]           /* ⭐ FIXED SIZE */
                 "
               >
                 <img
