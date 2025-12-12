@@ -24,15 +24,24 @@ const MainText3: React.FC = () => {
       <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 md:px-16 lg:px-24 flex items-center py-20">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-16">
           {/* Left: big headline */}
-          <div className="flex flex-col justify-center">
-            {/* Desktop font size forced to 120px; small screens scale down */}
-            <h1 className="text-white font-bold uppercase leading-[0.82] text-[64px] md:text-[120px]">
-              PRO
-              <br />
-              SERVICES
-            </h1>
-          </div>
-
+         <div className="flex flex-col justify-center">
+  <h1
+    className="
+      text-white
+      font-bold
+      uppercase
+      leading-[0.82]
+      text-[64px] md:text-[120px]
+    "
+    style={{
+      fontFamily: `"Clash Display", "Clash Display Placeholder", sans-serif`,
+    }}
+  >
+    PRO
+    <br />
+    SERVICES
+  </h1>
+</div>
           {/* Right: description block (aligned to right like the image) */}
          <div className="flex flex-col justify-end items-start md:items-end">
   <p

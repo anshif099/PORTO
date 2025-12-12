@@ -74,7 +74,7 @@ export default function Members() {
         <div className="hidden lg:flex justify-between items-center absolute left-6 right-6 top-6 z-20 pointer-events-none w-[700px] m-auto">
           {services.map((s) => (
             <div key={s.id} className="flex-1 flex justify-center">
-              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full border border-white/20 text-[17px] font-medium text-white font-clash bg-[#292929]">
+              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full text-[12px] font-medium text-white font-clash bg-[#292929]">
                 {s.id}
               </span>
             </div>
@@ -93,7 +93,7 @@ export default function Members() {
                 style={
                   idx === 0
                     ? {}
-                    : { boxShadow: "inset 1px 0 0 rgba(255,255,255,0.03)" }
+                    : { boxShadow: " rgba(10, 8, 8, 0.03)" }
                 }
               >
                 {/* top small carousel/dot indicators */}
@@ -102,7 +102,7 @@ export default function Members() {
                     <span
                       key={i}
                       className={`w-2.5 h-2.5 rounded-full transition-all ${
-                        i < service.dots ? "bg-white" : "bg-white/20"
+                        i < service.dots ? "bg-white" : "bg-white"
                       }`}
                     />
                   ))}
@@ -123,7 +123,7 @@ export default function Members() {
                 </h3>
 
                 {/* Description */}
-                <p className="font-clash text-[15px] leading-relaxed text-gray-400 max-w-[300px]">
+                <p className="font-clash text-[18px] leading-relaxed text-gray-400 max-w-[300px]">
                   {service.description}
                 </p>
 
