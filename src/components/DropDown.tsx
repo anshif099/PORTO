@@ -88,7 +88,6 @@ const services: ServiceItem[] = [
   },
 ];
 
-// ⭐ HORIZONTAL DOT ROW LIKE SCREENSHOT
 const DotRow: React.FC<{ active: number }> = ({ active }) => {
   return (
     <div className="hidden md:flex items-center justify-start gap-2 w-[120px]">
@@ -105,48 +104,41 @@ const DotRow: React.FC<{ active: number }> = ({ active }) => {
 };
 
 const DropDown: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-  const handleToggle = (index: number) => {
-    setOpenIndex((prev) => (prev === index ? null : index));
-  };
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="relative w-full text-white overflow-hidden">
+    <section className="relative w-full text-white overflow-hidden bg-transparent">
 
-      {/* Inter Display font */}
+      {/* Font */}
       <style>{`
         .font-inter-display {
           font-family: "Inter Display", "Inter Display Placeholder", system-ui, sans-serif;
         }
       `}</style>
 
+      {/* Main Container */}
       <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 md:px-10 lg:px-20 font-inter-display">
         <div className="grid grid-cols-1 md:grid-cols-[0.9fr,2fr] gap-10 md:gap-16">
 
-          {/* LEFT EMPTY COLUMN */}
+          {/* Left Empty Space */}
           <div className="hidden md:block" />
 
-          {/* RIGHT ACCORDION */}
+          {/* Accordion */}
           <div className="space-y-1 border-t border-white/5">
             {services.map((item, index) => {
-              const isOpen = openIndex === index;
+              const isOpen = index === openIndex;
 
               return (
-                <div
-                  key={item.title}
-                  className="border-b border-white/10 pb-4 md:pb-6"
-                >
-                  {/* HEADER LINE */}
+                <div key={item.title} className="border-b border-white/10 pb-4 md:pb-6">
+                  
+                  {/* Header */}
                   <button
                     type="button"
-                    onClick={() => handleToggle(index)}
+                    onClick={() => setOpenIndex(isOpen ? null : index)}
                     className="w-full flex items-center justify-between gap-6 pt-4 md:pt-6"
                   >
-                    {/* LEFT: DOT ROW */}
                     <DotRow active={item.dotsActive} />
 
-                    {/* MIDDLE: TEXT */}
                     <div className="flex-1 text-left">
                       <h3 className="text-[18px] md:text-[19px] font-semibold">
                         {item.title}
@@ -156,40 +148,28 @@ const DropDown: React.FC = () => {
                       </p>
                     </div>
 
-                    {/* RIGHT: ARROW ONLY — NO DOT */}
-                    <div className="flex items-center shrink-0">
-                      {isOpen ? (
-                        <ChevronUp className="h-4 w-4" />
-                      ) : (
-                        <ChevronDown className="h-4 w-4" />
-                      )}
-                    </div>
+                    {/* Arrow */}
+                    {isOpen ? (
+                      <ChevronUp className="h-4 w-4" />
+                    ) : (
+                      <ChevronDown className="h-4 w-4" />
+                    )}
                   </button>
 
-                  {/* EXPANDED CONTENT */}
+                  {/* Expanded */}
                   {isOpen && (
                     <div className="mt-6 flex flex-col md:flex-row gap-8 md:gap-10">
-
-                      {/* IMAGE */}
+                      {/* Image */}
                       <div className="w-full md:w-[360px] rounded-[22px] overflow-hidden bg-black/60 border border-white/10 shadow-[0_30px_70px_rgba(0,0,0,0.8)]">
-                        <img
-                          src={item.image}
-                          alt={item.title}
-                          className="w-full h-full object-cover"
-                        />
+                        <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                       </div>
 
-                      {/* BULLETS */}
+                      {/* Bullets */}
                       <ul className="flex-1 space-y-2.5 text-[13px] md:text-[14px] leading-relaxed">
-                        {item.bullets.map((bullet) => (
-                          <li
-                            key={bullet}
-                            className="flex items-start gap-3 text-white/90"
-                          >
+                        {item.bullets.map((b) => (
+                          <li key={b} className="flex items-start gap-3 text-white/90">
                             <Check className="h-4 w-4 mt-0.5 shrink-0" />
-                            <span className="uppercase tracking-[0.08em]">
-                              {bullet}
-                            </span>
+                            <span className="uppercase tracking-[0.08em]">{b}</span>
                           </li>
                         ))}
                       </ul>
@@ -199,6 +179,7 @@ const DropDown: React.FC = () => {
               );
             })}
           </div>
+
         </div>
       </div>
     </section>
