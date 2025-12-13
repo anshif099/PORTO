@@ -88,11 +88,11 @@ export default function Sponsors() {
       `}</style>
 
       {/* ⭐ TOP clean horizontal line */}
-      <div className="w-full h-[1px] bg-white/10 mb-10" />
+      <div className="w-full h-[1px] bg-white/10" />
 
       {/* Scrolling logos */}
-      <div className="relative z-10 overflow-hidden">
-        <div className="sponsors-track gap-6 sm:gap-10 px-6 sm:px-16">
+      <div className="relative overflow-hidden bg-framer-pattern">
+        <div className="sponsors-track gap-6 sm:gap-10 py-10 z-10 relative ">
           {scrolling.map((item, i) => (
             <div className="sponsor-card" key={`${item.name}-${i}`}>
               <img
@@ -108,7 +108,7 @@ export default function Sponsors() {
       </div>
 
       {/* ⭐ BOTTOM clean horizontal line */}
-      <div className="w-full h-[1px] bg-white/10 mt-10" />
+      <div className="w-full h-[1px] bg-white/10" />
 
       {/* Edge fade */}
       <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-[#050505] to-transparent z-10" />

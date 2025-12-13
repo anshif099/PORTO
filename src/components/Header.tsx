@@ -143,10 +143,6 @@ const Header: React.FC = () => {
                   {item.label}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                     <div className="grid grid-cols-2 gap-1.5">
-                      <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
-                      <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-75" />
-                      <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-150" />
-                      <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-225" />
                     </div>
                   </div>
                 </Link>

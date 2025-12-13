@@ -23,7 +23,6 @@ body {
   position: relative;   /* required to control z indexes */
   z-index: 0;           /* creates stacking context */
   width: 100%;
-  min-height: 100vh;
   background-color: #050505;
   overflow: hidden;
 }
