@@ -23,7 +23,11 @@ const MovingCarosal: React.FC = () => {
   const loopImages = [...images, ...images];
 
   return (
-    <section className="relative w-full py-10 sm:py-14 lg:py-20 overflow-hidden">
+    
+    <section className="w-full text-white font-sans overflow-hidden relative bg-framer-pattern z-20">
+
+      {/* ⭐ TOP clean horizontal line */}
+      <div className="relative z-30 w-full h-[1px] bg-white/10" />
 
       {/* Animation */}
       <style>{`
@@ -39,9 +43,9 @@ const MovingCarosal: React.FC = () => {
         }
       `}</style>
 
-      <div className="relative z-10 max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12">
-
-        <div className="group overflow-hidden w-full opacity-100 
+      <div className="relative z-10 max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 pt-10">
+        <div
+          className="group overflow-hidden w-full opacity-100 
           [mask-image:linear-gradient(to_right,
           rgba(0,0,0,0)_0%,
           rgb(0,0,0)_12.5%,
@@ -59,7 +63,7 @@ const MovingCarosal: React.FC = () => {
                   bg-black/60 border border-white/10
                   shadow-[0_30px_70px_rgba(0,0,0,0.9)]
                   flex-shrink-0
-                  w-[350px] h-[245px]           /* ⭐ FIXED SIZE */
+                  w-[350px] h-[245px]
                 "
               >
                 <img
@@ -71,8 +75,12 @@ const MovingCarosal: React.FC = () => {
             ))}
           </div>
         </div>
-
       </div>
+
+      <br /><br />
+
+      {/* ⭐ BOTTOM clean horizontal line */}
+      <div className="relative z-30 w-full h-[1px] bg-white/10" />
     </section>
   );
 };

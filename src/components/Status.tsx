@@ -9,52 +9,56 @@ const stats = [
 
 const Status: React.FC = () => {
   return (
-    <section className="relative w-full pt-20   text-white overflow-hidden">
-      {/* Background grid */}
-      <div className="absolute inset-0 " />
+    <>
+      {/* ⭐ TOP clean horizontal line */}
+      <div className="w-full h-[1px] bg-white/10" />
 
-      {/* Font (Inter Display) */}
-      <style>{`
-        .font-inter-display {
-          font-family: "Inter Display", "Inter Display Placeholder", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        }
-      `}</style>
+      <section className="relative w-full pt-20 text-white overflow-hidden">
+        <style>{`
+          .font-inter-display {
+            font-family: "Inter Display", "Inter Display Placeholder",
+              system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+          }
+        `}</style>
 
-      {/* Top row: 05 / //STATS / FUN FACTS */}
-      <div className="absolute top-8 left-6 md:left-12 text-[11px] md:text-[12px] tracking-[0.22em] uppercase text-white font-inter-display">
-        05
-      </div>
+        {/* Header */}
+        <div className="absolute top-8 left-6 md:left-12 text-[12px] tracking-[0.22em] uppercase text-white font-inter-display">
+          05
+        </div>
+        <div className="absolute top-8 left-1/2 -translate-x-1/2 text-[12px] tracking-[0.22em] uppercase text-white font-inter-display">
+          //STATS
+        </div>
+        <div className="absolute top-8 right-6 md:right-12 text-[12px] tracking-[0.22em] uppercase text-white/55 font-inter-display">
+          FUN FACTS
+        </div>
 
-      <div className="absolute top-8 left-1/2 -translate-x-1/2 text-[11px] md:text-[12px] tracking-[0.22em] uppercase text-white font-inter-display">
-        //STATS
-      </div>
+        <br /><br />
 
-      <div className="absolute top-8 right-6 md:right-12 text-[11px] md:text-[12px] tracking-[0.22em] uppercase text-white/55 font-inter-display">
-        FUN FACTS
-      </div>
+        {/* Divider */}
+        <div className="w-full h-[1px] bg-white/10" />
 
-      {/* Main content */}
-      <div className="relative z-10 flex items-center justify-center w-full py-20">
-        <div className="w-full max-w-[1500px] mx-auto px-6 md:px-16 lg:px-24 font-inter-display">
-          {/* 4 stats in a row */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-y-0">
-            {stats.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center lg:items-start text-center lg:text-left"
-              >
-                <div className="text-[clamp(40px,7vw,90px)] leading-none font-bold">
-                  {item.value}
+        {/* ✅ PURE bg-framer-pattern (NO global layers leaking) */}
+        <div className="relative isolate bg-framer-pattern py-12">
+          <div className="relative z-10 w-full max-w-[1500px] mx-auto px-6 md:px-16 lg:px-24 font-inter-display">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-y-0">
+              {stats.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center lg:items-start text-center lg:text-left"
+                >
+                  <div className="text-[clamp(40px,7vw,90px)] leading-none font-bold text-white">
+                    {item.value}
+                  </div>
+                  <div className="mt-5 text-[11px] tracking-[0.20em] uppercase text-white/70">
+                    {item.label}
+                  </div>
                 </div>
-                <div className="mt-5 text-[11px] tracking-[0.20em] uppercase text-white/55">
-                  {item.label}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

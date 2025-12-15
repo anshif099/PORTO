@@ -27,9 +27,11 @@ export default function MainText2() {
 
       {/* Subtle Grid Background */}
       <div className="absolute inset-0  opacity-20 pointer-events-none"></div>
+      {/* ⭐ TOP clean horizontal line */}
+      <div className="w-full h-[1px] bg-white/10" />
 
       {/* Top Bar: Navigation / Meta Data */}
-      <div className="relative z-10 flex flex-col md:flex-row justify-between items-start w-full text-[12px] md:text-sm font-clash font-medium tracking-widest text-white/60 md:text-white uppercase mb-12 md:mb-0">
+      <div className="relative z-10 flex flex-col md:flex-row justify-between items-start w-full text-[12px] md:text-sm font-clash font-medium tracking-widest text-white/60 md:text-white uppercase mb-12 md:mb-0 pt-2">
         <span className="block mb-2 md:mb-0 md:text-[12px]">02</span>
         <span className="block md:absolute md:left-1/2 md:-translate-x-1/2 mb-2 md:mb-0 md:text-[12px]">// Portfolio</span>
         <span className="block text-[rgb(128,128,128)] md:text-[12px]">2016 - 2025</span>

@@ -14,6 +14,7 @@ export default function Approach() {
   }, []);
 
   return (
+
     <div className="w-full  text-white font-sans overflow-hidden relative flex flex-col">
       <style>{`
         :root {
@@ -27,10 +28,12 @@ export default function Approach() {
       {/* Subtle Grid Background */}
       <div className="absolute inset-0 pointer-events-none"></div>
 
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 flex flex-col h-full py-40 justify-between">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 flex flex-col h-full pt-10 justify-between">
+              {/* ⭐ TOP clean horizontal line */}
+      <div className="w-full h-[1px] bg-white/10" />
         
         {/* Top Header Row */}
-        <div className="flex justify-between items-start w-full text-[12px] md:text-sm font-clash font-medium tracking-widest text-gray-400 mb-10 md:mb-0">
+        <div className="flex justify-between items-start w-full text-[12px] md:text-[12px] font-clash font-medium tracking-widest text-gray-400 mb-10 md:mb-0 pt-1">
           <span className="block text-[#ffff]">01</span>
           <span className="block uppercase text-[#ffff]">// Approach</span>
           <span className="block uppercase">Four Phases</span>
@@ -53,13 +56,11 @@ export default function Approach() {
           {/* Subtext Paragraph */}
           {/* Max-width constrained to ~550px to match the line wrapping of the image */}
            <div className="max-w-[432px] mx-auto px-4">
-  <p className='[font-family:"Inter_Display","Inter_Display_Placeholder",sans-serif] text-sm md:text-[18px] text-[rgb(128,128,128)] font-medium leading-[1.3em] tracking-wide text-center'>
+  <p className='[font-family:"Inter_Display","Inter_Display_Placeholder",sans-serif] text-sm md:text-[18px] text-[rgb(128,128,128)] font-medium leading-[1.3em] tracking-wide text-center w-[400px] h-[154]'>
     Iconic, bold, innovative events, and experiential marketing that breaks through the noise, cuts through the clutter — becoming part of your identity. We believe that every touchpoint is an opportunity to strengthen brand perception, through meaningful, and powerfully engaging experiences. Experiences that redefine. Experiences that inspire.
   </p>
-</div>
+</div><br></br>
         </div>
-        {/* Bottom Spacer to balance the layout vertically */}
-        <div className="h-10"></div>
       </div>
     </div>
   );

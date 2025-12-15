@@ -6,6 +6,7 @@ import Bg4 from "@/components/Bg4";
 import Bg5 from "@/components/Bg5";
 import DropDown from "@/components/DropDown";
 import FooterIdentity from "@/components/FooterIdentity";
+import Grids from "@/components/grids";
 import Header from "@/components/Header";
 import Location from "@/components/Location";
 import MainText from "@/components/MainText";
@@ -18,6 +19,7 @@ import MovingCarosal from "@/components/MovingCarosal";
 import Relation from "@/components/Relation";
 import Sponsors from "@/components/Sponsers";
 import Status from "@/components/Status";
+import { Grid } from "lucide-react";
 
 const Index = () => {
   return (
@@ -47,6 +49,7 @@ const Index = () => {
         <Bg5 />
         <MainText4 />
         <Status />
+        <Grids/>
         <MovingCarosal />
         <MainText5 />
         <Relation />

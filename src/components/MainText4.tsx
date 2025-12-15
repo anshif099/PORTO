@@ -6,7 +6,8 @@ const MainText4: React.FC = () => {
     <section className="relative w-full overflow-hidden text-white font-sans bg-transparent">
       {/* ❌ NO BACKGROUND — completely removed */}
 
-      
+      {/* ⭐ TOP clean horizontal line */}
+      <div className="w-full h-[1px] bg-white/10" />
 
       {/* Top labels */}
       <div className="absolute top-8 left-12 z-20 text-[12px] tracking-[0.25em] uppercase text-white/80">

@@ -4,7 +4,8 @@ const MainText3: React.FC = () => {
   return (
     <section className="relative w-full overflow-hidden">
       {/* ❌ No background elements at all */}
-
+{/* ⭐ TOP clean horizontal line */}
+      <div className="w-full h-[1px] bg-white/10" />
       {/* Top labels */}
       <div className="font-medium pointer-events-none absolute top-8 left-6 md:left-12 text-[12px] md:text-xs tracking-[0.14em] uppercase text-white">
         03
