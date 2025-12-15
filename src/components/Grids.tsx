@@ -11,11 +11,8 @@ const MovingCarosal: React.FC = () => {
 
       {/* ⭐ TOP clean horizontal line */}
       <div className="relative z-30 w-full h-[1px] bg-white/10" />
-
-      <br /><br />
-
-      {/* ⭐ BOTTOM clean horizontal line */}
-      <div className="relative z-30 w-full h-[1px] bg-white/10" />
+      <div className="py-4"></div>
+     
     </section>
   );
 };
