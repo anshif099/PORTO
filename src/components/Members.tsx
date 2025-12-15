@@ -114,12 +114,12 @@ export default function Members() {
 
 
                 {/* Title */}
-                <h3 className="font-clash text-[20px] md:text-[22px] lg:text-[24px] font-medium uppercase tracking-wide mb-6 leading-tight text-white max-w-[260px]">
+                <h3 className="font-clash text-[20px] md:text-[22px] lg:text-[24px] font-medium uppercase tracking-wide mb-6 leading-tight text-white w-[275px]">
                   {service.title}
                 </h3>
 
                 {/* Description */}
-                <p className='[font-family:"Inter_Display","Inter_Display_Placeholder",sans-serif] text-sm md:text-[18px] text-[rgb(128,128,128)] font-medium leading-[1.3em] tracking-wide text-center'>
+                <p className='[font-family:"Inter_Display","Inter_Display_Placeholder",sans-serif] text-sm md:text-[19px] text-[rgb(128,128,128)] font-normal leading-[1.3em] tracking-wide text-center w-[275px] h-[163.8px]'>
                   {service.description}
                 </p>
 
