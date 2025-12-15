@@ -30,9 +30,9 @@ export default function MainText2() {
 
       {/* Top Bar: Navigation / Meta Data */}
       <div className="relative z-10 flex flex-col md:flex-row justify-between items-start w-full text-[12px] md:text-sm font-clash font-medium tracking-widest text-white/60 md:text-white uppercase mb-12 md:mb-0">
-        <span className="block mb-2 md:mb-0">02</span>
-        <span className="block md:absolute md:left-1/2 md:-translate-x-1/2 mb-2 md:mb-0">// Portfolio</span>
-        <span className="block">2016 - 2025</span>
+        <span className="block mb-2 md:mb-0 md:text-[12px]">02</span>
+        <span className="block md:absolute md:left-1/2 md:-translate-x-1/2 mb-2 md:mb-0 md:text-[12px]">// Portfolio</span>
+        <span className="block text-[rgb(128,128,128)] md:text-[12px]">2016 - 2025</span>
       </div>
 
       {/* Main Content Area */}
@@ -42,7 +42,7 @@ export default function MainText2() {
           {/* Large Left Text */}
           <div className="col-span-1 lg:col-span-1">
             {/* Updated font size to 62px as requested */}
-            <h1 className="pt-[3.25rem] text-center font-clash font-semibold text-white uppercase leading-[0.9] text-[10vw] md:text-[71px]">
+            <h1 className="pt-[3.25rem] text-center font-clash font-semibold text-white uppercase leading-[1em] text-[10vw] md:text-[71px]">
               <span className="block">Work is our</span>
               <span className="block">Culture.</span>
               <span className="block">Working Smart</span>
@@ -55,11 +55,15 @@ export default function MainText2() {
             
 
             {/* Bottom Right Paragraph */}
-            <div className="mt-auto lg:pl-12">
-               <p className="font-clash text-lg md:text-xl text-white font-medium leading-relaxed tracking-wide text-left max-w-sm ms-auto">
-                 Our creative spirit comes alive in the digital realm. With nimble fingers flying across the device.
-               </p>
-            </div>
+           <div className="mt-auto lg:pl-12">
+  <p className='[font-family:"Inter_Display","Inter_Display_Placeholder",sans-serif] 
+    w-[260px] h-[66px]
+    md:text-[18px] text-white font-medium
+    leading-[1.2em] tracking-[-0.02em] text-left 
+    ms-auto overflow-hidden'>
+    Our creative spirit comes alive in the digital realm. With nimble fingers flying across the device.
+  </p>
+</div>
           </div>
 
         </div>

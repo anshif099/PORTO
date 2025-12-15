@@ -119,7 +119,7 @@ export default function Members() {
                 </h3>
 
                 {/* Description */}
-                <p className="font-clash text-[18px] leading-relaxed text-gray-400 max-w-[300px]">
+                <p className='[font-family:"Inter_Display","Inter_Display_Placeholder",sans-serif] text-sm md:text-[18px] text-[rgb(128,128,128)] font-medium leading-[1.3em] tracking-wide text-center'>
                   {service.description}
                 </p>
 

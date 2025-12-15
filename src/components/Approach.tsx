@@ -42,24 +42,22 @@ export default function Approach() {
           
           {/* Hero Heading */}
           <h1 className="font-clash font-semibold text-white tracking-tight uppercase leading-[0.9] w-full mx-auto mb-2 md:mb-4 px-2">
-            <span className="block text-[5vw] md:text-[6vw] lg:text-[57px] whitespace-nowrap">
+            <span className="block text-[5vw] md:text-[6vw] lg:text-[71px] whitespace-nowrap">
               Crafting Extraordinary Brand
             </span>
-            <span className="block text-[5vw] md:text-[6vw] lg:text-[57px] whitespace-nowrap">
+            <span className="block text-[5vw] md:text-[6vw] lg:text-[71px] whitespace-nowrap">
               Experiences Since 2016
             </span>
           </h1>
 
           {/* Subtext Paragraph */}
           {/* Max-width constrained to ~550px to match the line wrapping of the image */}
-          <div className="max-w-[432px] mx-auto px-4">
-            <p className="font-clash text-sm md:text-[16px] text-gray-400 font-medium leading-relaxed tracking-wide text-center">
-              Iconic, bold, innovative events, and experiential marketing that breaks through the noise, cuts through the clutter — becoming part of your identity. We believe that every touchpoint is an opportunity to strengthen brand perception, through meaningful, and powerfully engaging experiences. Experiences that redefine. Experiences that inspire.
-            </p>
-          </div>
-
+           <div className="max-w-[432px] mx-auto px-4">
+  <p className='[font-family:"Inter_Display","Inter_Display_Placeholder",sans-serif] text-sm md:text-[18px] text-[rgb(128,128,128)] font-medium leading-[1.3em] tracking-wide text-center'>
+    Iconic, bold, innovative events, and experiential marketing that breaks through the noise, cuts through the clutter — becoming part of your identity. We believe that every touchpoint is an opportunity to strengthen brand perception, through meaningful, and powerfully engaging experiences. Experiences that redefine. Experiences that inspire.
+  </p>
+</div>
         </div>
-
         {/* Bottom Spacer to balance the layout vertically */}
         <div className="h-10"></div>
       </div>

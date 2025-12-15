@@ -47,16 +47,16 @@ export default function Sponsors() {
         .sponsors-track {
           display: flex;
           width: max-content;
-          animation: sponsors-scroll 35s linear infinite;
+          gap: 20px; 
+          animation: sponsors-scroll 60s linear infinite;
         }
 
         .sponsor-card {
           min-width: 240px;
-          height: 140px;
-          border-radius: 20px;
-          background: radial-gradient(circle at top left, #111, #050505 65%);
+          height: 180px;
+          border-radius: 10px;
+          background-color: var(--token-24f27aa8-9496-4d3e-bf0e-429bb69788c2, rgb(10, 10, 10));
           border: 1px solid rgba(255,255,255,0.05);
-          box-shadow: 0 15px 40px rgba(0,0,0,0.8);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -65,12 +65,11 @@ export default function Sponsors() {
 
         .sponsor-card:hover {
           transform: translateY(-4px);
-          box-shadow: 0 22px 55px rgba(0,0,0,1);
         }
 
         .sponsor-logo {
-          max-width: 140px;
-          max-height: 50px;
+          max-width: 118px;
+          max-height: 118px;
           object-fit: contain;
           filter: brightness(0) invert(1);
           opacity: 0.9;
@@ -78,8 +77,8 @@ export default function Sponsors() {
 
         @media (min-width: 1024px) {
           .sponsor-card {
-            min-width: 280px;
-            height: 160px;
+            min-width: 240px;
+            height: 180px;
           }
           .sponsor-logo {
             max-width: 160px;

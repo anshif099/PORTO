@@ -6,15 +6,15 @@ const MainText3: React.FC = () => {
       {/* ❌ No background elements at all */}
 
       {/* Top labels */}
-      <div className="pointer-events-none absolute top-8 left-6 md:left-12 text-[11px] md:text-xs tracking-[0.18em] uppercase text-white">
+      <div className="font-medium pointer-events-none absolute top-8 left-6 md:left-12 text-[12px] md:text-xs tracking-[0.14em] uppercase text-white">
         03
       </div>
 
-      <div className="pointer-events-none absolute top-8 left-1/2 -translate-x-1/2 text-[11px] md:text-xs tracking-[0.18em] uppercase text-white">
+      <div className="font-medium pointer-events-none absolute top-8 left-1/2 -translate-x-1/2 text-[12px] md:text-xs tracking-[0.14em] uppercase text-white">
         //SERVICES
       </div>
 
-      <div className="pointer-events-none absolute top-8 right-6 md:right-12 text-[11px] md:text-xs tracking-[0.18em] uppercase text-white/60">
+      <div className="font-medium pointer-events-none absolute top-8 right-6 md:right-12 text-[12px] md:text-xs tracking-[0.14em] uppercase text-[rgb(128,128,128)]">
         FAST DELIVERY
       </div>
 
