@@ -6,7 +6,7 @@ const AmazewitText: React.FC = () => {
       className="w-full py-20 flex items-center justify-center text-white font-clash px-6"
       
     >
-      <div className="max-w-[820px] w-full text-center space-y-8">
+      <div className="max-w-[820px] w-full text-center space-y-8 pt-20">
 
         {/* DATE */}
         <p className="text-[11px] tracking-[0.25em] uppercase text-white/50">
@@ -26,6 +26,7 @@ const AmazewitText: React.FC = () => {
             md:text-[80px]
             lg:text-[101px]
             tracking-[-0.07em]
+            
           "
           style={{ fontFamily: '"clash Display", "clash Display Placeholder", sans-serif' }}
         >

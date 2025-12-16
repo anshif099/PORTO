@@ -15,6 +15,7 @@ const MainText5: React.FC = () => {
           text-white
           text-[clamp(42px,8vw,120px)]
         "
+        style={{ fontFamily: '"clash Display", "clash Display Placeholder", sans-serif' }}
       >
         LET'S WORK
         <br />
