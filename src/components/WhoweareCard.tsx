@@ -162,7 +162,7 @@ const WhoweareCard: React.FC = () => {
                   <h3 className="text-[20px] leading-snug font-semibold text-[#111111] mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-[16px] text-[#777777] mb-5">
+                  <p className="text-[16px] text-[#777777] mb-1">
                     {member.role}
                   </p>
                   <button className="inline-flex items-center px-5 py-2.5 rounded-[10px] bg-framer-pattern text-white text-[14px] font-semibold shadow-[0_4px_14px_rgba(0,0,0,0.35)]">
