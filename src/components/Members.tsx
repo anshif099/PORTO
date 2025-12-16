@@ -67,7 +67,7 @@ export default function Members() {
 
      
 
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 py-12">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 ">
 
         {/* TOP BADGES ROW */}
         <div className="hidden lg:flex items-center absolute left-6 right-6 top-6 z-20 pointer-events-none w-[700px] m-auto">
@@ -89,7 +89,7 @@ export default function Members() {
         </div>
 
         {/* CONTENT */}
-        <div className="py-20">
+        <div className="pt-20">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-0">
             {services.map((service, idx) => (
               <article

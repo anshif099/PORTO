@@ -6,7 +6,7 @@ import Bg4 from "@/components/Bg4";
 import Bg5 from "@/components/Bg5";
 import DropDown from "@/components/DropDown";
 import FooterIdentity from "@/components/FooterIdentity";
-import Grids from "@/components/grids";
+import Grids from "@/components/Grids";
 import Header from "@/components/Header";
 import Location from "@/components/Location";
 import MainText from "@/components/MainText";
