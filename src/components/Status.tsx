@@ -22,13 +22,13 @@ const Status: React.FC = () => {
         `}</style>
 
         {/* Header */}
-        <div className="absolute top-8 left-6 md:left-12 text-[12px] tracking-[0.22em] uppercase text-white font-inter-display">
+        <div className="absolute top-2 left-6 md:left-12 text-[12px] tracking-[0.22em] uppercase text-white font-inter-display">
           05
         </div>
-        <div className="absolute top-8 left-1/2 -translate-x-1/2 text-[12px] tracking-[0.22em] uppercase text-white font-inter-display">
+        <div className="absolute top-2 left-1/2 -translate-x-1/2 text-[12px] tracking-[0.22em] uppercase text-white font-inter-display">
           //STATS
         </div>
-        <div className="absolute top-8 right-6 md:right-12 text-[12px] tracking-[0.22em] uppercase text-white/55 font-inter-display">
+        <div className="absolute top-2 right-6 md:right-12 text-[12px] tracking-[0.22em] uppercase text-white/55 font-inter-display">
           FUN FACTS
         </div>
 
@@ -38,13 +38,13 @@ const Status: React.FC = () => {
         <div className="w-full h-[1px] bg-white/10" />
 
         {/* ✅ PURE bg-framer-pattern (NO global layers leaking) */}
-        <div className="relative isolate bg-framer-pattern py-12">
-          <div className="relative z-10 w-full max-w-[1500px] mx-auto px-6 md:px-16 lg:px-24 font-inter-display">
+        <div className="relative isolate bg-framer-pattern py-12 w-full">
+          <div className="relative z-10  max-w-[1500px]  font-inter-display">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-y-0">
               {stats.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center lg:items-start text-center lg:text-left"
+                  className="mx-auto  flex flex-col items-center lg:items-start text-center lg:text-left"
                 >
                   <div className="text-[clamp(40px,7vw,90px)] leading-none font-bold text-white">
                     {item.value}

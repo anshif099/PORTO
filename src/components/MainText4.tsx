@@ -10,15 +10,15 @@ const MainText4: React.FC = () => {
       <div className="w-full h-[1px] bg-white/10" />
 
       {/* Top labels */}
-      <div className="absolute top-8 left-12 z-20 text-[12px] tracking-[0.25em] uppercase text-white/80">
+      <div className="absolute top-2 left-12 z-20 text-[12px] tracking-[0.25em] uppercase text-white">
         04
       </div>
 
-      <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20 text-[12px] tracking-[0.25em] uppercase text-white">
+      <div className="absolute top-2 left-1/2 -translate-x-1/2 z-20 text-[12px] tracking-[0.25em] uppercase text-white">
         //VOICE OF IDENTITY
       </div>
 
-      <div className="absolute top-8 right-12 z-20 text-[12px] tracking-[0.25em] uppercase text-white/60">
+      <div className="absolute top-2 right-12 z-20 text-[12px] tracking-[0.25em] uppercase text-white/60">
         SINCE 2016
       </div>
 
@@ -45,6 +45,7 @@ const MainText4: React.FC = () => {
             draggable={false}
           />
         </div>
+        <div className="pt-20"></div>
       </div>
     </section>
   );

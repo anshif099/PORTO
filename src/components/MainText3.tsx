@@ -7,15 +7,15 @@ const MainText3: React.FC = () => {
 {/* ⭐ TOP clean horizontal line */}
       <div className="w-full h-[1px] bg-white/10" />
       {/* Top labels */}
-      <div className="font-medium pointer-events-none absolute top-8 left-6 md:left-12 text-[12px] md:text-xs tracking-[0.14em] uppercase text-white">
+      <div className="font-medium pointer-events-none absolute top-2 left-6 md:left-12 text-[12px] md:text-xs tracking-[0.14em] uppercase text-white">
         03
       </div>
 
-      <div className="font-medium pointer-events-none absolute top-8 left-1/2 -translate-x-1/2 text-[12px] md:text-xs tracking-[0.14em] uppercase text-white">
+      <div className="font-medium pointer-events-none absolute top-2 left-1/2 -translate-x-1/2 text-[12px] md:text-xs tracking-[0.14em] uppercase text-white">
         //SERVICES
       </div>
 
-      <div className="font-medium pointer-events-none absolute top-8 right-6 md:right-12 text-[12px] md:text-xs tracking-[0.14em] uppercase text-[rgb(128,128,128)]">
+      <div className="font-medium pointer-events-none absolute top-2 right-6 md:right-12 text-[12px] md:text-xs tracking-[0.14em] uppercase text-[rgb(128,128,128)]">
         FAST DELIVERY
       </div>
 
@@ -46,7 +46,7 @@ const MainText3: React.FC = () => {
           {/* Right: paragraph */}
           <div className="flex flex-col justify-end items-start md:items-end">
             <p
-              className="max-w-xs md:max-w-[360px] text-left font-bold text-[18px] leading-relaxed text-white md:pr-12 lg:pr-22"
+              className="max-w-xs md:max-w-[360px] text-left font-bold text-[18px] leading-[1.2em] text-white md:pr-12 lg:pr-22"
               style={{
                 fontFamily: `"Inter Display", "Inter Display Placeholder", sans-serif`,
               }}
