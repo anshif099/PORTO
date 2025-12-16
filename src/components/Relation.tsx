@@ -20,11 +20,11 @@ const Relation: React.FC = () => {
         <div className="w-full grid grid-cols-[1fr_auto_1fr] items-center gap-4 mb-12 md:mb-16">
 
           {/* Left text */}
-          <div className="hidden sm:flex flex-col items-center justify-center text-left font-bold">
-            <p className="text-[11px] tracking-[0.22em] uppercase">
+          <div className="hidden sm:flex flex-col items-center justify-center text-left font-semibold">
+            <p className="text-[12px] tracking-[0.1em] leading-[0.02em] uppercase">
               Based in Bengaluru
             </p>
-            <p className="mt-1 text-[10px] tracking-[0.18em] uppercase text-white/55">
+            <p className="mt-1 text-[10px] tracking-[0.1em] uppercase text-white/55">
               India
             </p>
           </div>
@@ -53,11 +53,11 @@ const Relation: React.FC = () => {
 </div>
 
           {/* Right text */}
-          <div className="hidden sm:flex flex-col items-center justify-center text-right font-bold">
-            <p className="text-[11px] tracking-[0.22em] uppercase">
+          <div className="hidden sm:flex flex-col items-center justify-center text-right">
+            <p className="text-[12px] tracking-[0.1em] uppercase leading-[0.02em]">
               Events
             </p>
-            <p className="mt-1 text-[10px] tracking-[0.18em] uppercase text-white/55">
+            <p className="mt-1 text-[10px] tracking-[0.1em] uppercase text-white/55">
               &amp; Experiences
             </p>
           </div>
@@ -74,7 +74,7 @@ const Relation: React.FC = () => {
 
         {/* Social Links */}
         <header className="w-full pt-8 px-6 md:px-12 flex justify-center py-40">
-          <nav className="flex gap-8 md:gap-12 text-[11px] md:text-[18px] font-semibold uppercase">
+          <nav className="flex gap-8 md:gap-12 text-[11px] md:text-[18px]  uppercase">
             <a href="#" className="hover:text-gray-300">Instagram ↗</a>
             <a href="#" className="hover:text-gray-300">LinkedIn ↗</a>
             <a href="#" className="hover:text-gray-300">Twitter ↗</a>

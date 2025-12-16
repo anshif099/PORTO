@@ -60,24 +60,25 @@ const FAQ: React.FC = () => {
 
   return (
     <section
-      className="w-full text-white font-clash"
+      className="w-full text-white"
       style={{
+        fontFamily: `"Clash Display", "Clash Display Placeholder", sans-serif`,
       }}
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-16 py-16 sm:py-20 lg:py-24">
         {/* Top meta row */}
-        <div className="flex items-center justify-between text-[10px] sm:text-[11px] tracking-[0.25em] uppercase text-white/60">
+        <div className="flex items-center justify-between text-[10px] sm:text-[11px] tracking-[-0.02em] uppercase text-white">
           <span>03</span>
           <span>//FAQ</span>
-          <span>Concerns</span>
+          <span className="text-white/50">Concerns</span>
         </div>
 
         {/* Main heading */}
         <div className="mt-12 text-center">
-          <p className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-semibold leading-tight tracking-tight uppercase">
+          <p className="text-[34px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-semibold leading-tight tracking-tight uppercase">
             Frequently
           </p>
-          <p className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-semibold leading-tight tracking-tight uppercase">
+          <p className="text-[34px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-semibold leading-tight tracking-tight uppercase">
             Asked Questions
           </p>
         </div>
@@ -96,12 +97,12 @@ const FAQ: React.FC = () => {
                   className="w-full flex items-center gap-6 sm:gap-10 py-6 sm:py-8 text-left"
                 >
                   {/* Number */}
-                  <span className="w-10 text-[11px] sm:text-[12px] tracking-[0.25em] uppercase text-white/60">
+                  <span className="font-semibold w-10 text-[12px] sm:text-[12px] tracking-[0.25em] uppercase text-white">
                     {item.id}
                   </span>
 
                   {/* Question text */}
-                  <span className="flex-1 text-[12px] xs:text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-snug tracking-[0.1em] uppercase">
+                  <span className="font-bold flex-1 text-[18px] xs:text-[13px] sm:text-[18px] md:text-[15px] lg:text-[16px] leading-snug tracking-[0.1em] uppercase">
                     {item.question}
                   </span>
 
@@ -121,7 +122,10 @@ const FAQ: React.FC = () => {
                       : "opacity-0 max-h-0 overflow-hidden"
                   }`}
                 >
-                  <p className="max-w-4xl text-[12px] sm:text-[13px] md:text-[14px] leading-relaxed text-white/70">
+                  <p className="max-w-4xl text-[18px] sm:text-[18px] md:text-[18px] leading-relaxed text-white/70"
+                   style={{
+                fontFamily: `"Inter Display", "Inter Display Placeholder", sans-serif`,
+              }}>
                     {item.answer}
                   </p>
                 </div>
