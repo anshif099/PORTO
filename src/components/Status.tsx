@@ -46,7 +46,7 @@ const Status: React.FC = () => {
                   key={index}
                   className="mx-auto  flex flex-col items-center lg:items-start text-center lg:text-left"
                 >
-                  <div className="text-[clamp(40px,7vw,90px)] leading-none font-bold text-white">
+                  <div className="text-[clamp(40px,7vw,88px)] leading-none font-bold text-white">
                     {item.value}
                   </div>
                   <div className="mt-5 text-[11px] tracking-[0.20em] uppercase text-white/70">
