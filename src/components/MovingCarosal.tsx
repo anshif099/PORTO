@@ -69,7 +69,7 @@ const MovingCarosal: React.FC = () => {
                 <img
                   src={src}
                   alt={`carousel-${index}`}
-                  className="w-full h-full object-cover"
+                  className="w-[350px] h-[245px] object-cover"
                 />
               </div>
             ))}
