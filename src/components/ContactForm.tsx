@@ -9,15 +9,15 @@ const ContactForm = () => {
         {/* LEFT CONTENT */}
         <div className="text-white">
 
-          <h1 className="text-[32px] sm:text-[38px] md:text-[48px] lg:text-[56px] leading-tight font-bold uppercase">
+          <h1 className="text-[32px] sm:text-[38px] md:text-[48px] lg:text-[48px] leading-[0.9em] tracking-[-0.04em] font-bold uppercase">
             LET'S CREATE <br /> EXTRAORDINARY!
           </h1>
 
-          <p className="text-white/60 mt-4 max-w-md text-sm sm:text-base">
+          <p className="text-white/60 mt-4 max-w-md text-[18px] sm:text-[18px]">
             Reach out and let's create something amazing together. Let's achieve greatness.
           </p>
 
-          <p className="mt-10 text-sm tracking-wide uppercase">Fill THIS form out</p>
+          <p className="mt-10 text-[24px] tracking-wide uppercase leading-[0.9em] tracking-[-0.04em]">Fill THIS form out</p>
 
           {/* FORM */}
           <form className="mt-4 space-y-4 max-w-lg">
@@ -25,7 +25,7 @@ const ContactForm = () => {
             <input
               type="text"
               placeholder="Name*"
-              className="w-full px-5 py-4 bg-black/60 rounded-xl border border-white/5 text-white outline-none focus:border-white/20"
+              className=" w-full px-5 py-4 bg-black/60 rounded-xl border border-white/5 text-white outline-none focus:border-white/20"
             />
 
             <input
