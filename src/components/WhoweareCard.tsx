@@ -161,14 +161,14 @@ const WhoweareCard: React.FC = () => {
 
                 {/* info block */}
                 <div className="bg-[#f4f4f4] px-7 py-6">
-                  <h3 className="text-[18px] leading-snug font-semibold text-[#111111] mb-1">
+                  <h3 className="text-[20px] leading-snug font-semibold text-[#111111] mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-[14px] text-[#777777] mb-5">
+                  <p className="text-[16px] text-[#777777] mb-5">
                     {member.role}
                   </p>
 
-                  <button className="inline-flex items-center px-5 py-2.5 rounded-md bg-[#202020] text-white text-[14px] font-semibold shadow-[0_6px_0_rgba(0,0,0,0.45)]">
+                  <button className="inline-flex items-center px-5 py-2.5 rounded-md bg-[#202020] text-white text-[14px] font-semibold">
                     Read More
                   </button>
                 </div>

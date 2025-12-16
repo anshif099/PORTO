@@ -18,7 +18,7 @@ const ImageGallery: React.FC = () => {
         fontFamily: `"Clash Display", "Clash Display Placeholder", sans-serif`,
       }}
     >
-      <div className="w-full max-w-6xl mx-auto">
+      <div className=" mx-auto">
         {/* HEADLINE */}
         <h2 className="text-white uppercase tracking-[-0.04em] leading-[1em] text-center text-[71px] font-bold">
           WE BELIEVE IN SUSTAINABLE EVENTS,
