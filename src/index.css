@@ -8,7 +8,7 @@ html, body {
   margin: 0;
   padding: 0;
   background: transparent !important;
-  font-family: "Clash Display", "Clash Display Placeholder", sans-serif;
+  font-family: "Clash Display", "Clash Display Placeholder", sans-serif !important;
 }
 
 body {
