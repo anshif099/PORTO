@@ -9,7 +9,7 @@ const ContactForm = () => {
         {/* LEFT CONTENT */}
         <div className="text-white">
 
-          <h1 className="text-[32px] sm:text-[38px] md:text-[48px] lg:text-[48px] leading-[0.9em] tracking-[-0.04em] font-bold uppercase">
+          <h1 className="text-[32px] sm:text-[38px] md:text-[48px] lg:text-[48px] leading-[0.9em] tracking-[-0.02em] font-semibold uppercase">
             LET'S CREATE <br /> EXTRAORDINARY!
           </h1>
 
