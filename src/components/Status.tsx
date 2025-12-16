@@ -38,9 +38,9 @@ const Status: React.FC = () => {
         <div className="w-full h-[1px] bg-white/10" />
 
         {/* ✅ PURE bg-framer-pattern (NO global layers leaking) */}
-        <div className="relative isolate bg-framer-pattern py-12 w-full">
-          <div className="relative z-10  max-w-[1500px]  font-inter-display">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-y-0">
+        <div className="relative isolate bg-framer-pattern py-12 ">
+          <div className="relative z-10  max-w-[1500px]  font-inter-display mx-auto ">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-y-0 ">
               {stats.map((item, index) => (
                 <div
                   key={index}
