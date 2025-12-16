@@ -4,7 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background: transparent !important;
@@ -20,10 +21,10 @@ body {
 
 /* MAIN BACKGROUND WRAPPER */
 .bg-framer-pattern {
-  position: relative;   /* required to control z indexes */
-  z-index: 0;           /* creates stacking context */
-  width: 100%;
-  background-color: #050505;
+  position: relative;
+  /* required to control z indexes */
+  z-index: 0;
+  /* creates stacking context */
   overflow: hidden;
 }
 
@@ -45,10 +46,42 @@ body {
   position: absolute;
   inset: 0;
   background-color: rgba(5, 5, 5, 0.9);
-  z-index: 1;  /* below big rectangles */
+  z-index: 1;
+  /* below big rectangles */
   pointer-events: none;
 }
 
+/* MAIN BACKGROUND WRAPPER */
+.bg-pattern {
+  position: relative;
+  /* required to control z indexes */
+  z-index: 0;
+  /* creates stacking context */
+  overflow: hidden;
+}
+
+/* tiny cell pattern */
+.bg-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://framerusercontent.com/images/ldf53R2pKtKErtQpdz1GxxWt2I.svg");
+  background-repeat: repeat;
+  background-size: 15px 15px;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+/* dark vignette overlay */
+.bg-pattern::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+  /* below big rectangles */
+  pointer-events: none;
+}
 
 .bg-rectangle {
   position: absolute;
@@ -59,15 +92,15 @@ body {
   height: 100%;
 
   /* MUCH LOWER border opacity */
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 
   background: transparent;
   pointer-events: none;
 
   /* CELL GRID INSIDE THE RECTANGLE */
   background-image:
-    linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px);
-    /* linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px); */
+    linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  /* linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px); */
 
   /* Use smaller grid size → far smoother */
   background-size: 25% 100%;
@@ -87,14 +120,20 @@ body {
   background-image: url("https://framerusercontent.com/images/ZvCFpOWcZHq9t6PbfxfLLgGVM.png");
   background-repeat: repeat;
   opacity: 0.05;
-  z-index: 3;  /* topmost overlay */
+  z-index: 3;
+  /* topmost overlay */
   pointer-events: none;
 }
 
 /* marquee text animation */
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-text-marquee {

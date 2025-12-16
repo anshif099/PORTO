@@ -11,12 +11,12 @@ export default function WhoweareText() {
       <div className="relative z-10 max-w-[1100px] text-center uppercase tracking-[-0.02em] leading-[5em] text-white">
 
         {/* HONEST */}
-        <h1 className="font-bold text-[101px] mb-[2.4vh] tracking-[-0.09em] leading-[-5em]">
+        <h1 className="font-semibold text-[101px] mb-[2.4vh] tracking-[-0.02em] leading-[-5em]">
           HONEST.
         </h1>
 
         {/* Small Description */}
-        <div className="font-bold text-[34px]  space-y-[0.2em] tracking-[-0.02em] leading-[0.9em]">
+        <div className="font-semibold text-[34px]  space-y-[0.2em] tracking-[-0.02em] leading-[0.9em]">
           <p>HARD + SMART + INTELLIGENT-WORKING.</p>
           <p>DILIGENT, DEPENDABLE. AT THE EDGE.</p>
           <p>THE LEADING EDGE. CRAFTING. CURATING.</p>
@@ -24,12 +24,12 @@ export default function WhoweareText() {
         </div>
 
         {/* WE ARE IDENTITY */}
-        <h2 className="font-bold text-[101px] leading-none tracking-[-0.02em]">
+        <h2 className="font-semibold text-[101px] leading-none tracking-[-0.02em]">
           WE ARE IDENTITY.
         </h2>
 
         {/* CHAMPION BLOCK */}
-        <div className="font-bold text-[101px] leading-none space-y-[0.45em] tracking-[-0.02em]">
+        <div className="font-semibold text-[101px] leading-none space-y-[0.45em] tracking-[-0.02em]">
           <div>WE CHAMPION<br></br>
           THE
           EXTRAORDINARY.</div>
