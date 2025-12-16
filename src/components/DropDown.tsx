@@ -147,10 +147,10 @@ const DropDown: React.FC = () => {
 
                   {/* EXPANDED */}
                   {isOpen && (
-                    <div className="pl-[140px] mt-8 grid grid-cols-1 md:grid-cols-[360px,1fr] gap-10 items-start">
+                    <div className="pl-[140px] mt-8 grid grid-cols-1 md:grid-cols-[272px,1fr] gap-10 items-start">
                       
                       {/* LEFT: IMAGE BELOW SUBTITLE */}
-                      <div className=" w-full h-[230px] rounded-[22px] overflow-hidden bg-black/60 border border-white/10 shadow-[0_30px_70px_rgba(0,0,0,0.8)]">
+                      <div className=" w-[272px] h-[160px] rounded-[22px] overflow-hidden bg-black/60 border border-white/10 shadow-[0_30px_70px_rgba(0,0,0,0.8)]">
                         <img
                           src={item.image}
                           alt={item.title}
@@ -159,7 +159,7 @@ const DropDown: React.FC = () => {
                       </div>
 
                       {/* RIGHT: BULLETS */}
-                      <ul className="space-y-3 text-[12px] leading-relaxed">
+                      <ul className=" space-y-3 text-[12px] leading-relaxed">
                         {item.bullets.map((b) => (
                           <li key={b} className="flex items-start gap-3">
                             <Check className="h-4 w-4 mt-0.5 shrink-0" />

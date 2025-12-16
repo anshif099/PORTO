@@ -144,7 +144,7 @@ const WhoweareCard: React.FC = () => {
           {members.map((member) => (
             <div
               key={member.name}
-              className="w-full sm:w-1/2 lg:w-1/3 max-w-[360px] flex justify-center"
+              className="w-full sm:w-1/2 lg:w-1/3 max-w-[320px] flex justify-center"
             >
               <div className=" w-full rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)] bg-transparent">
                 {/* photo block */}
@@ -152,7 +152,7 @@ const WhoweareCard: React.FC = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-[320px] md:h-[340px] object-cover"
+                    className="w-full h-[320px] md:h-[320px] object-cover"
                   />
                 </div>
 
