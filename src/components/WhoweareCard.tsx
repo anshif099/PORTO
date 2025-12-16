@@ -140,13 +140,13 @@ const WhoweareCard: React.FC = () => {
     >
       <div className="w-full max-w-6xl mx-auto">
         {/* flex layout so last 2 are centered on final row */}
-        <div className="flex flex-wrap justify-center gap-y-12 gap-x-8">
+        <div className="flex flex-wrap justify-center gap-y-5 gap-x-5">
           {members.map((member) => (
             <div
               key={member.name}
               className="w-full sm:w-1/2 lg:w-1/3 max-w-[360px] flex justify-center"
             >
-              <div className="w-full rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)] bg-transparent">
+              <div className=" w-full rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)] bg-transparent">
                 {/* photo block */}
                 <div className="bg-[#1d1d1d]">
                   <img
