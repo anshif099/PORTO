@@ -108,7 +108,7 @@ const Values: React.FC = () => {
             return (
               <div key={item.title} className="flex flex-col items-center max-w-xs">
                 {/* Icon card */}
-                <div className="w-[150px] h-[150px] md:w-[170px] md:h-[170px] rounded-[32px] bg-white flex items-center justify-center shadow-[0_18px_32px_rgba(0,0,0,0.55)] mb-6 tracking-[-0.02em] leading-[1em]">
+                <div className="w-[150px] h-[150px] md:w-[132px] md:h-[132px] rounded-[32px] bg-white flex items-center justify-center shadow-[0_18px_32px_rgba(0,0,0,0.55)] mb-6 tracking-[-0.02em] leading-[1em]">
                   <img
                     src={item.icon}
                     alt={item.title}
