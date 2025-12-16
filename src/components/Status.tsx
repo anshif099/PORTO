@@ -49,7 +49,7 @@ const Status: React.FC = () => {
                   <div className="text-[clamp(40px,7vw,88px)] leading-none font-bold text-white">
                     {item.value}
                   </div>
-                  <div className="mt-5 text-[11px] tracking-[0.20em] uppercase text-white/70">
+                  <div className="mt-5 text-[12px] tracking-[0.20em] uppercase text-white/70">
                     {item.label}
                   </div>
                 </div>
