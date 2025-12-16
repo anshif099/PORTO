@@ -89,7 +89,7 @@ export default function Members() {
         </div>
 
         {/* CONTENT */}
-        <div className="pt-20">
+        <div className="pt-40">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-0">
             {services.map((service, idx) => (
               <article
