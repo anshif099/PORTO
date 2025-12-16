@@ -18,7 +18,7 @@ const ImageGallery: React.FC = () => {
         fontFamily: `"Clash Display", "Clash Display Placeholder", sans-serif`,
       }}
     >
-      <div className=" mx-auto">
+      <div className="w-full max-w-[1450px] mx-auto">
         {/* HEADLINE */}
         <h2 className="text-white uppercase tracking-[-0.04em] leading-[1em] text-center text-[71px] font-semibold">
           WE BELIEVE IN SUSTAINABLE EVENTS,
@@ -26,17 +26,17 @@ const ImageGallery: React.FC = () => {
           EXPERIENCES AND ENGAGEMENTS.
         </h2>
 
-        {/* 1. HERO IMAGE (COMMUNITY MIXER) */}
+        {/* 1. HERO IMAGE */}
         <div className="mt-10 rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
           <img
             src={galleryHeroCommunityMixer}
             alt="Community Mixer Event"
-            className="w-[1450px] h-[512px] md:h-[512px] object-cover"
+            className="w-full h-[512px] object-cover"
           />
         </div>
 
-        {/* 2. TWO IMAGE ROW (AUDIENCE + GOOGLE LEAF SIGN) */}
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
+        {/* 2. TWO IMAGE ROW */}
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
             <img
               src={galleryAudienceRedLights}
@@ -54,10 +54,10 @@ const ImageGallery: React.FC = () => {
           </div>
         </div>
 
-        {/* 3. LEFT: MI STAGE + CAMEL VIDEO, RIGHT: TALL INDIA DOOR IMAGE */}
-        <div className="mt-8 grid gap-6 md:grid-cols-[1.4fr,1fr]">
-          {/* LEFT COLUMN (STACKED) */}
-          <div className="flex flex-col gap-6">
+        {/* 3. LEFT STACK + RIGHT TALL */}
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-[1.4fr,1fr] gap-5">
+          {/* LEFT STACK */}
+          <div className="flex flex-col gap-5">
             <div className="rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
               <img
                 src={galleryMiStage}
@@ -66,7 +66,6 @@ const ImageGallery: React.FC = () => {
               />
             </div>
 
-            {/* CAMEL VIDEO (ONLY VIDEO ITEM) */}
             <div className="rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
               <video
                 src={galleryCamelVideo}
@@ -79,7 +78,7 @@ const ImageGallery: React.FC = () => {
             </div>
           </div>
 
-          {/* RIGHT TALL IMAGE */}
+          {/* RIGHT TALL */}
           <div className="rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
             <img
               src={galleryIndiaCommunityDoor}
@@ -89,8 +88,8 @@ const ImageGallery: React.FC = () => {
           </div>
         </div>
 
-        {/* 4. FULL-WIDTH IMAGE (GOOGLE FOR STARTUPS) */}
-        <div className="mt-8 rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
+        {/* 4. FULL WIDTH */}
+        <div className="mt-6 rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
           <img
             src={galleryGoogleForStartups}
             alt="Google for Startups display"
@@ -98,9 +97,8 @@ const ImageGallery: React.FC = () => {
           />
         </div>
 
-        {/* 5. LEFT TALL IMAGE, RIGHT TWO STACKED (RED STAGE / AWARDS / BOOTH) */}
-        <div className="mt-8 grid gap-6 md:grid-cols-[1.4fr,1fr]">
-          {/* LEFT TALL RED STAGE IMAGE */}
+        {/* 5. LEFT TALL + RIGHT STACK */}
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-[1.4fr,1fr] gap-5">
           <div className="rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
             <img
               src={galleryRedStageGrid}
@@ -109,8 +107,7 @@ const ImageGallery: React.FC = () => {
             />
           </div>
 
-          {/* RIGHT COLUMN STACKED (AWARDS + BOOTH) */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-5">
             <div className="rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
               <img
                 src={galleryAwardsTable}
