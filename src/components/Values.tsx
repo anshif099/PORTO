@@ -89,7 +89,7 @@ const Values: React.FC = () => {
 
       <div className="w-full max-w-6xl mx-auto text-center text-white">
         {/* Heading */}
-        <h2 className="uppercase tracking-[0.16em] leading-none font-extrabold text-[clamp(2.4rem,5vw,4.4rem)] mb-12">
+        <h2 className="uppercase tracking-[-0.04em] leading-none font-extrabold text-[101px] mb-12">
           OUR VALUES
         </h2>
 
@@ -108,7 +108,7 @@ const Values: React.FC = () => {
             return (
               <div key={item.title} className="flex flex-col items-center max-w-xs">
                 {/* Icon card */}
-                <div className="w-[150px] h-[150px] md:w-[170px] md:h-[170px] rounded-[32px] bg-white flex items-center justify-center shadow-[0_18px_32px_rgba(0,0,0,0.55)] mb-6">
+                <div className="w-[150px] h-[150px] md:w-[170px] md:h-[170px] rounded-[32px] bg-white flex items-center justify-center shadow-[0_18px_32px_rgba(0,0,0,0.55)] mb-6 tracking-[-0.02em] leading-[1em]">
                   <img
                     src={item.icon}
                     alt={item.title}
@@ -117,12 +117,12 @@ const Values: React.FC = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="uppercase font-extrabold text-[0.95rem] md:text-[1rem] tracking-[0.12em] mb-3">
+                <h3 className="uppercase font-bold text-[20px] md:text-[20px] tracking-[-0.02em] leading-[1em] mb-3">
                   {item.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-[0.9rem] md:text-[0.95rem] leading-relaxed text-white/90">
+                <p className="text-[19px] md:text-[19px] leading-[-0.02em] tracking-[-0.02em] text-white/90">
                   {item.description}
                 </p>
               </div>

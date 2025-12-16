@@ -14,17 +14,21 @@ const AmazewitText: React.FC = () => {
         </p>
 
         {/* TITLE */}
-        <h1 className="
-          text-white
-          font-semibold
-          leading-[0.95]
-          tracking-tight
-          uppercase
-          text-[48px]
-          sm:text-[64px]
-          md:text-[80px]
-          lg:text-[96px]
-        ">
+        <h1
+          className="
+            text-white
+            font-semibold
+            leading-[0.95]
+            tracking-tight
+            uppercase
+            text-[48px]
+            sm:text-[64px]
+            md:text-[80px]
+            lg:text-[101px]
+            tracking-[-0.07em]
+          "
+          style={{ fontFamily: '"clash Display", "clash Display Placeholder", sans-serif' }}
+        >
           WELCOME TO  <br></br>A WORLD OF <br></br>EXTRAORDINARY
         </h1>
       </div>

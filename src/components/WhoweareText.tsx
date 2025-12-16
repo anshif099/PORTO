@@ -1,44 +1,38 @@
 export default function WhoweareText() {
   return (
     <section
-      className="min-h-screen w-full flex items-center justify-center relative overflow-hidden px-[5vw]"
+      className="min-h-screen w-full flex items-center justify-center relative overflow-hidden px-[5vw] pt-40"
       style={{
         fontFamily: `"Clash Display", "Clash Display Placeholder", sans-serif`,
       }}
     >
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1100px] text-center uppercase tracking-[0.12em] leading-tight text-white">
+      <div className="relative z-10 max-w-[1100px] text-center uppercase tracking-[-0.02em] leading-[2.5em] text-white">
 
         {/* HONEST */}
-        <h1 className="font-extrabold text-[clamp(3.3rem,7vw,5.4rem)] mb-[2.4vh]">
+        <h1 className="font-bold text-[101px] mb-[2.4vh] tracking-[-0.09em] leading-[-5em]">
           HONEST.
         </h1>
 
         {/* Small Description */}
-        <div className="font-bold text-[clamp(0.78rem,1.15vw,1.1rem)] leading-[1.45] space-y-[0.2em]">
+        <div className="font-bold text-[34px]  space-y-[0.2em] tracking-[-0.02em]">
           <p>HARD + SMART + INTELLIGENT-WORKING.</p>
           <p>DILIGENT, DEPENDABLE. AT THE EDGE.</p>
           <p>THE LEADING EDGE. CRAFTING. CURATING.</p>
           <p>CELEBRATING. CONSISTENT. CREATIVE.</p>
         </div>
 
-        {/* Spacer */}
-        <div className="h-[7vh] min-h-[40px]" />
-
         {/* WE ARE IDENTITY */}
-        <h2 className="font-extrabold text-[clamp(3.1rem,6.6vw,5rem)] leading-none">
+        <h2 className="font-bold text-[101px] leading-none tracking-[-0.02em]">
           WE ARE IDENTITY.
         </h2>
 
-        {/* Spacer */}
-        <div className="h-[3.5vh] min-h-[24px]" />
-
         {/* CHAMPION BLOCK */}
-        <div className="font-extrabold text-[clamp(3.1rem,6.6vw,5rem)] leading-none space-y-[0.45em]">
-          <div>WE CHAMPION</div>
-          <div>THE</div>
-          <div>EXTRAORDINARY.</div>
+        <div className="font-bold text-[101px] leading-none space-y-[0.45em] tracking-[-0.02em]">
+          <div>WE CHAMPION<br></br>
+          THE
+          EXTRAORDINARY.</div>
         </div>
 
       </div>

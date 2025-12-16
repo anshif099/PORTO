@@ -20,7 +20,7 @@ const ImageGallery: React.FC = () => {
     >
       <div className="w-full max-w-6xl mx-auto">
         {/* HEADLINE */}
-        <h2 className="text-white uppercase tracking-[0.12em] leading-tight text-center text-[clamp(1.9rem,3.3vw,3rem)] font-extrabold">
+        <h2 className="text-white uppercase tracking-[-0.04em] leading-[1em] text-center text-[62px] font-bold">
           WE BELIEVE IN SUSTAINABLE EVENTS,
           <br />
           EXPERIENCES AND ENGAGEMENTS.
