@@ -71,7 +71,6 @@ export default function Sponsors() {
           max-width: 118px;
           max-height: 118px;
           object-fit: contain;
-          filter: brightness(0) invert(1);
           opacity: 0.9;
         }
 
