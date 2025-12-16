@@ -31,7 +31,7 @@ const ImageGallery: React.FC = () => {
           <img
             src={galleryHeroCommunityMixer}
             alt="Community Mixer Event"
-            className="w-full h-[360px] md:h-[520px] object-cover"
+            className="w-[1450px] h-[512px] md:h-[512px] object-cover"
           />
         </div>
 
@@ -62,7 +62,7 @@ const ImageGallery: React.FC = () => {
               <img
                 src={galleryMiStage}
                 alt="Mi launch stage"
-                className="w-full h-[260px] md:h-[320px] object-cover"
+                className="w-full h-[260px] md:h-[550px] object-cover"
               />
             </div>
 
