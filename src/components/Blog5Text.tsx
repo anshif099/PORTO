@@ -20,7 +20,7 @@ const Blog2: React.FC = () => {
           </p>
 
           {/* Title */}
-          <h1 className="uppercase font-semibold leading-[1.08] text-[48px] mb-8">
+          <h1 className="uppercase font-semibold leading-[0.8em] text-[48px] mb-8">
             XIAOMI-SMARTER-<br></br>
             LIVING
           </h1>
