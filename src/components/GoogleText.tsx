@@ -15,22 +15,22 @@ const GoogleText: React.FC = () => {
     >
       <div className="max-w-[1200px] w-full flex flex-col items-center text-center">
         {/* Date */}
-        <p className="text-[10px] sm:text-xs md:text-sm tracking-[0.35em] uppercase text-white/70 mb-10 md:mb-12">
+        <p className="text-[12px] sm:text-[12px] md:text-[12px] tracking-[-0.02em] uppercase text-[#808080] mb-10 md:mb-12">
           February 12, 2022
         </p>
 
         {/* Title */}
         <h1 className="leading-[0.9] font-semibold uppercase">
-          <span className="block text-[40px] sm:text-[56px] md:text-[80px] lg:text-[96px] xl:text-[112px]">
+          <span className="block text-[40px] sm:text-[56px] md:text-[80px] lg:text-[120px] xl:text-[120px]">
             Google / ICS
           </span>
-          <span className="block text-[40px] sm:text-[56px] md:text-[80px] lg:text-[96px] xl:text-[112px]">
+          <span className="block text-[40px] sm:text-[56px] md:text-[80px] lg:text-[120px] xl:text-[120px]">
             Summit 2022–25
           </span>
         </h1>
 
         {/* Description */}
-        <p className="mt-8 md:mt-10 max-w-3xl text-xs sm:text-sm md:text-base lg:text-lg text-white/70 leading-relaxed">
+        <p className="mt-8 md:mt-10 max-w-3xl text-[20px] sm:text-sm md:text-base lg:text-lg text-[#808080] leading-relaxed">
           Google ICS was a four-year multi-city journey across Leh, Goa, Udaipur, and
           Thiruvananthapuram—bringing together developer communities to celebrate impact,
           sustainability, and innovation through immersive learning, culture, and tech-powered

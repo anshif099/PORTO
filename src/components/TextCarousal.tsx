@@ -28,7 +28,7 @@ const TextCarousal: React.FC = () => {
           {[...items, ...items].map((text, index) => (
             <span
               key={index}
-              className={`mx-8 text-[5vw] md:text-[4vw] lg:text-[64px] font-bold uppercase ${
+              className={`mx-8 text-[5vw] md:text-[4vw] lg:text-[71px] font-bold uppercase ${
                 index % 2 === 0 ? "text-gray-500" : "text-white"
               }`}
             >
