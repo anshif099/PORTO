@@ -8,7 +8,7 @@ const AmazewitText: React.FC = () => {
       <div className="max-w-[820px] w-full text-center space-y-8 pt-20">
 
         {/* DATE */}
-        <p className="text-[11px] tracking-[0.25em] uppercase text-white/50">
+        <p className="text-[12px] tracking-[-0.02em] uppercase text-[#808080]">
           (2021 - 2025)
         </p>
 

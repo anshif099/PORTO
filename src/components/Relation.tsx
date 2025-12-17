@@ -74,7 +74,7 @@ const Relation: React.FC = () => {
 
         {/* Social Links */}
         <header className="w-full pt-8 px-6 md:px-12 flex justify-center py-40">
-          <nav className="flex gap-8 md:gap-12 text-[11px] md:text-[18px]  uppercase">
+          <nav className="font-bold flex gap-8 md:gap-12 text-[11px] md:text-[18px]  uppercase">
             <a href="#" className="hover:text-gray-300">Instagram ↗</a>
             <a href="#" className="hover:text-gray-300">LinkedIn ↗</a>
             <a href="#" className="hover:text-gray-300">Twitter ↗</a>
