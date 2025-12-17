@@ -20,10 +20,6 @@ const Blog1Bg1: React.FC = () => {
     <section
       className="w-full min-h-screen flex justify-center items-center px-0 sm:px-0 py-0 relative overflow-hidden"
       style={{
-        backgroundColor: "#050505",
-        backgroundImage:
-          "radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px)",
-        backgroundSize: "6px 6px",
         fontFamily: `"Clash Display", "Clash Display Placeholder", sans-serif`,
       }}
     >

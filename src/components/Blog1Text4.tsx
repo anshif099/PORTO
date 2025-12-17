@@ -11,17 +11,17 @@ const Blog1Text4: React.FC = () => {
       {/* Center vertical divider */}
       <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-white/10 pointer-events-none" />
 
-      {/* Center white dot */}
-      <div className="hidden md:block absolute left-1/2 top-[45%] -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_12px_rgba(255,255,255,0.5)] pointer-events-none" />
-
-      <div className="w-full max-w-6xl ml-auto text-white">
+      <div className="px-20 w-full max-w-6xl ml-auto text-white">
         {/* Heading */}
-        <h2 className="text-[1.2rem] font-semibold mb-6">
+        <h2 className="text-[24px] mb-6">
           Concept
         </h2>
 
         {/* Paragraph */}
-        <p className="max-w-4xl text-[1rem] leading-[1.75] text-white/80">
+        <p className="max-w-4xl text-[18px] leading-[1.4] text-[#808080]"
+        style={{
+        fontFamily: `"Inter Display", "Inter Display Placeholder", sans-serif`,
+      }}>
           We adopted a multi-pronged outreach strategy. This included direct
           engagement with colleges through seminars, posters, and speaker
           sessions; targeted digital campaigns across email, WhatsApp, and

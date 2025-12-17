@@ -8,14 +8,15 @@ const Blog1Text2: React.FC = () => {
         fontFamily: `"Clash Display", "Clash Display Placeholder", sans-serif`,
       }}
     >
-      <div className="w-full max-w-6xl text-white">
+      
+      <div className="px-20 w-full max-w-6xl text-white">
         {/* Heading */}
-        <h2 className="text-[1.2rem] font-semibold mb-6">
+        <h2 className="text-[24px] mb-6">
           Research
         </h2>
 
         {/* Paragraph */}
-        <p className="max-w-4xl text-[1rem] leading-[1.75] text-white/80">
+        <p className="max-w-4xl text-[18px] leading-[1.4em] text-[#808080]">
           The campaign was initiated to increase awareness and accessibility of
           the Google Cybersecurity Course for students across India. It aimed to
           address the skill gap in cybersecurity by reaching students through

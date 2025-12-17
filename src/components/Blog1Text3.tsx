@@ -8,14 +8,17 @@ const Blog1Text3: React.FC = () => {
         fontFamily: `"Clash Display", "Clash Display Placeholder", sans-serif`,
       }}
     >
-      <div className="w-full max-w-6xl text-white">
+      <div className="px-20 w-full max-w-6xl text-white">
         {/* Heading */}
-        <h2 className="text-[1.2rem] font-semibold mb-6">
+        <h2 className="text-[24px]  mb-6">
           Development
         </h2>
 
         {/* Paragraph */}
-        <p className="max-w-4xl text-[1rem] leading-[1.75] text-white/80">
+        <p className="max-w-4xl text-[18px] leading-[1.3em] text-[#808080]"
+        style={{
+        fontFamily: `"Inter Display", "Inter Display Placeholder", sans-serif`,
+      }}>
           Key challenges included low awareness among students, difficulties in
           reaching a wide college network, securing influencer endorsements, and
           crafting digital content that clearly communicated the course’s value.

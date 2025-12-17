@@ -25,28 +25,30 @@ const Blog1Bg2: React.FC = () => {
       }}
     >
       <div className="w-full max-w-6xl mx-auto">
-        <div className="grid gap-6 md:grid-cols-2 h-[65vh] md:h-[70vh]">
-          {/* LEFT IMAGE */}
-          <div className="w-full h-full rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
-            <img
-              src="src/assets/blog1-bg2-left.jpg" // replace with your left image path
-              alt="Cybersecurity event crowd"
-              className="w-full h-full object-cover will-change-transform transition-transform duration-75 ease-out"
-              style={{ transform: `scale(${scale})` }}
-            />
-          </div>
+  <div className="grid gap-6 md:grid-cols-2">
+    
+    {/* LEFT IMAGE */}
+    <div className="w-full h-[658px] rounded-[10px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
+      <img
+        src="src/assets/blog1-bg2-left.jpg"
+        alt="Cybersecurity event crowd"
+        className="w-full h-full object-cover will-change-transform transition-transform duration-75 ease-out"
+        style={{ transform: `scale(${scale})` }}
+      />
+    </div>
 
-          {/* RIGHT IMAGE */}
-          <div className="w-full h-full rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
-            <img
-              src="src/assets/blog1-bg2-right.jpg" // replace with your right image path
-              alt="Cybersecurity Roadshows stage"
-              className="w-full h-full object-cover will-change-transform transition-transform duration-75 ease-out"
-              style={{ transform: `scale(${scale})` }}
-            />
-          </div>
-        </div>
-      </div>
+    {/* RIGHT IMAGE */}
+    <div className="w-full h-[658px] rounded-[10px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
+      <img
+        src="src/assets/blog1-bg2-right.jpg"
+        alt="Cybersecurity Roadshows stage"
+        className="w-full h-full object-cover will-change-transform transition-transform duration-75 ease-out"
+        style={{ transform: `scale(${scale})` }}
+      />
+    </div>
+
+  </div>
+</div>
     </section>
   );
 };
