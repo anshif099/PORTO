@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
 import Google from "./pages/Google";
 import Cursor from "./components/Cursor";
+import ScrollToTop from "./components/ScrollToTop";
 import { CursorProvider } from "./contexts/CursorContext";
 import AmazeWit from "./pages/AmazeWit";
 import LinkedInHackWeek from "./pages/LinkedInHackWeek";
@@ -31,6 +32,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Cursor />
           <Routes>
             <Route path="/" element={<Index />} />
