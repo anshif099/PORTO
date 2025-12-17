@@ -4,13 +4,14 @@ const TextCarousal: React.FC = () => {
   const items = new Array(12).fill("MORE WORKS");
 
   return (
-    <div className="relative w-full overflow-hidden py-6">
+    <div className="relative w-full overflow-hidden py-6 bg-black">
 
       {/* LEFT FOG */}
       <div
         className="pointer-events-none absolute left-0 top-0 z-20 h-full w-24 md:w-40 lg:w-56"
         style={{
-          
+          background:
+            "linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0))",
         }}
       />
 
@@ -18,7 +19,8 @@ const TextCarousal: React.FC = () => {
       <div
         className="pointer-events-none absolute right-0 top-0 z-20 h-full w-24 md:w-40 lg:w-56"
         style={{
-
+          background:
+            "linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))",
         }}
       />
 

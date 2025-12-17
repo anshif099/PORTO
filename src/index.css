@@ -134,3 +134,16 @@ body {
   width: max-content;
   animation: marquee 18s linear infinite;
 }
+
+@keyframes text-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-text-marquee {
+  animation: text-marquee 35s linear infinite;
+}

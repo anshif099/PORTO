@@ -49,10 +49,10 @@ const GoogleText: React.FC = () => {
             py-3.5 md:py-4
             rounded-full
             bg-white text-black
-            text-[10px] sm:text-xs md:text-sm
+            text-[10px] sm:text-xs md:text-[18px]
             font-semibold
             uppercase
-            tracking-[0.35em]
+            tracking-[-0.02em]
             border border-white
             transition-colors duration-300
             hover:bg-black hover:text-white
