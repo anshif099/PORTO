@@ -11,24 +11,21 @@ const Blog2: React.FC = () => {
       {/* Center vertical divider */}
       <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-white/10 pointer-events-none" />
 
-      {/* Center white dot */}
-      <div className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_12px_rgba(255,255,255,0.5)] pointer-events-none" />
-
       <div className="w-full max-w-6xl mx-auto grid gap-12 md:grid-cols-[1.3fr,1fr]">
         {/* LEFT COLUMN */}
         <div className="text-white">
           {/* Date */}
-          <p className="text-[0.75rem] tracking-[0.18em] uppercase text-white/60 mb-8">
+          <p className="text-[12px] tracking-[-0.02] uppercase text-[#808080] mb-8">
             Jul 12, 2025
           </p>
 
           {/* Title */}
-          <h1 className="uppercase font-extrabold leading-[1.08] text-[clamp(2.1rem,3.3vw,3.3rem)] mb-8">
+          <h1 className="uppercase font-semibold leading-[1.08] text-[48px] mb-8">
             Alli Serona Campaign
           </h1>
 
           {/* Description */}
-          <p className="text-[0.95rem] md:text-[1rem] leading-relaxed text-white/75 max-w-xl">
+          <p className="text-[18px] md:text-[18px] leading-[1.3em] text-[#808080] max-w-xl">
             “Alli Serona” was a public-focused campaign designed to elevate the 
             mobility challenges of marginalized communities in Bangalore. Through 
             documentary screenings and immersive installations, the campaign 
@@ -40,26 +37,26 @@ const Blog2: React.FC = () => {
         <div className="text-white/80 text-sm md:text-[0.9rem] flex flex-col justify-center">
           {/* Client */}
           <div className="flex items-center justify-between py-6 border-b border-white/10">
-            <span className="tracking-[0.16em] uppercase text-[0.7rem] text-white/50">
+            <span className="tracking-[-0.02em] uppercase text-[12px] text-[#808080]">
               Client
             </span>
-            <span className="text-[1.1rem] text-white">Purpose</span>
+            <span className="text-[24px] text-white">Purpose</span>
           </div>
 
           {/* Duration */}
           <div className="flex items-center justify-between py-6 border-b border-white/10">
-            <span className="tracking-[0.16em] uppercase text-[0.7rem] text-white/50">
+            <span className="tracking-[-0.02em] uppercase text-[12px] text-[#808080]">
               Duration
             </span>
-            <span className="text-[1.1rem] text-white">1 Day</span>
+            <span className="text-[24px] text-white">1 Day</span>
           </div>
 
           {/* Category / Casestudy ID */}
           <div className="flex items-center justify-between py-6">
-            <span className="tracking-[0.16em] uppercase text-[0.7rem] text-white/50">
+            <span className="tracking-[-0.02em] uppercase text-[12px] text-[#808080]">
               Product launch and experiential
             </span>
-            <span className="text-[1.1rem] text-white">Casestudy 02</span>
+            <span className="text-[24px] text-white">Casestudy 02</span>
           </div>
         </div>
       </div>
