@@ -67,7 +67,7 @@ const FAQ: React.FC = () => {
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-16 py-16 sm:py-20 lg:py-24">
         {/* Top meta row */}
-        <div className="flex items-center justify-between text-[10px] sm:text-[11px] tracking-[-0.02em] uppercase text-white">
+        <div className="flex items-center justify-between text-[10px] sm:text-[12px] tracking-[-0.02em] uppercase text-white">
           <span>03</span>
           <span>//FAQ</span>
           <span className="text-white/50">Concerns</span>
@@ -75,10 +75,10 @@ const FAQ: React.FC = () => {
 
         {/* Main heading */}
         <div className="mt-12 text-center">
-          <p className="text-[34px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-semibold leading-tight tracking-tight uppercase">
+          <p className="text-[34px] sm:text-[28px] md:text-[32px] lg:text-[34px] font-semibold leading-tight tracking-tight uppercase">
             Frequently
           </p>
-          <p className="text-[34px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-semibold leading-tight tracking-tight uppercase">
+          <p className="text-[34px] sm:text-[28px] md:text-[32px] lg:text-[34px] font-semibold leading-tight tracking-tight uppercase">
             Asked Questions
           </p>
         </div>
