@@ -25,7 +25,10 @@ const Blog2: React.FC = () => {
           </h1>
 
           {/* Description */}
-          <p className="text-[18px] md:text-[18px] leading-[1.3em] text-[#808080] max-w-xl">
+          <p className="text-[18px] md:text-[18px] leading-[1.3em] text-[#808080] max-w-xl"
+          style={{
+        fontFamily: `"Inter Display", "Inter Display Placeholder", sans-serif`,
+      }}>
             “Alli Serona” was a public-focused campaign designed to elevate the 
             mobility challenges of marginalized communities in Bangalore. Through 
             documentary screenings and immersive installations, the campaign 
