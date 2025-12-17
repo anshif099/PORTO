@@ -57,7 +57,7 @@ const Header: React.FC = () => {
           aria-label={isMenuOpen ? 'Close Menu' : 'Open Menu'}
           // make sure this sits on top of everything and is easy to click
           style={{ cursor: cursorStyle, zIndex: 9999 }}
-          className="absolute left-1/2 top-[4rem] -translate-x-[22px] -translate-y-1/2 p-2.5 sm:p-3 flex items-center justify-center"
+          className="absolute left-1/2 top-[4rem] -translate-x-[25px] -translate-y-1/2 p-2.5 sm:p-3 flex items-center justify-center"
         >
           <div className="relative w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center">
             {/* 4-dots (hidden when open) */}
