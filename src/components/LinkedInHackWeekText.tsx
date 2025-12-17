@@ -11,7 +11,7 @@ const AmazewitText: React.FC = () => {
       <div className="max-w-[820px] w-full text-center space-y-8">
 
         {/* DATE */}
-        <p className="text-[11px] tracking-[0.25em] uppercase text-white/50">
+        <p className="text-[12px] tracking-[-0.02em] uppercase text-[#808080]">
           April 3, 2023
         </p>
 
@@ -25,13 +25,13 @@ const AmazewitText: React.FC = () => {
           text-[48px]
           sm:text-[64px]
           md:text-[80px]
-          lg:text-[96px]
+          lg:text-[120px]
         ">
           LinkedIn <br></br> HackWeek
         </h1>
 
         {/* DESCRIPTION */}
-        <div className="space-y-6 text-white/60 text-[13px] sm:text-[14px] leading-relaxed">
+        <div className="space-y-6 text-[#808080] text-[20px] sm:text-[20px] leading-relaxed">
 
           <p>
             LinkedIn Hack Week 2025, hosted on January 15th and 16th at the LinkedIn Bangalore <br></br>
@@ -60,9 +60,9 @@ const AmazewitText: React.FC = () => {
               rounded-full
               bg-white
               text-black
-              text-[11px]
-              sm:text-[12px]
-              tracking-[0.2em]
+              text-[18px]
+              sm:text-[18px]
+              tracking-[-0.02em]
               uppercase
               font-semibold
               transition-all
