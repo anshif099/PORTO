@@ -15,7 +15,16 @@ const FooterIdentity: React.FC = () => {
       }
     );
 
-    if (footerRef.current) observer.observe(footerRef.current);
+    if (footerRef.current) {
+      observer.observe(footerRef.current);
+      // Check if already intersecting on mount (e.g., after refresh if scrolled)
+      const rect = footerRef.current.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      const isIntersecting = rect.top < windowHeight * 0.8 && rect.bottom > 0;
+      if (isIntersecting) {
+        setVisible(true);
+      }
+    }
 
     return () => observer.disconnect();
   }, []);

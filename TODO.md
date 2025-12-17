@@ -1,81 +1,11 @@
-# TODO: Update Backgrounds in All Components
+# Jump-in Animation Implementation
 
-- [ ] AmazewitBg1.tsx
-- [ ] AmazewitBg2.tsx
-- [ ] AmazewitBg3.tsx
-- [ ] AmazewitText.tsx
-- [ ] AmazonData.tsx
-- [ ] AmazonPXTBg1.tsx
-- [ ] AmazonPXTBg2.tsx
-- [ ] AmazonPXTText.tsx
-- [ ] Approach.tsx
-- [ ] ArticleText.tsx
-- [ ] Bg1.tsx
-- [ ] Bg2.tsx
-- [ ] Bg3.tsx
-- [ ] Bg4.tsx
-- [ ] Bg5.tsx
-- [ ] Blog.tsx
-- [ ] Blog1Bg1.tsx
-- [ ] Blog1Bg2.tsx
-- [ ] Blog1Text.tsx
-- [ ] Blog1Text2.tsx
-- [ ] Blog1Text3.tsx
-- [ ] Blog1Text4.tsx
-- [ ] Blog2Bg1.tsx
-- [ ] Blog2Bg2.tsx
-- [ ] Blog2Bg3.tsx
-- [ ] Blog2Text.tsx
-- [ ] Blog2Text3.tsx
-- [ ] Blog3Bg1.tsx
-- [ ] Blog3Bg2.tsx
-- [ ] Blog3Bg3.tsx
-- [ ] Blog3Text.tsx
-- [ ] Blog4Bg1.tsx
-- [ ] Blog4Bg2.tsx
-- [ ] Blog4Bg3.tsx
-- [ ] Blog4Text.tsx
-- [ ] Blog5Bg1.tsx
-- [ ] Blog5Bg2.tsx
-- [ ] Blog5Bg3.tsx
-- [ ] Blog5Text.tsx
-- [ ] BlogCarousal.tsx
-- [ ] ContactDetails.tsx
-- [ ] ContactForm.tsx
-- [ ] Cursor.tsx
-- [ ] DropDown.tsx
-- [ ] FAQ.tsx
-- [ ] FooterIdentity.tsx
-- [ ] GoogleBg1.tsx
-- [ ] GoogleBg2.tsx
-- [ ] GoogleBg3.tsx
-- [ ] GoogleData.tsx
-- [ ] GoogleText.tsx
-- [ ] Header.tsx (already has it)
-- [ ] ImageGallery.tsx
-- [ ] LinkedInData.tsx
-- [ ] LinkedInHackWeekBg1.tsx
-- [ ] LinkedInHackWeekBg2.tsx
-- [ ] LinkedInHackWeekBg3.tsx
-- [ ] LinkedInHackWeekText.tsx
-- [ ] Location.tsx
-- [ ] MainText.tsx
-- [ ] MainText2.tsx
-- [ ] MainText3.tsx
-- [ ] MainText4.tsx
-- [ ] MainText5.tsx
-- [ ] Members.tsx
-- [ ] MovingCarosal.tsx
-- [ ] NavLink.tsx
-- [ ] Relation.tsx
-- [ ] Sponsers.tsx
-- [ ] Status.tsx
-- [ ] TextCarousal.tsx
-- [ ] Values.tsx
-- [ ] WhoweareCard.tsx
-- [ ] WhoweareText.tsx
-- [ ] WorkText.tsx
-- [ ] xiaomi-bg1.tsx
-- [ ] XiaomiBg2.tsx
-- [ ] XiaomiData.tsx
-- [ ] XiaomiText.tsx
+## Completed Tasks
+- [x] Added "jump-in" keyframes to tailwind.config.ts
+- [x] Added "jump-in" animation to tailwind.config.ts
+- [x] Wrapped Routes in App.tsx with div having "animate-jump-in" class
+
+## Summary
+- Jump-in animation added to entire website on page refresh
+- Animation scales elements from 90% to 100% with a 20px downward translate and fades in over 0.6s
+- Applied globally via wrapper div in App.tsx

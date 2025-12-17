@@ -83,10 +83,21 @@ export default {
             height: "0",
           },
         },
+        "jump-in": {
+          "0%": {
+            transform: "scale(0.9) translateY(20px)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "scale(1) translateY(0)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "jump-in": "jump-in 0.6s ease-out",
       },
     },
   },
