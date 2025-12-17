@@ -23,38 +23,38 @@ const GoogeData: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 md:gap-y-0 md:gap-x-12 border-b border-white/10 pb-16 md:pb-20">
           {/* YEAR */}
           <div>
-            <p className="text-[10px] md:text-[11px] tracking-[0.3em] uppercase text-white/60 mb-3">
+            <p className="text-[12px] md:text-[12px] tracking-[0.02em] uppercase text-[#808080] mb-3">
               Year
             </p>
-            <p className="text-[26px] md:text-[30px] leading-none">2024</p>
+            <p className="text-[24px] md:text-[24px] leading-none">2024</p>
           </div>
 
           {/* CLIENT */}
           <div>
-            <p className="text-[10px] md:text-[11px] tracking-[0.3em] uppercase text-white/60 mb-3">
+            <p className="text-[12px] md:text-[12px] tracking-[0.02em] uppercase text-[#808080] mb-3">
               Client
             </p>
-            <p className="text-[20px] md:text-[22px] leading-tight">
+            <p className="text-[24px] md:text-[24px] leading-tight">
               Xiaomi
             </p>
           </div>
 
           {/* CATEGORY */}
           <div>
-            <p className="text-[10px] md:text-[11px] tracking-[0.3em] uppercase text-white/60 mb-3">
+            <p className="text-[12px] md:text-[12px] tracking-[0.02em] uppercase text-[#808080] mb-3">
               Category
             </p>
-            <p className="text-[20px] md:text-[22px] leading-tight">
+            <p className="text-[24px] md:text-[24px] leading-tight">
               Xiaomi Global Launch
             </p>
           </div>
 
           {/* PRODUCT DURATION */}
           <div>
-            <p className="text-[10px] md:text-[11px] tracking-[0.3em] uppercase text-white/60 mb-3">
+            <p className="text-[12px] md:text-[12px] tracking-[-0.02em] uppercase text-[#808080] mb-3">
               Product Duration
             </p>
-            <p className="text-[22px] md:text-[26px] leading-none">72 Hrs</p>
+            <p className="text-[24px] md:text-[24px] leading-none">72 Hrs</p>
           </div>
         </div>
 
@@ -63,13 +63,13 @@ const GoogeData: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-10 md:gap-24">
             {/* Left label */}
             <div className="md:w-1/3">
-              <p className="text-[12px] md:text-[13px] font-semibold tracking-[0.28em] uppercase">
+              <p className="text-[18px] md:text-[18px] font-semibold tracking-[-0.02em] uppercase">
                 Research
               </p>
             </div>
 
             {/* Right text */}
-            <div className="md:w-2/3 space-y-5 text-[14px] md:text-[16px] leading-relaxed text-white/80">
+            <div className="md:w-2/3 space-y-5 text-[18px] md:text-[18px] leading-relaxed text-[#808080]">
               <p>
                 At the heart of the event was the insight that today’s consumers crave not just specs, but 
               </p>
@@ -98,13 +98,13 @@ const GoogeData: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-10 md:gap-24">
             {/* Left label */}
             <div className="md:w-1/3">
-              <p className="text-[12px] md:text-[13px] font-semibold tracking-[0.28em] uppercase">
+              <p className="text-[18px] md:text-[18px] font-semibold tracking-[-0.02em] uppercase">
                 Development
               </p>
             </div>
 
             {/* Right text */}
-            <div className="md:w-2/3 space-y-5 text-[14px] md:text-[16px] leading-relaxed text-white/80">
+            <div className="md:w-2/3 space-y-5 text-[18px] md:text-[18px] leading-relaxed text-[#808080]">
               <p>
                 Every touchpoint at the launch was crafted to extend the visual and functional DNA of the Xiaomi 14 Civi into the<br></br>
                  physical space:<br></br>
