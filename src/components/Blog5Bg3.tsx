@@ -23,7 +23,7 @@ const Blog1Bg1: React.FC = () => {
       }}
     >
       <div className="w-full h-screen">
-        <div className="w-full h-full rounded-none sm:rounded-[32px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
+        <div className="w-full h-full rounded-none sm:rounded-[10px] overflow-hidden shadow-[0_22px_40px_rgba(0,0,0,0.55)]">
           <img
             src="src/assets/blog5-hero-Xiaomi2.jpg" // replace with your image path
             alt="Cybersecurity Roadshows"
